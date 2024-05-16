@@ -8,7 +8,7 @@
 
 body {
   font-family: var(--body-font);
-  color: hsl(var(--body-color));
+  color: hsl(var(--heading-color));
   word-break: break-word;
   background-color: hsl(var(--body-color));
   min-height: 100vh;
@@ -20,9 +20,9 @@ p {
   font-family: var(--body-font);
   font-size: 17px;
   margin: 0;
-  font-weight: 400;
+  font-weight: 600;
   word-break: break-word;
-  color: hsl(var(--white)/0.8);
+  color: hsl(var(--black)/0.5);
 }
 
 h1,
@@ -96,7 +96,7 @@ a {
   display: inline-block;
   transition: .2s linear;
   text-decoration: none;
-  color: hsl(var(--body-color));
+  color: hsl(var(--heading-color));
 }
 
 a:hover {

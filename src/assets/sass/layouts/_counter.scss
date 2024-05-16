@@ -45,25 +45,26 @@
 .count-card{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
   
     .count-number-wraper{
-      color: hsl(var(--white));
+
       display: flex;
       align-items: center;
      
       .amount{
-        color: hsl(var(--white));
-        font-size: 60px;
+      
+        font-size: 40px;
         font-weight: 500;
-        line-height: 1.25;
+        line-height: 1.55;
         margin: 0px;
       }
     }
     .subtitle{
-      color: hsl(var(--white));
-      font-size: 20px;
-      font-weight: 400;
+        font-size: 14px;
+        font-weight: 500;
+        color: hsl(var(--black));
+        text-transform: uppercase;
     }
   }

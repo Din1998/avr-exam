@@ -1,244 +1,242 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 /* All Css Variables Start */
 
-  :root {   
+:root {
 
-    --heading-font:  "Radio Canada Big", sans-serif;
-    --body-font:  "Poppins", sans-serif;
-    
-    --heading-one: clamp(1.5rem, 2.8vw + 1rem, 3.75rem); 
-    --heading-two: clamp(1.375rem, 1.7vw + 1rem, 2.5rem);
-    --heading-three: clamp(1.25rem, .8vw + 1rem, 1.875rem); 
-    --heading-four: clamp(1.125rem, .5vw + 1rem, 1.5rem); 
-    --heading-five: clamp(1.0625rem, .3vw + 1rem, 1.25rem);
-    --heading-six: 1.2rem;
+  --heading-font: "Rubik", sans-serif;
+  --body-font: "Lato", sans-serif;
 
-
-    --heading-h: 222;
-    --heading-s: 91%;
-    --heading-l: 27%;
-    --heading-color: 	var(--heading-h) var(--heading-s) var(--heading-l);
-  
-
-  
-    --white: 0 0% 100%;
-        
-    --light-h: 0;
-    --light-s: 0%;
-    --light-l: 78%;
-    --light: var(--light-h) var(--light-s) var(--light-l);
-    
-    --black-h: 0;
-    --black-s: 0%;
-    --black-l: 0%;
-    --black: var(--black-h) var(--black-s) var(--black-l);
-    
-    --heading-color: 0, 0%, 100%;
-
-    --marque-bg: 224, 22%, 14%;
-
-    --cards-bg: 224, 22%, 14%;
-
-    --body-color: 225, 31%, 10%;
-
-    --border-color: 0 0% 88%;
-    --background: 0, 0%, 97%;
-    --footer-bg: 	36, 76%, 10%;
+  --heading-one: clamp(1.5rem, 2.8vw + 1rem, 3.75rem);
+  --heading-two: clamp(1.375rem, 1.7vw + 1rem, 2.5rem);
+  --heading-three: clamp(1.25rem, .8vw + 1rem, 1.875rem);
+  --heading-four: clamp(1.125rem, .5vw + 1rem, 1.5rem);
+  --heading-five: clamp(1.0625rem, .3vw + 1rem, 1.25rem);
+  --heading-six: 1.2rem;
 
 
-    --border-radius: 16px;
-    --border-radius-sm: 4px;
+  --heading-h: 0;
+  --heading-s: 0%;
+  --heading-l: 13%;
+  --heading-color: var(--heading-h) var(--heading-s) var(--heading-l);
 
 
 
-    --header-box-shadow: 0px -1px 15px 3px hsl(var(--black) /.3); 
+  --white: 0 0% 100%;
+
+  --light-h: 0;
+  --light-s: 0%;
+  --light-l: 78%;
+  --light: var(--light-h) var(--light-s) var(--light-l);
+
+  --black-h: 0;
+  --black-s: 0%;
+  --black-l: 0%;
+  --black: var(--black-h) var(--black-s) var(--black-l);
 
 
-    --mobile-box-shadow: 0px -1px 5px 0px hsl(var(--black) /.92);
+  --marque-bg: 224, 22%, 14%;
 
-    --box-shadow: 0px 2px 15px hsl(var(--black) /.05);
+  --cards-bg: 224, 22%, 14%;
 
-    --gradient-bg: linear-gradient( 95.26deg, hsl(var(--base)) 0%, hsl(var(--secondary)) 100%);
+  --body-color: 0, 0, 100%;
 
-    --card-bg: 	hsl(240, 1%, 15%);
-    --section-bg: 	hsl(240, 1%, 15%);
-
-
-    --header-bg: 	hsl(240, 1%, 15%);
-    --header--bg: 	hsl(0, 0%, 11.8%);
-
-    --base-light-h: 152;
-    --base-light-s:100%;
-    --base-light-l: 50%;
-    --base-light: var(--base-light-h) var(--base-light-s) var(--base-light-l);
-             
-    --base-component-h: 213;  
-    --base-component-s: 100%;
-    --base-component-l: 17%;
-    --base-component: var(--base-component-h) var( --base-component-s) var(--base-component-l);
+  --border-color: 0 0% 88%;
+  --background: 0, 0%, 97%;
+  --footer-bg: 36, 76%, 10%;
 
 
-    --base-h: 33;
-    --base-s: 93%;
-    --base-l: 54%;
-    --base: var(--base-h) var( --base-s) var(--base-l);
-
-    --base-two-h: 222;
-    --base-two-s: 91%;
-    --base-two-l: 27%;
-    --base-two: 	var(--base-two-h) var(--base-two-s) var(--base-two-l);
-
-
-    --secondary-h: 232; 
-    --secondary-s: 87%;
-    --secondary-l: 34%;
-    --secondary: var(--secondary-h) var( --secondary-s) var(--secondary-l);
-
-    --background-gradient: linear-gradient(45deg, hsl(var( --base)), hsl(var(--base-two)));
-
-    --dark-h: 228;
-    --dark-s: 67%;
-    --dark-l: 12%;
-    --dark: var(--dark-h) var(--dark-s) var(--dark-l);
-
-    --primary-h: 211;
-    --primary-s: 100%;
-    --primary-l: 50%;
-    --primary: var(--primary-h) var(--primary-s) var(--primary-l);
-
-    --success-h: 115;
-    --success-s: 100%;
-    --success-l: 47%;
-    --success: var(--success-h) var(--success-s) var(--success-l);
-
-    --danger-h: 0;
-    --danger-s: 96%;
-    --danger-l: 63%;
-    --danger: var(--danger-h) var(--danger-s) var(--danger-l);
-
-    --warning-h: 29;
-    --warning-s: 88%;
-    --warning-l: 59%;
-    --warning: var(--warning-h) var(--warning-s) var(--warning-l); 
-
-    --info-h: 196;
-    --info-s: 100%;
-    --info-l: 50%;
-    --info: var(--info-h) var(--info-s) var(--info-l);
-
-    --violet-h: 251;
-    --violet-s: 96%;
-    --violet-l: 63%;
-    --violet: var(--violet-h) var(--violet-s) var(--violet-l);
-
-    --yellow-h: 50;
-    --yellow-s: 100%;
-    --yellow-l: 50%;
-    --yellow: var(--yellow-h) var(--yellow-s) var(--yellow-l);
-
-    --dark-card-bg:rgba(148, 148, 148, 0.1)
+  --border-radius: 16px;
+  --border-radius-sm: 4px;
 
 
 
-        /* teal color */
-        --teal-h: 174;
-        --teal-s: 100%;
-        --teal-l: 29%;
-        --teal: var(--teal-h) var(--teal-s) var(--teal-l);
-    
-    
-        /* orange color */
-        --orange-h: 39;
-        --orange-s: 100%;
-        --orange-l: 50%;
-        --orange: var(--orange-h) var(--orange-s) var(--orange-l);
+  --header-box-shadow: 0px -1px 15px 3px hsl(var(--black) /.3);
 
 
- /* grey color */
- --grey-h: 0;
- --grey-s: 0%;
- --grey-l: 13%;
- --grey: var(--grey-h) var(--grey-s) var(--grey-l);
+  --mobile-box-shadow: 0px -1px 5px 0px hsl(var(--black) /.92);
+
+  --box-shadow: 0px 2px 15px hsl(var(--black) /.05);
+
+  --gradient-bg: linear-gradient(95.26deg, hsl(var(--base)) 0%, hsl(var(--secondary)) 100%);
+
+  --card-bg: hsl(240, 1%, 15%);
+  --section-bg: hsl(240, 1%, 15%);
+
+
+  --header-bg: hsl(240, 1%, 15%);
+  --header--bg: hsl(0, 0%, 11.8%);
+
+  --base-light-h: 152;
+  --base-light-s: 100%;
+  --base-light-l: 50%;
+  --base-light: var(--base-light-h) var(--base-light-s) var(--base-light-l);
+
+  --base-component-h: 213;
+  --base-component-s: 100%;
+  --base-component-l: 17%;
+  --base-component: var(--base-component-h) var(--base-component-s) var(--base-component-l);
+
+
+  --base-h: 166;
+  --base-s: 92%;
+  --base-l: 15%;
+  --base: var(--base-h) var(--base-s) var(--base-l);
+
+  --base-two-h: 222;
+  --base-two-s: 91%;
+  --base-two-l: 27%;
+  --base-two: var(--base-two-h) var(--base-two-s) var(--base-two-l);
+
+
+  --secondary-h: 232;
+  --secondary-s: 87%;
+  --secondary-l: 34%;
+  --secondary: var(--secondary-h) var(--secondary-s) var(--secondary-l);
+
+  --background-gradient: linear-gradient(45deg, hsl(var(--base)), hsl(var(--base-two)));
+
+  --dark-h: 228;
+  --dark-s: 67%;
+  --dark-l: 12%;
+  --dark: var(--dark-h) var(--dark-s) var(--dark-l);
+
+  --primary-h: 211;
+  --primary-s: 100%;
+  --primary-l: 50%;
+  --primary: var(--primary-h) var(--primary-s) var(--primary-l);
+
+  --success-h: 115;
+  --success-s: 100%;
+  --success-l: 47%;
+  --success: var(--success-h) var(--success-s) var(--success-l);
+
+  --danger-h: 0;
+  --danger-s: 96%;
+  --danger-l: 63%;
+  --danger: var(--danger-h) var(--danger-s) var(--danger-l);
+
+  --warning-h: 29;
+  --warning-s: 88%;
+  --warning-l: 59%;
+  --warning: var(--warning-h) var(--warning-s) var(--warning-l);
+
+  --info-h: 196;
+  --info-s: 100%;
+  --info-l: 50%;
+  --info: var(--info-h) var(--info-s) var(--info-l);
+
+  --violet-h: 251;
+  --violet-s: 96%;
+  --violet-l: 63%;
+  --violet: var(--violet-h) var(--violet-s) var(--violet-l);
+
+  --yellow-h: 50;
+  --yellow-s: 100%;
+  --yellow-l: 50%;
+  --yellow: var(--yellow-h) var(--yellow-s) var(--yellow-l);
+
+  --dark-card-bg: rgba(148, 148, 148, 0.1)
+    /* teal color */
+    --teal-h: 174;
+  --teal-s: 100%;
+  --teal-l: 29%;
+  --teal: var(--teal-h) var(--teal-s) var(--teal-l);
+
+
+  /* orange color */
+  --orange-h: 39;
+  --orange-s: 100%;
+  --orange-l: 50%;
+  --orange: var(--orange-h) var(--orange-s) var(--orange-l);
+
+
+  /* grey color */
+  --grey-h: 0;
+  --grey-s: 0%;
+  --grey-l: 13%;
+  --grey: var(--grey-h) var(--grey-s) var(--grey-l);
 
 
 
-     /* purple color */
-     --purple-h: 300;
-     --purple-s: 100%;
-     --purple-l: 25%;
-     --purple: var(--purple-h) var(--purple-s) var(--purple-l);
- 
-     /* blue color */
-     --blue-h: 224;
-     --blue-s: 98%;
-     --blue-l: 52%;
-     --blue: var(--blue-h) var(--blue-s) var(--blue-l);
- 
-     /* pink color */
-     --pink-h: 320;
-     --pink-s: 98%;
-     --pink-l: 53%;
-     --pink: var(--pink-h) var(--pink-s) var(--pink-l);
+  /* purple color */
+  --purple-h: 300;
+  --purple-s: 100%;
+  --purple-l: 25%;
+  --purple: var(--purple-h) var(--purple-s) var(--purple-l);
 
-         /* slate color */
-    --slate-h: 242;
-    --slate-s: 92%;
-    --slate-l: 71%;
-    --slate: var(--slate-h) var(--slate-s) var(--slate-l);
+  /* blue color */
+  --blue-h: 224;
+  --blue-s: 98%;
+  --blue-l: 52%;
+  --blue: var(--blue-h) var(--blue-s) var(--blue-l);
 
+  /* pink color */
+  --pink-h: 320;
+  --pink-s: 98%;
+  --pink-l: 53%;
+  --pink: var(--pink-h) var(--pink-s) var(--pink-l);
 
-
-    --gradient-1: linear-gradient(225deg, rgb(105, 234, 203), rgb(234, 204, 248), rgb(102, 84, 241));
-    --gradient-2: linear-gradient(337deg, rgb(101, 78, 163), rgb(218, 152, 180));
-    --gradient-3: linear-gradient(354deg, rgb(255, 117, 181), rgb(255, 184, 108));
-    --gradient-4: linear-gradient(355deg, rgb(28, 94, 101), rgb(83, 197, 148));
-    --gradient-5: linear-gradient(55deg, rgb(138, 35, 135), rgb(233, 64, 87), rgb(233, 64, 87));
-    --gradient-6: linear-gradient(270deg, rgb(20, 30, 48), rgb(36, 59, 85));
-    --gradient-7: linear-gradient(120deg, rgb(212, 252, 121), rgb(150, 230, 161));
-    --gradient-8: linear-gradient(120deg, rgb(246, 211, 101), rgb(253, 160, 133));
-    --gradient-9: linear-gradient(120deg, rgb(132, 250, 176), rgb(143, 211, 244));
-    --gradient-10: linear-gradient(120deg, rgb(252, 203, 144), rgb(213, 126, 235));
-    --gradient-11: linear-gradient(145deg, rgb(48, 207, 208), rgb(51, 8, 103));
-    --gradient-12: linear-gradient(0deg, rgb(210, 153, 194), rgb(254, 249, 215));
-    --gradient-13: linear-gradient(135deg, rgb(102, 126, 234), rgb(118, 75, 162));
-    --gradient-14: linear-gradient(90deg, rgb(247, 140, 160), rgb(249, 116, 143), rgb(253, 134, 140), rgb(254, 154, 139));
-    --gradient-15: linear-gradient(0deg, rgb(172, 203, 238), rgb(231, 240, 253));
-    --gradient-16: linear-gradient(0deg, rgb(193, 223, 196), rgb(222, 236, 221));
-    --gradient-17: linear-gradient(0deg, rgb(106, 133, 182), rgb(186, 200, 224));
-    --gradient-18: linear-gradient(0deg, rgb(151, 149, 240), rgb(251, 200, 212));
-    --gradient-19: linear-gradient(320deg, rgb(63, 81, 177), rgb(143, 106, 174), rgb(204, 107, 142), rgb(241, 130, 113), rgb(243, 164, 105), rgb(247, 201, 120));
-    --gradient-20: linear-gradient(0deg, rgb(199, 29, 111), rgb(208, 150, 147));
-    --gradient-21: linear-gradient(90deg, rgb(168, 202, 186), rgb(93, 65, 87));
-    --gradient-22: linear-gradient(320deg, rgb(63, 81, 177), rgb(143, 106, 174), rgb(204, 107, 142), rgb(241, 130, 113), rgb(243, 164, 105), rgb(247, 201, 120));
-    --gradient-23: linear-gradient(0deg, rgb(59, 65, 197), rgb(169, 129, 187), rgb(255, 200, 169));
-    --gradient-24: linear-gradient(45deg, rgb(255, 199, 150), rgb(255, 107, 149));
-    --gradient-25: linear-gradient(45deg, rgb(0, 219, 222), rgb(252, 0, 255));
-    --gradient-26: linear-gradient(0deg, rgb(80, 204, 127), rgb(245, 209, 0));
-    --gradient-27: linear-gradient(90deg, rgb(10, 207, 254), rgb(73, 90, 255));
-    --gradient-28: linear-gradient(45deg, rgb(225, 79, 173), rgb(249, 212, 35));
-    --gradient-29: linear-gradient(45deg, rgb(236, 119, 171), rgb(120, 115, 245));
-    --gradient-30: linear-gradient(225deg, rgb(105, 234, 203), rgb(234, 204, 248), rgb(102, 84, 241));
-    --gradient-31: linear-gradient(0deg, rgb(2, 80, 197), rgb(212, 63, 141));
-    --gradient-32: linear-gradient(0deg, rgb(255, 8, 68), rgb(255, 177, 153));
-    --gradient-33: linear-gradient(225deg, rgb(252, 235, 194), rgb(253, 103, 166), rgb(178, 152, 250));
+  /* slate color */
+  --slate-h: 242;
+  --slate-s: 92%;
+  --slate-l: 71%;
+  --slate: var(--slate-h) var(--slate-s) var(--slate-l);
 
 
 
-  }::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px hsl(var(--base)/.2); 
-    
-  }
-  ::-webkit-scrollbar-thumb {
-    background: hsl(var(--base)/.5); 
-    
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--base)); 
-  }
+  --gradient-1: linear-gradient(225deg, rgb(105, 234, 203), rgb(234, 204, 248), rgb(102, 84, 241));
+  --gradient-2: linear-gradient(337deg, rgb(101, 78, 163), rgb(218, 152, 180));
+  --gradient-3: linear-gradient(354deg, rgb(255, 117, 181), rgb(255, 184, 108));
+  --gradient-4: linear-gradient(355deg, rgb(28, 94, 101), rgb(83, 197, 148));
+  --gradient-5: linear-gradient(55deg, rgb(138, 35, 135), rgb(233, 64, 87), rgb(233, 64, 87));
+  --gradient-6: linear-gradient(270deg, rgb(20, 30, 48), rgb(36, 59, 85));
+  --gradient-7: linear-gradient(120deg, rgb(212, 252, 121), rgb(150, 230, 161));
+  --gradient-8: linear-gradient(120deg, rgb(246, 211, 101), rgb(253, 160, 133));
+  --gradient-9: linear-gradient(120deg, rgb(132, 250, 176), rgb(143, 211, 244));
+  --gradient-10: linear-gradient(120deg, rgb(252, 203, 144), rgb(213, 126, 235));
+  --gradient-11: linear-gradient(145deg, rgb(48, 207, 208), rgb(51, 8, 103));
+  --gradient-12: linear-gradient(0deg, rgb(210, 153, 194), rgb(254, 249, 215));
+  --gradient-13: linear-gradient(135deg, rgb(102, 126, 234), rgb(118, 75, 162));
+  --gradient-14: linear-gradient(90deg, rgb(247, 140, 160), rgb(249, 116, 143), rgb(253, 134, 140), rgb(254, 154, 139));
+  --gradient-15: linear-gradient(0deg, rgb(172, 203, 238), rgb(231, 240, 253));
+  --gradient-16: linear-gradient(0deg, rgb(193, 223, 196), rgb(222, 236, 221));
+  --gradient-17: linear-gradient(0deg, rgb(106, 133, 182), rgb(186, 200, 224));
+  --gradient-18: linear-gradient(0deg, rgb(151, 149, 240), rgb(251, 200, 212));
+  --gradient-19: linear-gradient(320deg, rgb(63, 81, 177), rgb(143, 106, 174), rgb(204, 107, 142), rgb(241, 130, 113), rgb(243, 164, 105), rgb(247, 201, 120));
+  --gradient-20: linear-gradient(0deg, rgb(199, 29, 111), rgb(208, 150, 147));
+  --gradient-21: linear-gradient(90deg, rgb(168, 202, 186), rgb(93, 65, 87));
+  --gradient-22: linear-gradient(320deg, rgb(63, 81, 177), rgb(143, 106, 174), rgb(204, 107, 142), rgb(241, 130, 113), rgb(243, 164, 105), rgb(247, 201, 120));
+  --gradient-23: linear-gradient(0deg, rgb(59, 65, 197), rgb(169, 129, 187), rgb(255, 200, 169));
+  --gradient-24: linear-gradient(45deg, rgb(255, 199, 150), rgb(255, 107, 149));
+  --gradient-25: linear-gradient(45deg, rgb(0, 219, 222), rgb(252, 0, 255));
+  --gradient-26: linear-gradient(0deg, rgb(80, 204, 127), rgb(245, 209, 0));
+  --gradient-27: linear-gradient(90deg, rgb(10, 207, 254), rgb(73, 90, 255));
+  --gradient-28: linear-gradient(45deg, rgb(225, 79, 173), rgb(249, 212, 35));
+  --gradient-29: linear-gradient(45deg, rgb(236, 119, 171), rgb(120, 115, 245));
+  --gradient-30: linear-gradient(225deg, rgb(105, 234, 203), rgb(234, 204, 248), rgb(102, 84, 241));
+  --gradient-31: linear-gradient(0deg, rgb(2, 80, 197), rgb(212, 63, 141));
+  --gradient-32: linear-gradient(0deg, rgb(255, 8, 68), rgb(255, 177, 153));
+  --gradient-33: linear-gradient(225deg, rgb(252, 235, 194), rgb(253, 103, 166), rgb(178, 152, 250));
 
 
 
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px hsl(var(--base)/.2);
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--base)/.5);
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--base));
+}

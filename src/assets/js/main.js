@@ -182,10 +182,7 @@
 
 
 
-  $('.sidebar-menu-show-hide').on('click', function () {
-    $('.sidebar-menu-wrapper').addClass('show');
-    $(".sidebar-overlay").addClass('show');
-  });
+
 
   $('.sidebar-overlay, .close-hide-show').on('click', function () {
     $('.sidebar-menu-wrapper').removeClass('show');
