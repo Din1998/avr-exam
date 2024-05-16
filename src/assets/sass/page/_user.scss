@@ -1,0 +1,41 @@
+// user
+.user-section{
+  .sidebar{
+    background: hsl(var(--base)/.2);
+    width: 80%;
+    height: 100%;
+    padding: 24px;
+    .user-info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      .user-thumb{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        img{
+          max-width: 100%;
+          max-height: 100%;
+          border-radius: 50%;
+          object-fit: cover;
+
+        }
+      }
+    }
+  }
+
+  .sidebar-menu{
+    padding: 20px;
+    display: flex;
+    gap: 12px;
+    .sidebar-menu-item{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  
+}

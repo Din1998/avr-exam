@@ -1,0 +1,182 @@
+
+.search-section{
+    background: hsl(var(--white));
+    border-top: 1px solid hsl(var(--black)/0.2);
+}
+
+// search box
+.browse-search-box-wrap{
+    padding: 12px;
+    background: hsl(var(--white));
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+    form{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        input{
+            &::placeholder{
+                color: hsl(var(--black)) !important;
+            }
+        }
+        .hero-input-group{
+            width: 300px;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                top: 6px;
+                right: 0px;
+                width: 1px;
+                height: 50px;
+                background: hsl(var(--black)/0.1);
+            }
+            &:nth-child(3)::after{
+                content: none;
+            }
+
+            label{
+                margin-left: 12px;
+                color: hsl(var(--black)/0.5);
+            }
+            .hero-search-input{
+                border-radius: 0;
+                border: none;
+                padding-top: 4px;
+                position: relative;
+               
+            }
+
+        }
+       
+
+        
+    }
+    .btn_wrap{
+        position: absolute;
+        right: 0;
+        .hero-serch-btn{
+            border-radius: 5px;
+            color: hsl(var(--white));
+            padding: 16px 38px;
+            font-weight: 400;
+        }
+    }
+
+    .content-wrap{
+        .title{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.25;
+        }
+        ul{
+            display: flex;
+            gap: 30px;
+            li{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 8px;
+                    right: -18px;
+                    height: 12px;
+                    width: 1px;
+                    background: hsl(var(--black)/0.5);
+                }
+                &:last-child::after{
+                    content: none;
+                }
+                p{
+                    color: hsl(var(--black)/0.5)
+                }
+                i{
+                    color: hsl(var(--black)/0.5)
+                }
+            }
+        }
+    }
+}
+
+
+.property-type-box{
+    border: 1px solid hsl(var(--black)/0.2);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    i{
+        font-size: 28px;
+    }
+}
+.more-filter-item{
+    display: none;
+    &.show-all{
+        display: block;
+    }
+}
+
+.show-all-tgl-btn{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+// responsive code
+
+@media (max-width:1024px){
+    .browse-search-box-wrap {
+        padding: 12px;
+        background: hsl(var(--white));
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        margin-bottom: 92px;
+    }
+    .browse-search-box-wrap .btn_wrap {
+        position: absolute;
+        left: 0;
+        bottom: -60px;
+    }
+}
+
+@media (max-width:588px){
+    .browse-search-box-wrap form .hero-input-group {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .browse-search-box-wrap form .hero-input-group::after {
+        content: none;
+    }
+    .browse-search-box-wrap form .hero-input-group .hero-search-input {
+        border-radius: 8px;
+        border: 1px solid hsl(var(--black)/0.2);
+        padding: 14px 12px;
+        position: relative;
+    }
+    .browse-search-box-wrap form .hero-input-group label {
+        margin-left: 0px;
+        margin-bottom: 12px;
+        color: hsl(var(--black)/0.5);
+    }
+    .browse-search-box-wrap form{
+        flex-wrap: wrap;
+    }
+    .browse-search-box-wrap .content-wrap ul li {
+        flex-wrap: wrap;
+    }
+    .browse-search-box-wrap .content-wrap ul {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+}

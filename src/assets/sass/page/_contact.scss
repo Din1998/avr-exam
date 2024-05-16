@@ -1,0 +1,84 @@
+// contact section right content
+.contact-right-side {
+
+  .contact-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    flex-shrink: 0;
+    width: 100%;
+
+
+    .icon-wrap {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 68px;
+        height: 68px;
+        background: hsl(var(--base));
+        filter: blur(20px);
+        z-index: -1;
+        border-radius: 50%;
+      }
+
+      i {
+        color: hsl(var(--base));
+        font-size: 24px;
+      }
+
+    }
+
+    .content-wrap {
+      .title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+        margin: 0px;
+      }
+    }
+
+  }
+
+}
+
+.contact-card2 {
+  padding: 36px;
+  background: hsl(var(--base)/0.1);
+  border-radius: 8px;
+}
+
+.map-section {
+  .map-box {
+    height: 500px;
+    border-radius: 9px;
+    overflow: hidden;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+
+
+@media (max-width:425px) {
+  .contact-right-side {
+    .title {
+      font-size: 30px !important;
+    }
+  }
+}

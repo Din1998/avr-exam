@@ -1,0 +1,387 @@
+
+
+<section class="search-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="browse-search-box-wrap">
+                    <form>
+                        <div class="hero-input-group">
+                            <label>Search Destnation</label>
+                            <input type="text" class="hero-search-input form--control" placeholder="Whare To">
+                        </div>
+                        <div class="hero-input-group">
+                                <label>Check In</label>
+                                <input type="date" class="hero-search-input form--control">
+                        </div>
+                        <div class="hero-input-group">
+                                <label>Check Out</label>
+                                <input type="date" class="hero-search-input form--control">
+                        </div>
+                        
+                    </form>
+                    <div class="btn_wrap">
+                        <button class="btn btn--base" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-sliders"></i> Filter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- filter-modal -->
+    <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+           
+            <div class="modal-header">
+                <h5 class="modal-title">Filter</h5>
+                <div class="modal-btn-wrap">
+                    <button data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+              </div>
+            <div class="modal-body">
+              <form>
+                <div class="row mb-3">
+                    <h6>Rooms and beds</h6>
+                    <div class="col-lg-6">
+                        <div class="bedrooms mb-3">
+                            <div class="hero-input-group">
+                                <label class="mb-2">Bedrooms</label>
+                                <select class="form--control form-select hero-search-input" name="country">
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">Any</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">1</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">2</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">5</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">7</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">9</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">10+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="beds mb-3">
+                            <div class="hero-input-group">
+                                <label class="mb-2">Beds</label>
+                                <select class="form--control form-select hero-search-input" name="country">
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">Any</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">1</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">2</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">5</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">7</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">9</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">10+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="beds mb-3">
+                            <div class="hero-input-group">
+                                <label class="mb-2">Bathrooms</label>
+                                <select class="form--control form-select hero-search-input" name="country">
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">Any</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">1</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">2</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">5</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">7</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">9</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">10+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="beds mb-3">
+                            <div class="hero-input-group">
+                                <label class="mb-2">Bathrooms</label>
+                                <select class="form--control form-select hero-search-input" name="country">
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">Any</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">1</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">2</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">5</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">7</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">9</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">10+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <h6>Property type</h6>
+                    <div class="col-lg-3">
+                        <div class="property-type-box">
+                            <i class="fa-solid fa-house"></i>
+                            <div class="form--check">
+                                <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="4">
+                                <label class="form-check-label" for="5">
+                                    House
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="property-type-box">
+                            <i class="fa-solid fa-building"></i>
+                            <div class="form--check">
+                                <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="6">
+                                <label class="form-check-label" for="6">
+                                    Apartment
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="property-type-box">
+                            <i class="fa-solid fa-city"></i>
+                            <div class="form--check">
+                                <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="7">
+                                <label class="form-check-label" for="7">
+                                    Guesthouse
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="property-type-box">
+                            <i class="fa-solid fa-city"></i>
+                            <div class="form--check">
+                                <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="7">
+                                <label class="form-check-label" for="7">
+                                    Any
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <h6>Amenities</h6>
+                    <div class="amenities-box">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Wifi
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Washer
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Air Conditioning
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Dedicated Workspace
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Hair Dryer
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Kitchen
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Dryer
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Heating
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Tv
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Iron
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="more-filter-item">
+                            <div class="row">
+                                <p class="mb-2">Features</p>
+                                <div class="col-lg-6">
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            Pool
+                                        </label>
+                                    </div>
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                           Free parking
+                                        </label>
+                                    </div>
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            Crib
+                                        </label>
+                                    </div>
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            Gym
+                                        </label>
+                                    </div>
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            Breakfast
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            Hot Tube
+                                        </label>
+                                    </div>
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            EV Charger
+                                        </label>
+                                    </div>
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            King Bed
+                                        </label>
+                                    </div>
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            BBQ Grill
+                                        </label>
+                                    </div>
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            Indoor Fireplace
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <p class="show-all-tgl-btn">See More</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <h6>Guest entrance and parking</h6>
+                    <div class="amenities-box">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Step-free guest entrance
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Accessible parking spot
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Guest entrance wider than 32 inches
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Step-free path to the guest entrance
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h6>Host language</h6>
+                    <div class="language-filter-box">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        English
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        German
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        French
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Japanese
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn--base outline" data-bs-dismiss="modal">Clear All</button>
+              <button type="button" class="btn btn--base">Show 12 Homes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>

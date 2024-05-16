@@ -1,0 +1,39 @@
+.price-cardBody{
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 1px;
+    overflow: hidden;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .price-card-head{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        z-index: 1;
+        p{
+            font-size: 28px;
+            font-weight: 600;
+        }
+        h2{
+            color: hsl(var(--base));
+            sup{
+                font-size: 20px;
+                color: #BDBDBD;
+                font-weight: 400;
+            }
+        }
+    }
+
+    ul{
+        li{
+            font-size: 18px;
+            margin-bottom: 8px;
+
+            i{
+                margin-right: 4px;
+            }
+        }
+    }
+}  

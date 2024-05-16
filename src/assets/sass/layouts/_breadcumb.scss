@@ -1,0 +1,166 @@
+/*====================== Breadcumb Css Start ====================*/
+.breadcumb {
+    position: relative;
+    padding: 70px 0px;
+    background-color: hsl(var(--body-color));
+    overflow: hidden;
+    z-index: 1;
+    border-bottom: 1px solid hsl(var(--white) / 0.08);
+
+    @include md-screen {
+        padding: 150px 0px 60px 0px;
+    }
+
+    @include sm-screen {
+        padding: 100px 0px 60px 0px;
+    }
+
+
+    &--wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
+
+        &--title {
+            font-weight: 800;
+            font-size: 40px;
+            margin: 0px !important;
+            color: hsl(var(--black));
+            text-align: center;
+        }
+
+    }
+
+
+    &--list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &--item {
+        color: hsl(var(--black));
+        padding-right: 4px;
+        font-weight: 400;
+        font-size: 18px;
+
+        @include msm-screen {
+            font-size: 15px;
+        }
+
+        &--text {
+            color: hsl(var(--base));
+        }
+    }
+
+    &--icon {
+        margin-top: 4px;
+        color: hsl(var(--base));
+    }
+
+    &--link {
+        color: hsl(var(--white)) !important;
+        font-weight: 600;
+
+        &:hover {
+            color: hsl(var(--base));
+            ;
+        }
+    }
+}
+
+// design 2
+.breadcumb-2 {
+    position: relative;
+    padding: 24px 0px;
+    z-index: 1;
+
+    @include md-screen {
+        padding: 100px 0px 40px 0px;
+    }
+
+    .banner-effect-1 {
+        content: "";
+        position: absolute;
+        top: 67%;
+        left: 0%;
+        width: 151px;
+        height: 173px;
+        background-color: hsl(var(--base)/0.9);
+        opacity: 0.8;
+        filter: blur(93px);
+        border-radius: 1% 50% 50% 0%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+    }
+
+    &__wrapper-2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+        gap: 16px;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 40px;
+        margin: 0px !important;
+        color: hsl(var(--black));
+    }
+
+    &__lists {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__item {
+        color: hsl(var(--black));
+        padding-right: 4px;
+        font-weight: 400;
+        font-size: 18px;
+
+        @include msm-screen {
+            font-size: 15px;
+        }
+
+        &-text {
+            color: hsl(var(--black));
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.18;
+        }
+    }
+
+    &__icon {
+        i {
+            color: hsl(var(--black));
+            rotate: 80deg;
+            font-size: 12px !important;
+        }
+    }
+
+    &__link {
+        color: hsl(var(--black));
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.18;
+
+        &:hover {
+            color: hsl(var(--base));
+        }
+    }
+}
+
+// responsive code
+@media (max-width:375px) {
+    .breadcumb-2 {
+        padding: 70px 0px 30px 0px;
+    }
+}
+
+// ====================== Breadcumb Css End ====================

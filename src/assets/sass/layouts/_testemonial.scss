@@ -1,0 +1,61 @@
+.newslatter-wrap {
+    background-color: hsl(var(--base));
+    padding: 120px 0px;
+    position: relative;
+
+
+    .content-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .heading {
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            color: hsl(var(--white))
+        }
+
+        .title {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.25;
+            text-align: center;
+            color: hsl(var(--white));
+            width: 90%;
+            margin-bottom: 50px;
+        }
+
+        .input-wrap{
+            width: 100%;
+            form{
+                position: relative;
+            }
+            input{
+                padding: 20px;
+                border-radius: 5px;
+                background: hsl(var(--white));
+                border: none;
+                outline: none;
+                width: 100%;
+            }
+
+            .news-btn{
+                position: absolute;
+                top: 11px;
+                right: 12px;            
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: hsl(var(--base));
+                color: hsl(var(--white)) ;
+            }
+            
+        }
+
+
+    }
+
+
+}

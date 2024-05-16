@@ -1,0 +1,30 @@
+.filter-box {
+    padding: 20px 0px;
+    border-bottom: 1px solid hsl(var(--black)/0.05);
+}
+
+.discover-box {
+    padding: 36px 20px;
+    background: hsl(var(--black));
+    border-radius: 8px;
+    margin-top: 32px;
+    position: relative;
+
+    .close-btn {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background: hsl(var(--white));
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        color: hsl(var(--white));
+        margin: 0px;
+    }
+}

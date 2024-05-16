@@ -1,0 +1,991 @@
+<!-- header -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>AvrHyip</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/common/favicon.ico">
+    <!-- Apple touch icon -->
+    <link rel="apple-touch-icon" href="assets/images/common/apple-touch-icon.png">
+    <!-- line awesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Odometer -->
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <!-- splitting -->
+    <link rel="stylesheet" href="assets/css/splitting.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+
+    <!--==================== Preloader Start ====================-->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <span class="loader"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar-overlay"></div>
+
+    <!--==================== Preloader End ====================-->
+
+<!--========================== Header section Start ==========================-->
+
+<div class="header-main-area">
+  <div class="header border-bottom" id="header">
+    <div class="container position-relative">
+      <div class="row">
+        <div class="header-wrapper">
+          <!-- ham menu -->
+          <i class="fa-sharp fa-solid fa-bars-staggered ham__menu" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
+
+          <!-- logo -->
+          <div class="header-menu-wrapper align-items-center d-flex">
+            <div class="logo-wrapper">
+              <a href="index.html" class="normal-logo" id="normal-logo"> <img src="assets/images/logo/logo.png"
+                  alt="...">
+              </a>
+            </div>
+          </div>
+          <!-- / logo -->
+
+
+          <div class="menu-list-wrapper">
+              <ul class="main-menu">
+                <li><a class='active' href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="scheme.html">Scheme</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+
+          <ul class="login d-flex align-items-center gap-3">
+            <li class="language">
+              <div class="language-box">
+                <select class="select">
+                  <option selected="">EN</option>
+                  <option value="1">BN</option>
+                  <option value="2">FR</option>
+                  <option value="3">SP</option>
+                </select>
+              </div>
+            </li>
+            <li class="login-registration-list__item">
+              <a href="login.html">Sign in account</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--========================== Header section End ==========================-->
+
+<!--========================== Sidebar mobile menu wrap Start ==========================-->
+<div class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasExample">
+  <div class="offcanvas-header">
+    <div class="logo">
+      <div class="header-menu-wrapper align-items-center d-flex">
+        <div class="logo-wrapper">
+          <a href="index.html" class="normal-logo" id="offcanvas-logo-normal">
+            <img src="assets/images/logo/logo.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="user-info">
+      <div class="user-thumb">
+        <a href="userDashboard.html">
+          <img src="assets/images/user/user3.png" alt="user-thumb">
+        </a>
+      </div>
+      <a href="userDashboard.html">
+        <h4>Anonymous Alex</h4>
+      </a>
+    </div>
+    <ul class="side-Nav">
+      <li>
+        <a class="active" href="index.html">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="browse.html">
+          Browse
+        </a>
+      </li>
+      <li>
+        <a href="blog.html">
+          Blog
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">
+          Contact
+        </a>
+      </li>
+      <li>
+        <a href="login.html">
+          Login
+        </a>
+      </li>
+      <li>
+        <a href="login.html" class="login-btn">Signup</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!--========================== Sidebar mobile menu wrap End ==========================-->
+
+<!-- ==================== Breadcumb Start Here ==================== -->
+<div class="breadcumb">
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcumb--wrapper">
+                    <h2 class="breadcumb--title mb-2">  Browse Your Place </h2>
+                    <ul class="breadcumb--list">
+                        <li class="breadcumb--item"><a href="index.html" class="breadcumb--link">Home</a></li>
+                        <li class="breadcumb--icon">//</li>
+                        <li class="breadcumb--item"> <span class="breadcumb--item--text"> Browse Your Place </span> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ==================== Breadcumb End Here ==================== -->
+
+<!-- search box -->
+
+
+<section class="search-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="browse-search-box-wrap">
+                    <form>
+                        <div class="hero-input-group">
+                            <label>Search Destnation</label>
+                            <input type="text" class="hero-search-input form--control" placeholder="Whare To">
+                        </div>
+                        <div class="hero-input-group">
+                                <label>Check In</label>
+                                <input type="date" class="hero-search-input form--control">
+                        </div>
+                        <div class="hero-input-group">
+                                <label>Check Out</label>
+                                <input type="date" class="hero-search-input form--control">
+                        </div>
+                        
+                    </form>
+                    <div class="btn_wrap">
+                        <button class="btn btn--base" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-sliders"></i> Filter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- filter-modal -->
+    <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+           
+            <div class="modal-header">
+                <h5 class="modal-title">Filter</h5>
+                <div class="modal-btn-wrap">
+                    <button data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+              </div>
+            <div class="modal-body">
+              <form>
+                <div class="row mb-3">
+                    <h6>Rooms and beds</h6>
+                    <div class="col-lg-6">
+                        <div class="bedrooms mb-3">
+                            <div class="hero-input-group">
+                                <label class="mb-2">Bedrooms</label>
+                                <select class="form--control form-select hero-search-input" name="country">
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">Any</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">1</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">2</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">5</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">7</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">9</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">10+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="beds mb-3">
+                            <div class="hero-input-group">
+                                <label class="mb-2">Beds</label>
+                                <select class="form--control form-select hero-search-input" name="country">
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">Any</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">1</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">2</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">5</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">7</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">9</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">10+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="beds mb-3">
+                            <div class="hero-input-group">
+                                <label class="mb-2">Bathrooms</label>
+                                <select class="form--control form-select hero-search-input" name="country">
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">Any</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">1</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">2</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">5</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">7</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">9</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">10+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="beds mb-3">
+                            <div class="hero-input-group">
+                                <label class="mb-2">Bathrooms</label>
+                                <select class="form--control form-select hero-search-input" name="country">
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">Any</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">1</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">2</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">5</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">7</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">9</option>
+                                    <option data-mobile_code="93" value="Afghanistan" data-code="AF">10+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <h6>Property type</h6>
+                    <div class="col-lg-3">
+                        <div class="property-type-box">
+                            <i class="fa-solid fa-house"></i>
+                            <div class="form--check">
+                                <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="4">
+                                <label class="form-check-label" for="5">
+                                    House
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="property-type-box">
+                            <i class="fa-solid fa-building"></i>
+                            <div class="form--check">
+                                <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="6">
+                                <label class="form-check-label" for="6">
+                                    Apartment
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="property-type-box">
+                            <i class="fa-solid fa-city"></i>
+                            <div class="form--check">
+                                <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="7">
+                                <label class="form-check-label" for="7">
+                                    Guesthouse
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="property-type-box">
+                            <i class="fa-solid fa-city"></i>
+                            <div class="form--check">
+                                <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="7">
+                                <label class="form-check-label" for="7">
+                                    Any
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <h6>Amenities</h6>
+                    <div class="amenities-box">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Wifi
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Washer
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Air Conditioning
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Dedicated Workspace
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Hair Dryer
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Kitchen
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Dryer
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Heating
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Tv
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Iron
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="more-filter-item">
+                            <div class="row">
+                                <p class="mb-2">Features</p>
+                                <div class="col-lg-6">
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            Pool
+                                        </label>
+                                    </div>
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                           Free parking
+                                        </label>
+                                    </div>
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            Crib
+                                        </label>
+                                    </div>
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            Gym
+                                        </label>
+                                    </div>
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            Breakfast
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            Hot Tube
+                                        </label>
+                                    </div>
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            EV Charger
+                                        </label>
+                                    </div>
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            King Bed
+                                        </label>
+                                    </div>
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            BBQ Grill
+                                        </label>
+                                    </div>
+                                    <div class="form--check mb-3">
+                                        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                        <label class="form-check-label" for="1">
+                                            Indoor Fireplace
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <p class="show-all-tgl-btn">See More</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <h6>Guest entrance and parking</h6>
+                    <div class="amenities-box">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Step-free guest entrance
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Accessible parking spot
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Guest entrance wider than 32 inches
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Step-free path to the guest entrance
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h6>Host language</h6>
+                    <div class="language-filter-box">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        English
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        German
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        French
+                                    </label>
+                                </div>
+                                <div class="form--check mb-3">
+                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Japanese
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn--base outline" data-bs-dismiss="modal">Clear All</button>
+              <button type="button" class="btn btn--base">Show 12 Homes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<!-- browse page -->
+
+<section class="browse-page">
+    <div class="container-fluid">
+        <div class="row gy-4">
+            
+            <div class="col-xl-6 col-lg-12">
+                <div class="row gy-4">
+                    <div class="col-xxl-6 col-md-6 col-sm-6">
+                        <div class="base-card">
+                            <div class="thumb product-slider">
+                                <img src="assets/images/product/img6.png" alt="...">
+                                <img src="assets/images/product/img11.png" alt="...">
+                                <img src="assets/images/product/img7.png" alt="...">
+                                <img src="assets/images/product/img6.png" alt="...">
+                            </div>
+                            <div class="content-wrap">
+                                <a href="#"><h6 class="title">Hideaway Docklands, India </h6></a>
+                                <p class="location"><i class="fa-solid fa-location-dot"></i> Embong malang, Surabaya</p>
+                            </div>
+                            <ul class="item-list">
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-bed"></i>
+                                    <p>2 Bed</p>
+                                </li>
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-bath"></i>
+                                    <p>3 Bath</p>
+                                </li>
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <p>Wifi</p>
+                                </li>
+                            </ul>
+                            <div class="card-btm-item">
+                                <a href="#"><h6 class="price">$250.00 <span>/night</span></h6></a>
+                                <a href="#" class="card-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-md-6 col-sm-6">
+                        <div class="base-card">
+                            <div class="thumb product-slider">
+                                <img src="assets/images/product/img6.png" alt="...">
+                                <img src="assets/images/product/img11.png" alt="...">
+                                <img src="assets/images/product/img7.png" alt="...">
+                                <img src="assets/images/product/img6.png" alt="...">
+                            </div>
+                            <div class="content-wrap">
+                                <a href="#"><h6 class="title">Hideaway Docklands, India </h6></a>
+                                <p class="location"><i class="fa-solid fa-location-dot"></i> Embong malang, Surabaya</p>
+                            </div>
+                            <ul class="item-list">
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-bed"></i>
+                                    <p>2 Bed</p>
+                                </li>
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-bath"></i>
+                                    <p>3 Bath</p>
+                                </li>
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <p>Wifi</p>
+                                </li>
+                            </ul>
+                            <div class="card-btm-item">
+                                <a href="#"><h6 class="price">$250.00 <span>/night</span></h6></a>
+                                <a href="#" class="card-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-md-6 col-sm-6">
+                        <div class="base-card">
+                            <div class="thumb product-slider">
+                                <img src="assets/images/product/img6.png" alt="...">
+                                <img src="assets/images/product/img11.png" alt="...">
+                                <img src="assets/images/product/img7.png" alt="...">
+                                <img src="assets/images/product/img6.png" alt="...">
+                            </div>
+                            <div class="content-wrap">
+                                <a href="#"><h6 class="title">Hideaway Docklands, India </h6></a>
+                                <p class="location"><i class="fa-solid fa-location-dot"></i> Embong malang, Surabaya</p>
+                            </div>
+                            <ul class="item-list">
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-bed"></i>
+                                    <p>2 Bed</p>
+                                </li>
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-bath"></i>
+                                    <p>3 Bath</p>
+                                </li>
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <p>Wifi</p>
+                                </li>
+                            </ul>
+                            <div class="card-btm-item">
+                                <a href="#"><h6 class="price">$250.00 <span>/night</span></h6></a>
+                                <a href="#" class="card-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-md-6 col-sm-6">
+                        <div class="base-card">
+                            <div class="thumb product-slider">
+                                <img src="assets/images/product/img6.png" alt="...">
+                                <img src="assets/images/product/img11.png" alt="...">
+                                <img src="assets/images/product/img7.png" alt="...">
+                                <img src="assets/images/product/img6.png" alt="...">
+                            </div>
+                            <div class="content-wrap">
+                                <a href="#"><h6 class="title">Hideaway Docklands, India </h6></a>
+                                <p class="location"><i class="fa-solid fa-location-dot"></i> Embong malang, Surabaya</p>
+                            </div>
+                            <ul class="item-list">
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-bed"></i>
+                                    <p>2 Bed</p>
+                                </li>
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-bath"></i>
+                                    <p>3 Bath</p>
+                                </li>
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <p>Wifi</p>
+                                </li>
+                            </ul>
+                            <div class="card-btm-item">
+                                <a href="#"><h6 class="price">$250.00 <span>/night</span></h6></a>
+                                <a href="#" class="card-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-md-6 col-sm-6">
+                        <div class="base-card">
+                            <div class="thumb product-slider">
+                                <img src="assets/images/product/img6.png" alt="...">
+                                <img src="assets/images/product/img11.png" alt="...">
+                                <img src="assets/images/product/img7.png" alt="...">
+                                <img src="assets/images/product/img6.png" alt="...">
+                            </div>
+                            <div class="content-wrap">
+                                <a href="#"><h6 class="title">Hideaway Docklands, India </h6></a>
+                                <p class="location"><i class="fa-solid fa-location-dot"></i> Embong malang, Surabaya</p>
+                            </div>
+                            <ul class="item-list">
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-bed"></i>
+                                    <p>2 Bed</p>
+                                </li>
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-bath"></i>
+                                    <p>3 Bath</p>
+                                </li>
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <p>Wifi</p>
+                                </li>
+                            </ul>
+                            <div class="card-btm-item">
+                                <a href="#"><h6 class="price">$250.00 <span>/night</span></h6></a>
+                                <a href="#" class="card-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-md-6 col-sm-6">
+                        <div class="base-card">
+                            <div class="thumb product-slider">
+                                <img src="assets/images/product/img6.png" alt="...">
+                                <img src="assets/images/product/img11.png" alt="...">
+                                <img src="assets/images/product/img7.png" alt="...">
+                                <img src="assets/images/product/img6.png" alt="...">
+                            </div>
+                            <div class="content-wrap">
+                                <a href="#"><h6 class="title">Hideaway Docklands, India </h6></a>
+                                <p class="location"><i class="fa-solid fa-location-dot"></i> Embong malang, Surabaya</p>
+                            </div>
+                            <ul class="item-list">
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-bed"></i>
+                                    <p>2 Bed</p>
+                                </li>
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-bath"></i>
+                                    <p>3 Bath</p>
+                                </li>
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <p>Wifi</p>
+                                </li>
+                            </ul>
+                            <div class="card-btm-item">
+                                <a href="#"><h6 class="price">$250.00 <span>/night</span></h6></a>
+                                <a href="#" class="card-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-md-6 col-sm-6">
+                        <div class="base-card">
+                            <div class="thumb product-slider">
+                                <img src="assets/images/product/img6.png" alt="...">
+                                <img src="assets/images/product/img11.png" alt="...">
+                                <img src="assets/images/product/img7.png" alt="...">
+                                <img src="assets/images/product/img6.png" alt="...">
+                            </div>
+                            <div class="content-wrap">
+                                <a href="#"><h6 class="title">Hideaway Docklands, India </h6></a>
+                                <p class="location"><i class="fa-solid fa-location-dot"></i> Embong malang, Surabaya</p>
+                            </div>
+                            <ul class="item-list">
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-bed"></i>
+                                    <p>2 Bed</p>
+                                </li>
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-bath"></i>
+                                    <p>3 Bath</p>
+                                </li>
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <p>Wifi</p>
+                                </li>
+                            </ul>
+                            <div class="card-btm-item">
+                                <a href="#"><h6 class="price">$250.00 <span>/night</span></h6></a>
+                                <a href="#" class="card-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-md-6 col-sm-6">
+                        <div class="base-card">
+                            <div class="thumb product-slider">
+                                <img src="assets/images/product/img6.png" alt="...">
+                                <img src="assets/images/product/img11.png" alt="...">
+                                <img src="assets/images/product/img7.png" alt="...">
+                                <img src="assets/images/product/img6.png" alt="...">
+                            </div>
+                            <div class="content-wrap">
+                                <a href="#"><h6 class="title">Hideaway Docklands, India </h6></a>
+                                <p class="location"><i class="fa-solid fa-location-dot"></i> Embong malang, Surabaya</p>
+                            </div>
+                            <ul class="item-list">
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-bed"></i>
+                                    <p>2 Bed</p>
+                                </li>
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-bath"></i>
+                                    <p>3 Bath</p>
+                                </li>
+                                <li class="item-list-item">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <p>Wifi</p>
+                                </li>
+                            </ul>
+                            <div class="card-btm-item">
+                                <a href="#"><h6 class="price">$250.00 <span>/night</span></h6></a>
+                                <a href="#" class="card-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="google-map-wrap">
+                    <iframe src="https://maps.google.com/maps?q={{ @$contact->data_values->latitude }},{{ @$contact->data_values->longitude }}&hl=es;z=14&amp;output=embed" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-12 justify-content-start d-flex">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">«</span>
+                            </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                            </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- Footer -->
+<!-- ==================== Footer Start Here ==================== -->
+<footer class="footer-area my-120" style="background-image: url(assets/images/common/footer-bg.png);">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row gy-4 justify-content-center">
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer-item">
+                        <div class="footer-item--logo wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                            <a href="index.html" class="footer-logo-normal" id="footer-logo-normal"> <img src="assets/images/logo/footer-logo.png" alt=""></a>
+                        </div>
+                        <p class="footer-item--desc wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">Ipsum pretium earum? Totam! Aliquet felis. Nonummy cum posuere. Primis. Magnam nec, tempora tellus.</p>
+
+                       
+                    </div>
+                </div> 
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item--title">Useful Link</h5>
+                        <ul class="footer--menu">
+                            <li class="menu--item"><a href="_blogs.html" class="menu--link"><i class="fa-solid fa-angles-right"></i> Our Blog </a></li>
+                            <li class="menu--item"><a href="about.html" class="menu--link"><i class="fa-solid fa-angles-right"></i> About Us </a></li>
+                            <li class="menu--item"><a href="terms-of-service.html" class="menu--link"><i class="fa-solid fa-angles-right"></i> Privacy Policy</a></li>
+                            <li class="menu--item"><a href="terms-of-service.html" class="menu--link"><i class="fa-solid fa-angles-right"></i> Term Of Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item--title">Cottagey</h5>
+                        <ul class="footer-menu">
+                          <li class="menu--item"><a href="login.html" class="menu--link"><i class="fa-solid fa-angles-right"></i> Dashboard</a></li>
+                            <li class="menu--item"><a href="login.html" class="menu--link"><i class="fa-solid fa-angles-right"></i> My Profile </a></li>
+                            <li class="menu--item"><a href="dashboard.html" class="menu--link"><i class="fa-solid fa-angles-right"></i> Notification</a></li>
+                            <li class="menu--item"><a href="dashboard.html" class="menu--link"><i class="fa-solid fa-angles-right"></i> My Ads</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item--title">Contact Us</h5>
+                        <div class="footer-contact-info mb-3">
+                          <i class="fa-solid fa-mobile-screen-button"></i>
+                          <p><a href="tel:+8800000000000">+880 0000 000 000</a> </p>
+                        </div>    
+                        <div class="footer-contact-info mb-3">
+                          <i class="fa-regular fa-envelope"></i>
+                          <p><a href="mailto:wstacksltd@gmail.com">avronsoft@gmail.com</a></p>
+                        </div>  
+                        <div class="footer-contact-info mb-3">
+                            <i class="fa-regular fa-envelope"></i>
+                            <p><a href="mailto:wstacksltd@gmail.com">avronsoft@gmail.com</a></p>
+                          </div>  
+                        <ul class="social-list wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+                            <li class="social-list--item"><a href="https://www.facebook.com" class="social-list__link icon-wrapper"><div class="icon"><i class="fab fa-facebook-f"></i></div></a> </li>
+                            <li class="social-list--item"><a href="https://www.twitter.com" class="social-list__link icon-wrapper active"><div class="icon"><i class="fa-brands fa-x-twitter"></i></div> </a></li>
+                            <li class="social-list--item"><a href="https://www.linkedin.com" class="social-list__link icon-wrapper"> <div class="icon"><i class="fab fa-linkedin-in"></i></div></a></li>
+                            <li class="social-list--item"><a href="https://www.pinterest.com" class="social-list__link icon-wrapper"> <div class="icon"><i class="fab fa-instagram"></i></div></a></li>
+                        </ul>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+  <!-- Footer Top End-->
+  
+    <!-- bottom Footer -->
+    <div class="bottom-footer py-3">
+        <div class="container">
+            <div class="row text-center gy-2">
+                <div class="col-lg-12">
+                    <div class="bottom-footer-text"> &copy; Copyright 2023 . All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- ==================== Footer End Here ==================== -->
+  
+
+
+
+<div class="scroll-top show">
+  <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 197.514;"></path>
+  </svg>
+</div>
+
+<!-- footer -->
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Js -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Appear -->
+<script src="assets/js/jquery.appear.min.js"></script>
+<!-- wow js -->
+<script src="assets/js/wow.min.js"></script>
+<!-- splitting js -->
+<script src="assets/js/splitting.min.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

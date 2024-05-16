@@ -1,0 +1,38 @@
+.section-left-wrap{
+  position: relative;
+  .tag-img1{
+    position: absolute;
+    top: -7px;
+    left: 363px;
+  }
+  .tag-img2{
+    position: absolute;
+    top: 109px;
+    left: 0;
+  }
+  .ani1{
+    position: absolute;
+    top: 28px;
+    right: 12px;
+  }
+  .ani2{
+    position: absolute;
+    bottom: 60px;
+    right: 114px;
+  }
+
+}
+
+
+
+
+@media(max-width: 992px){
+  .section-left-wrap{
+    .ani1{
+      right: 70px;
+    }
+    .ani2{
+      right: 68px;
+    }
+  }
+}

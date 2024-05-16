@@ -1,0 +1,518 @@
+// xxl device =>
+@media (max-width:1500px) {
+    .social-option {
+        .text {
+            &::before {
+                content: "";
+                width: 120px !important;
+            }
+
+            &::after {
+                content: "";
+                width: 120px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .about-us .thumb-wrap .circle-btn--wrap {
+        right: -18%;
+    }
+}
+
+@media (max-width:1199px) {
+
+    .faq-thumb--wrap {
+        top: 240px;
+    }
+
+    .about-thumb-wrap {
+        width: 100%;
+        height: 300px;
+    }
+
+    .faq-right .faq-bg {
+        width: 420px;
+        height: 420px;
+    }
+
+    .service-section .box--one::after {
+
+        width: 80px;
+        height: 302.44px;
+
+    }
+
+    .service-section .box--one::before {
+
+        width: 76px;
+        height: 100.44px;
+
+    }
+
+    .service-section .box--three::before {
+
+        right: -97px;
+        width: 57%;
+
+    }
+}
+
+
+
+// xl device =>
+
+@media (max-width: 1024px) {
+    .product-card-body {
+        padding: 8px 36px !important;
+    }
+
+    .menu-btm .sub-menu {
+        display: inline-flex;
+        gap: 50px;
+        padding: 0px 68px 0px 68px;
+    }
+
+    .btn-circle {
+        width: 100px;
+        height: 100px;
+
+        &::after {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    .blog-card {
+        padding: 14px;
+    }
+}
+
+@media (max-width:1023px) {
+    .custom--accordion:last-of-type .accordion-button.collapsed {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .custom--accordion .accordion-button[aria-expanded=false]::after {
+        content: none;
+
+    }
+
+    .custom--accordion .accordion-button[aria-expanded=true]::after,
+    .custom--accordion .accordion-button[aria-expanded=false]::after {
+        content: none;
+    }
+
+    .custom--accordion .accordion-button:not(.collapsed) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+// lg device =>
+@media (max-width: 996px) {
+    .how-work--box::after {
+        top: 26%;
+        right: -23px;
+        width: 26%;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .product-card-body {
+        padding: 8px 8px !important;
+
+    }
+}
+
+
+
+@media (max-width: 991px) {
+
+    // flex
+    .flex-md-col--revers {
+        flex-direction: column-reverse;
+    }
+
+    .service-section .box--one::after {
+        content: none;
+    }
+
+    .service-section .box--one::before {
+        content: none;
+    }
+
+    .service-section .box--two::after {
+        content: none;
+    }
+
+    .service-section .box--two::before {
+        content: none;
+    }
+
+    .service-section .box--three::after {
+        content: none;
+    }
+
+    .service-section .box--three::before {
+        content: none;
+    }
+
+    .service-section .box--four::after {
+        content: none;
+    }
+
+    .service-section .box--four::before {
+        content: none;
+    }
+
+    .service-section .box--three {
+        top: 0px;
+    }
+
+    .service-section .box--four {
+        top: 0px;
+    }
+
+    .service-section {
+        padding: 60px 0px 0px 0px;
+    }
+
+    .payment-section .bg--image {
+        top: 0px;
+    }
+
+    .hype--card .card--header {
+        top: 0px;
+        left: 0px;
+        padding: 24px 30px;
+    }
+
+    .hype--card .card--header::after {
+        content: none;
+    }
+
+    .hype--card::after {
+        border-top-left-radius: 14px;
+    }
+
+    .profit-card::before {
+        display: none;
+    }
+
+    .profit-card::after {
+        display: none;
+    }
+
+    .profit-card .bg-thumb--one {
+        display: none;
+    }
+
+    .profit-card .bg-thumb--two {
+        display: none;
+    }
+
+    .profit-card {
+        padding: 24px 20px;
+    }
+
+    .investors-card .card--header {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        padding: 0px 0px 12px 0px;
+    }
+
+    .investors-card .content--wrap .name {
+        font-size: 20px !important;
+        margin-bottom: 4px !important;
+    }
+
+    .investors-card .content--wrap .title {
+        margin-bottom: 4px !important;
+    }
+
+
+    .faq-right {
+        display: none;
+    }
+
+    .faq-thumb--wrap {
+        top: 0px;
+        justify-content: center;
+    }
+
+    // .hero-thumb-wrap {
+    //     display: none;
+    // }
+
+    // .about-us .thumb-wrap {
+    //     display: none !important;
+    // }
+
+    .hero {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+
+
+    .section-content {
+        .title-wrap {
+            .title {
+                font-size: 18px !important;
+            }
+
+            .title-2 {
+                font-size: 26px !important;
+            }
+        }
+    }
+
+    .section-content-2 {
+        .title-wrap {
+            .title {
+                font-size: 18px !important;
+            }
+        }
+    }
+
+    .section-content-3 {
+        .title {
+            font-size: 26px !important;
+        }
+    }
+
+    .section-content-4 {
+        margin-bottom: 40px;
+
+        .title {
+            font-size: 26px !important;
+        }
+    }
+
+    .section-content-5 {
+        .title {
+            font-size: 26px !important;
+        }
+    }
+
+    .about-thumb-wrap {
+        width: 100%;
+        height: 656px;
+    }
+
+    .section-content {
+        margin-bottom: 10px;
+    }
+
+    .about-content-box1 {
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .title {
+            text-align: left !important;
+        }
+
+        .sub-title {
+            text-align: left !important;
+        }
+    }
+}
+
+
+
+// md device =>
+@media (max-width: 768px) {
+    .faq-thumb--wrap::after {
+        left: 24%;
+        width: 190px;
+        height: 190px;
+    }
+
+    .how-work--box::after {
+        display: none;
+    }
+
+    .about-us .thumb-wrap .circle-btn--wrap {
+        right: 6%;
+        bottom: 10px !important;
+        transform: none;
+        top: auto;
+    }
+
+    .hero-left-content .hero-title {
+        font-size: 46px;
+    }
+
+    .testimonial-card .title {
+        line-height: 30px;
+    }
+
+    .login-box {
+        padding: 20px 14px;
+    }
+}
+
+@media (max-width:700px) {
+
+
+    .about-us .thumb-wrap .thumb1 {
+        position: absolute;
+        left: -28px;
+        top: 30%;
+    }
+
+    .about-us .thumb-wrap .thumb2 {
+        position: absolute;
+        left: -48px;
+        bottom: 18%;
+    }
+}
+
+@media (max-width:630px) {
+
+    .about-us .thumb-wrap .thumb1 {
+        position: absolute;
+        left: -2%;
+        top: 30%;
+    }
+
+    .about-us .thumb-wrap .thumb2 {
+        position: absolute;
+        left: -2%;
+        bottom: 18%;
+    }
+
+    .about-us .thumb-wrap .thumb {
+        height: 307px;
+    }
+}
+
+
+// sm device =>
+
+@media (max-width: 575px) {
+    .product-card-body {
+        padding: 3px 80px !important;
+    }
+}
+
+@media (max-width:520px) {
+    .about-us .thumb-wrap .thumb1 {
+        position: absolute;
+        left: -2%;
+        top: 30%;
+    }
+
+    .about-us .thumb-wrap .thumb2 {
+        position: absolute;
+        left: -2%;
+        bottom: 18%;
+    }
+
+    .about-us .thumb-wrap .thumb {
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 415px) {
+    .product-card-body {
+        padding: 8px 16px !important;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .hero-left-content .hero-title {
+        font-size: 34px;
+        line-height: 50px;
+    }
+
+    .hero {
+        padding-top: 135px;
+        padding-bottom: 30px;
+    }
+
+    .section-content-4 {
+        margin-top: 0px;
+    }
+
+    .signin-box {
+        width: 100%;
+    }
+
+    .login-box .title {
+        font-size: 25px;
+    }
+
+    .social-option {
+        .text {
+            h6 {
+                margin: 0px 7px !important;
+            }
+
+            &::before {
+                width: 100px !important;
+
+            }
+
+            &::after {
+                width: 100px !important;
+            }
+        }
+    }
+
+
+
+    .about-us .thumb-wrap {
+        height: 260px;
+    }
+
+    .section-content-4 .heading {
+        text-align: center;
+    }
+
+}
+
+
+
+@media(max-width: 426px) {
+    .transaction-card {
+        padding: 20px 8px;
+    }
+
+    .footer-subscribe-box {
+        .footer-input {
+            border: 1px solid hsl(var(--base));
+
+            &::placeholder {
+                color: hsl(var(--white)/0.7) !important;
+                font-size: 14px;
+            }
+        }
+
+        .search-btn {
+            margin: 16px 0 0 0px;
+        }
+    }
+
+    .footer-item__title {
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 376px) {
+    .footer-subscribe-box {
+        .footer-input {
+            width: 100%;
+        }
+
+    }
+}

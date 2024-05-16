@@ -1,0 +1,41 @@
+// sign up
+  .sign-up_box {
+    
+    padding: 20px 0px;
+    border-radius: 4px;
+    .title{
+      margin-bottom: 40px;
+    }
+    .input-group{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      .input-group-text{
+        border-radius: 4px;
+        border: 1px solid hsl(var(--base)/.5);
+        background: hsl(var(--base)) ;
+        color: hsl(var(--white)) ;
+      }
+    }
+ 
+  
+
+    .login-meta{
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+
+
+@media(max-width: 769px){
+ .signup-section{
+  .signup-thumb{
+    display: none !important;
+  }
+ }
+}
+

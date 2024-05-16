@@ -1,0 +1,130 @@
+/*=========================== Accodion style start =============================*/
+.accordion-area {
+    position: relative;
+    z-index: 1;
+}
+
+.custom--accordion {
+    .accordion-item {
+        background-color: transparent !important;
+        border: none;
+        border-radius: 0;
+
+        &.active {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50px;
+                left: 20px;
+                height: 67%;
+                width: 3px;
+                background: hsl(var(--base));
+
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        .accordion-header {
+
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .number {
+                position: absolute;
+                top: 0px;
+                left: -60px;
+                width: 45px;
+                height: 42px;
+                border-radius: 4px;
+                background: hsl(var(--base));
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+
+                h6 {
+                    margin-bottom: 0px;
+                    color: hsl(var(--white));
+                }
+
+            }
+
+        }
+
+
+    }
+
+    .accordion-body {
+        background-color: transparent;
+        color: hsl(var(--white)/0.7);
+        padding-left: 40px;
+
+        .text {
+            max-width: 60%;
+
+            @include msm-screen {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &:first-of-type .accordion-button.collapsed {
+        border-radius: 0px;
+        font-weight: 500;
+    }
+
+    &:last-of-type .accordion-button.collapsed {
+        border-radius: 0px;
+        color: hsl(var(--body-color));
+        background: transparent;
+    }
+
+    .accordion-button {
+        background-color: transparent;
+        color: hsl(var(--white)) !important;
+        font-size: 20px;
+        padding: 0px 20px;
+        border-radius: 8px;
+
+
+        @include msm-screen {
+            font-size: 18px;
+          
+            padding-right: 30px;
+        }
+
+        &::after {
+            background-image: none;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &:not(.collapsed) {
+            color: hsl(var(--base)) !important;
+            background-color: transparent !important;
+            box-shadow: none;
+            font-weight: 600;
+
+            &::after {
+                transform: rotate(0deg);
+                background-image: none;
+                color: hsl(var(--black));
+            }
+        }
+
+    }
+
+}
+
+
+
+

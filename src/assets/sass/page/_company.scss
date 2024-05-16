@@ -1,0 +1,230 @@
+// company profile
+.profile-info{
+    display: inline-flex;
+    gap: 28px;
+    border-bottom: 1px solid hsl(var(--base)/0.3);
+    padding: 15px 0px;
+    width: 100%;
+    .author-thumb{
+        width: 100px;
+        height: 100px;
+        img{
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    .user-meta{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        .user-name{
+            margin-bottom: 0px !important;
+        }
+        .company-rating-box{
+            font-size: 13px;
+            color: #faca51;
+        }
+        .company-name{
+            display: inline-flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: center;
+            .user-id{
+                font-size: 14px;
+            }
+            .company-stastus{
+                background: hsl(var(--base));
+                padding: 0px 8px;
+                border-radius: 4px;
+                color: hsl(var(--white));
+                font-size: 14px;
+            }
+            .msg-icon{
+                font-size: 20px;
+                color: hsl(var(--base));
+            }
+        }
+        .budget{
+            display:flex;
+            gap: 20px;
+            align-items: center;
+            .priority{
+                background: hsl(var(--danger)/0.5);
+                color: hsl(var(--white));
+                padding: 0px 8px;
+                font-size: 14px;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+.company-profile-discription{
+    padding: 30px 0px 0px 0px;
+    .bio{
+        color: hsl(var(--black)/0.7);
+    }
+}
+.company-skill-history{
+    padding: 30px 0px 0px 0px;
+
+    ul{
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        li{
+            border: 1px solid hsl(var(--base)/0.3);
+            border-radius: 4px;
+            padding: 0px 6px;
+            color: hsl(var(--black)/0.7);
+        }
+    }
+}
+
+.company-work-history{
+    padding: 30px 0px 0px 0px;
+    .title{
+        i{
+            color: #faca51;
+        }
+    }
+    .work-history-wraper{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .company-name{
+            font-weight: 600;
+            i{
+                color: hsl(var(--base));
+            }
+        }
+        .work-duration{
+            color: hsl(var(--black)/0.7);
+        }
+    }
+}
+
+.company-left-meta-box{
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position: sticky ;
+    top: 90px;
+    margin-top: 24px;
+    border-radius: 4px;
+    .reting-meta{
+        padding: 15px 0px;
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+        .rate{
+            padding: 0px 15px 0px 0px;
+            border-right: 1px solid hsl(var(--base)/0.3);
+        }
+        .bid{
+            padding: 0px 10px;
+            border-right: 1px solid hsl(var(--base)/0.3);
+        }
+    }
+    .company-timeline{
+        padding: 15px 0px;
+        .indicator{
+            padding: 0px 0px 12px 0px;
+            .progress{
+                margin-top: 8px;
+                .progress-bar{
+                    background: hsl(var(--base));
+                }
+            }
+        }
+    }
+    .company-social-profiles{
+        padding: 15px 0px;
+        .company-social-icon-list{
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            span{
+                i{
+                    font-size: 32px;
+                    color: hsl(var(--base)/0.7);
+                }
+            }
+        }
+    }
+}
+
+.user-comments{
+    padding: 30px 0px 0px 0px;
+    .comments-body{
+    padding: 40px 0px;
+    border-top: 1px solid hsl(var(--base)/0.3);
+    .user-info{
+        display: inline-flex;
+        gap: 12px;
+        .user-thubm{
+            height: 50px;
+            width: 50px;
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+        .user-meta{
+            width: 80%;
+            .comment-review-rating-wraper{
+                display: inline-flex;
+                align-items: center;
+                gap: 12px;
+                .rating-box{
+                    color: #faca51;
+                }
+                span{
+                    font-size: 14px;
+                }
+            }
+            .user-name{
+                font-weight: 600;
+            }
+            .comment-text{
+                color: hsl(var(--black)/0.7);
+            }
+        }
+    }
+    .saler-replay{
+        padding: 20px;
+        margin-left: 40px;
+        .saler-meta{
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            .saler-thumb{
+                height: 50px;
+                width: 50px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }  
+            p{
+                font-weight: 600;
+            }
+        }
+        .seller-msg{
+            width: 80%;
+            margin-left: 58px;
+            .comment-text{
+                color: hsl(var(--black)/0.7);
+            }
+        }
+    }
+}
+
+}

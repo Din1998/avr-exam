@@ -1,0 +1,289 @@
+<!-- dashboard section -->
+<!-- header -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title -->
+        <title> Rentout. </title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/images/common/favicon.ico">
+        <!-- Apple touch icon -->
+        <link rel="apple-touch-icon" href="assets/images/common/apple-touch-icon.png">
+    
+        <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+        <!-- Slick -->
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <!-- Animate css -->
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <!-- Odometer -->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!-- Odometer -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!-- Odometer -->
+        <link rel="stylesheet" href="assets/css/glightbox.min.css">
+         <!-- Odometer -->
+
+         <link rel="stylesheet" href="assets/css/lightpick.min.css">
+        
+        <!-- Main css -->
+        <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>                 
+
+    <!--==================== Preloader Start ====================-->      
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <span class="loader"></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sidebar-overlay"></div>
+    
+    <!--==================== Preloader End ====================-->
+
+<section class="transaction-section">
+    <div class="dashboard">
+        <div class="container-fluid">
+            <div class="row">
+                  <!-- < dashboard side bar -->
+                  <div class="col-xxl-2 col-xl-3 col-lg-4">
+                    <div class="dashboard_profile">
+                        <div class="dashboard_profile__details">
+                            <div class="sidebar-menu">
+                                <span class="sidebar-menu__close"><i class="las la-times"></i></span>
+                                <div class="dashboard_profile_wrap">
+                                    <div class="profile_photo">
+                                        <img src="assets/images/user/user6.jpg" alt="agent">
+                                        <div class="photo_upload">
+                                            <label for="file_upload"><i class="fa-regular fa-image"></i></label>
+                                            <input id="file_upload" type="file" class="upload_file">
+                                        </div>
+                                    </div>
+                                    <h3 class="text-center">Anonymous</h3>
+                                </div>
+                                <ul class="sidebar-menu-list">
+                                    <li class="sidebar-menu-list__item">
+                                        <a href="dashboard.html" class="sidebar-menu-list__link">
+                                        <span class="icon"><i class="fa fa-tachometer-alt"></i></span>
+                                        <span class="text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                   
+                                    <li class="sidebar-menu-list__item">
+                                        <a href="price-plan.html" class="sidebar-menu-list__link">
+                                        <span class="icon"><i class="fa-solid fa-check-to-slot"></i></span>
+                                        <span class="text">My Order</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-menu-list__item">
+                                        <a href="deposit.html" class="sidebar-menu-list__link">
+                                        <span class="icon"><i class="fa-solid fa-check-to-slot"></i></span>
+                                        <span class="text">Reviews</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-menu-list__item">
+                                        <a href="deposit-log.html" class="sidebar-menu-list__link">
+                                        <span class="icon"><i class="fa-solid fa-check-to-slot"></i></span>
+                                        <span class="text">Balance</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-menu-list__item">
+                                        <a href="deposit-log.html" class="sidebar-menu-list__link">
+                                        <span class="icon"><i class="fa-solid fa-check-to-slot"></i></span>
+                                        <span class="text">Transaction</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-menu-list__item has-dropdown">
+                                        <a href="javascript:void(0)" class="sidebar-menu-list__link">
+                                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                                        <span class="text">Profile</span>
+                                        </a>
+                                        <div class="sidebar-submenu">
+                                            <ul class="sidebar-submenu-list">
+                                                <li class="sidebar-submenu-list__item">
+                                                    <a href="user-settings.html" class="sidebar-submenu-list__link">Profile Setting</a>
+                                                </li>
+                                                <li class="sidebar-submenu-list__item">
+                                                    <a href="change-password.html" class="sidebar-submenu-list__link">Change Password </a>
+                                                </li>
+                                                <li class="sidebar-submenu-list__item">
+                                                    <a href="two-fa-security.html" class="sidebar-submenu-list__link">2Fa Security </a>
+                                                </li>
+                                                <li class="sidebar-submenu-list__item">
+                                                    <a href="login.html" class="sidebar-submenu-list__link">Log Out </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- dashboard side bar /> -->
+
+                <div class="col-xxl-10 col-xl-9 col-lg-12">
+                    <div class="dashboard-body">
+                        <div class="dashboard-body__bar">
+                            <span class="dashboard-body__bar-icon"><i class="las la-bars"></i></span>
+                        </div>
+                        <!-- dashboard header -->
+                        <div class="row my-5">
+                            <div class="col-lg-12">
+                                <div class="dashboard-header">
+                                    <div class="search-box">
+                                        <form>
+                                            <input class="form--control" placeholder="Search">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </form>
+                                    </div>
+                                    <ul>
+                                        <li><a href="index.html"><i class="fa-solid fa-house-user"></i></a></li>
+                                        <li class="notification position-relative">
+                                            <button>
+                                                <i class="fa-regular fa-bell"></i>
+                                              </button>
+                                             
+                                            <div class="notification-dropdown">
+                                                <div class="notification-dropdown-menu">
+                                                    <div class="notification-item-wraper">
+                                                        <div class="notification-item">
+                                                            <a href="notification.html">
+                                                                <span> <i class="fa-regular fa-bell notification-icon"></i></span>
+                                                                <p class="notification-title">A recent sign-in to your Upwork account (4b28719b) from an unknown device or browser.</p>
+                                                            </a>
+                                                        </div>
+            
+                                                        <div class="notification-item">
+                                                            <a href="notification.html">
+                                                                <span> <i class="fa-regular fa-bell notification-icon"></i></span>
+                                                                <p class="notification-title">A recent sign-in to your Upwork account (4b28719b) from an unknown device or browser.</p>
+                                                            </a>
+                                                        </div>
+            
+                                                        <div class="notification-item">
+                                                            <a href="notification.html">
+                                                                <span> <i class="fa-regular fa-bell notification-icon"></i></span>
+                                                                <p class="notification-title">A recent sign-in to your Upwork account (4b28719b) from an unknown device or browser.</p>
+                                                            </a>
+                                                        </div>
+            
+                                                        <div class="notification-item">
+                                                            <a href="notification.html">
+                                                                <span> <i class="fa-regular fa-bell notification-icon"></i></span>
+                                                                <p class="notification-title">A recent sign-in to your Upwork account (4b28719b) from an unknown device or browser.</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="notification-item-footer">
+                                                        <a href="notification.html">
+                                                            <p>See All Notification.</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="row gy-4 justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="order-wrap">
+                                    <div class="row justify-content-end">
+                                        <div class="col-md-3 mb-3">
+                                            <form action="#" autocomplete="off">
+                                                <div class="search-box w-100">
+                                                    <input type="text" class="form--control" placeholder="Search...">
+                                                    <button type="submit" class="search-box__button"><i class="fas fa-search"></i></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <table class="table table--responsive--lg">
+                                        <thead>
+                                            <tr>
+                                                <th>Trx</th>
+                                                <th>Transacted</th>
+                                                <th>Amount</th>
+                                                <th>Post Balance</th>
+                                                <th>Detail</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Trx">Trxlfjgld</td>
+                                                <td data-label="Transacted">Trfo85ut</td>
+                                                <td data-label="Post Balance">$2000.00</td>
+                                                <td data-label="Amount">$100.00</td>
+                                                <td data-label="Detail"><a class="btn btn--sm" href="transaction-details.html"><i class="las la-desktop"></i> View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Trx">Trxlfjgld</td>
+                                                <td data-label="Transacted">Trfo85ut</td>
+                                                <td data-label="Post Balance">$2000.00</td>
+                                                <td data-label="Amount">$100.00</td>
+                                                <td data-label="Detail"><a class="btn btn--sm" href="transaction-details.html"><i class="las la-desktop"></i> View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Trx">Trxlfjgld</td>
+                                                <td data-label="Transacted">Trfo85ut</td>
+                                                <td data-label="Post Balance">$2000.00</td>
+                                                <td data-label="Amount">$100.00</td>
+                                                <td data-label="Detail"><a class="btn btn--sm" href="transaction-details.html"><i class="las la-desktop"></i> View</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div> 
+</section>
+
+
+<!--  dashboard section /> -->
+
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Js -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script src="assets/js/moment.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Appear -->
+<script src="assets/js/jquery.appear.min.js"></script>
+<!-- wow js -->
+<script src="assets/js/wow.min.js"></script>
+<!-- popup js -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- glight js -->
+<script src="assets/js/glightbox.min.js"></script>
+<!-- apexchart js -->
+<script src="assets/js/apexcharts.min.js"></script>
+<!-- lightpic js -->
+<script src="assets/js/litepicker.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+
+
+</body>
+</html>     

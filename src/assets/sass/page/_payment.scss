@@ -1,0 +1,19 @@
+// payment section
+.billign-info{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 30px;
+    border-radius: 12px;
+    .add-billing-details{
+        display: inline-flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px 0px;
+        gap: 20px;
+    }
+}
+
+.payment-info{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 30px;
+    border-radius:12px;
+}

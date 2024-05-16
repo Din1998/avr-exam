@@ -1,0 +1,888 @@
+<!-- search section -->
+<!-- about section -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>AvrHyip</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/common/favicon.ico">
+    <!-- Apple touch icon -->
+    <link rel="apple-touch-icon" href="assets/images/common/apple-touch-icon.png">
+    <!-- line awesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Odometer -->
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <!-- splitting -->
+    <link rel="stylesheet" href="assets/css/splitting.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+
+    <!--==================== Preloader Start ====================-->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <span class="loader"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar-overlay"></div>
+
+    <!--==================== Preloader End ====================-->
+<!-- header -->
+<!--========================== Header section Start ==========================-->
+
+<div class="header-main-area">
+  <div class="header" id="header">
+    <div class="container position-relative">
+      <div class="row">
+        <div class="header-wrapper">
+          <!-- ham menu -->
+          <i class="fa-sharp fa-solid fa-bars-staggered ham__menu" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
+
+          <!-- logo -->
+          <div class="header-menu-wrapper align-items-center d-flex">
+            <div class="logo-wrapper">
+              <a href="index.html" class="normal-logo" id="normal-logo"> <img src="assets/images/logo/logo.png"
+                  alt="...">
+              </a>
+            </div>
+          </div>
+          <!-- / logo -->
+
+
+          <div class="menu-list-wrapper">
+              <ul class="main-menu">
+                <li><a class='active' href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="plan.html">Plan</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+
+          <ul class="login d-flex align-items-center gap-3">
+            <li class="language">
+              <div class="language-box">
+                <select class="select">
+                  <option selected="">English</option>
+                  <option value="1">Bangla</option>
+                  <option value="2">France</option>
+                  <option value="3">Spanish</option>
+                </select>
+              </div>
+            </li>
+            <li class="login-registration-list__item">
+              <a href="login.html">Sign in</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--========================== Header section End ==========================-->
+
+<!--========================== Sidebar mobile menu wrap Start ==========================-->
+<div class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasExample">
+  <div class="offcanvas-header">
+    <div class="logo">
+      <div class="header-menu-wrapper align-items-center d-flex">
+        <div class="logo-wrapper">
+          <a href="index.html" class="normal-logo" id="offcanvas-logo-normal">
+            <img src="assets/images/logo/logo.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="user-info">
+      <div class="user-thumb">
+        <a href="userDashboard.html">
+          <img src="assets/images/user/user3.png" alt="user-thumb">
+        </a>
+      </div>
+      <a href="userDashboard.html">
+        <h4>Anonymous Alex</h4>
+      </a>
+    </div>
+    <ul class="side-Nav">
+      <li>
+        <a class="active" href="index.html">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="browse.html">
+          Browse
+        </a>
+      </li>
+      <li>
+        <a href="blog.html">
+          Blog
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">
+          Contact
+        </a>
+      </li>
+      <li>
+        <a href="login.html">
+          Login
+        </a>
+      </li>
+      <li>
+        <a href="login.html" class="login-btn">Signup</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!--========================== Sidebar mobile menu wrap End ==========================-->
+
+<!-- ==================== Breadcumb Start Here ==================== -->
+<div class="breadcumb-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcumb-2__wrapper">
+                    <ul class="breadcumb-2__lists">
+                        <li class="breadcumb-2__item"><a href="index.html" class="breadcumb-2__link">Home</a></li>
+                        <li class="breadcumb-2__icon"> <i class="fa-solid fa-slash"></i> </li>
+                        <li class="breadcumb-2__item"> <span class="breadcumb-2__item-text"> Shop </span> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ==================== Breadcumb End Here ==================== -->
+
+<section class="search-section pb-60">
+    <div class="container">
+        <div class="row gy-4">
+            <!-- search box -->
+            <div class="col-xl-3 col-lg-4">
+                <div class="game-search-box">
+                    <div class="search-box-wrap">
+                        <input class="form--control" placeholder="Search">
+                    </div>
+                    <div class="item-wrap border-bottom">
+                        <h6 class="title mb-4">Category</h6>
+                        <div class="form--check mb-20">
+                            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+                            <label class="form-check-label" for="chekbox-0">
+                                All
+                            </label>
+                        </div>
+                        <div class="form--check mb-20">
+                            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+                            <label class="form-check-label" for="chekbox-0">
+                                Gaming PCs
+                            </label>
+                        </div>
+                        <div class="form--check mb-20">
+                            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+                            <label class="form-check-label" for="chekbox-0">
+                                Gaming Peripherals
+                            </label>
+                        </div>
+                        <div class="form--check mb-20">
+                            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+                            <label class="form-check-label" for="chekbox-0">
+                                Smartphones
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-wrap border-bottom">
+                        <h6 class="title mb-4">Platform</h6>
+                        <div class="form--check mb-20">
+                            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+                            <label class="form-check-label" for="chekbox-0">
+                                All
+                            </label>
+                        </div>
+                        <div class="form--check mb-20">
+                            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+                            <label class="form-check-label" for="chekbox-0">
+                                PuxStation
+                            </label>
+                        </div>
+                        <div class="form--check mb-20">
+                            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+                            <label class="form-check-label" for="chekbox-0">
+                                Sueam
+                            </label>
+                        </div>
+                        <div class="form--check mb-20">
+                            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+                            <label class="form-check-label" for="chekbox-0">
+                                Nuntendo
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-wrap">
+                        <h6 class="title mb-4">Brand</h6>
+                        <div class="form--check mb-20">
+                            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+                            <label class="form-check-label" for="chekbox-0">
+                                All
+                            </label>
+                        </div>
+                        <div class="form--check mb-20">
+                            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+                            <label class="form-check-label" for="chekbox-0">
+                                PuxStation
+                            </label>
+                        </div>
+                        <div class="form--check mb-20">
+                            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+                            <label class="form-check-label" for="chekbox-0">
+                                Sueam
+                            </label>
+                        </div>
+                        <div class="form--check mb-20">
+                            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+                            <label class="form-check-label" for="chekbox-0">
+                                Nuntendo
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- search box -->
+            <div class="col-xl-9 col-lg-8">
+                <div class="row gy-4">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="game-card">
+                            <div class="thumb">
+                                <img src="assets/images/product/img5.png" alt="...">
+                            </div>
+                            <div class="content">
+                                <a href="#"><h6 class="title">From Suace ORDER TR UBOX One / Ubox Series X|S CD Ke</h6></a>
+                                <ul>
+                                    <li><i class="fa-brands fa-steam"></i></li>
+                                    <li><i class="fa-brands fa-xbox"></i></li>
+                                </ul>
+                                <a href="#"><p class="price">$48.31</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="game-card">
+                            <div class="thumb">
+                                <img src="assets/images/product/img6.png" alt="...">
+                            </div>
+                            <div class="content">
+                                <a href="#"><h6 class="title">From Suace ORDER TR UBOX One / Ubox Series X|S CD Ke</h6></a>
+                                <ul>
+                                    <li><i class="fa-brands fa-steam"></i></li>
+                                    <li><i class="fa-brands fa-xbox"></i></li>
+                                </ul>
+                                <a href="#"><p class="price">$48.31</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="game-card">
+                            <div class="thumb">
+                                <img src="assets/images/product/img7.png" alt="...">
+                            </div>
+                            <div class="content">
+                                <a href="#"><h6 class="title">From Suace ORDER TR UBOX One / Ubox Series X|S CD Ke</h6></a>
+                                <ul>
+                                    <li><i class="fa-brands fa-steam"></i></li>
+                                    <li><i class="fa-brands fa-xbox"></i></li>
+                                </ul>
+                                <a href="#"><p class="price">$48.31</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="game-card">
+                            <div class="thumb">
+                                <img src="assets/images/product/img8.png" alt="...">
+                            </div>
+                            <div class="content">
+                                <a href="#"><h6 class="title">From Suace ORDER TR UBOX One / Ubox Series X|S CD Ke</h6></a>
+                                <ul>
+                                    <li><i class="fa-brands fa-steam"></i></li>
+                                    <li><i class="fa-brands fa-xbox"></i></li>
+                                </ul>
+                                <a href="#"><p class="price">$48.31</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="game-card">
+                            <div class="thumb">
+                                <img src="assets/images/product/img9.png" alt="...">
+                            </div>
+                            <div class="content">
+                                <a href="#"><h6 class="title">From Suace ORDER TR UBOX One / Ubox Series X|S CD Ke</h6></a>
+                                <ul>
+                                    <li><i class="fa-brands fa-steam"></i></li>
+                                    <li><i class="fa-brands fa-xbox"></i></li>
+                                </ul>
+                                <a href="#"><p class="price">$48.31</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="game-card">
+                            <div class="thumb">
+                                <img src="assets/images/product/img10.png" alt="...">
+                            </div>
+                            <div class="content">
+                                <a href="#"><h6 class="title">From Suace ORDER TR UBOX One / Ubox Series X|S CD Ke</h6></a>
+                                <ul>
+                                    <li><i class="fa-brands fa-steam"></i></li>
+                                    <li><i class="fa-brands fa-xbox"></i></li>
+                                </ul>
+                                <a href="#"><p class="price">$48.31</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="game-card">
+                            <div class="thumb">
+                                <img src="assets/images/product/img11.png" alt="...">
+                            </div>
+                            <div class="content">
+                                <a href="#"><h6 class="title">From Suace ORDER TR UBOX One / Ubox Series X|S CD Ke</h6></a>
+                                <ul>
+                                    <li><i class="fa-brands fa-steam"></i></li>
+                                    <li><i class="fa-brands fa-xbox"></i></li>
+                                </ul>
+                                <a href="#"><p class="price">$48.31</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="game-card">
+                            <div class="thumb">
+                                <img src="assets/images/product/img12.png" alt="...">
+                            </div>
+                            <div class="content">
+                                <a href="#"><h6 class="title">From Suace ORDER TR UBOX One / Ubox Series X|S CD Ke</h6></a>
+                                <ul>
+                                    <li><i class="fa-brands fa-steam"></i></li>
+                                    <li><i class="fa-brands fa-xbox"></i></li>
+                                </ul>
+                                <a href="#"><p class="price">$48.31</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="game-card">
+                            <div class="thumb">
+                                <img src="assets/images/product/img13.png" alt="...">
+                            </div>
+                            <div class="content">
+                                <a href="#"><h6 class="title">From Suace ORDER TR UBOX One / Ubox Series X|S CD Ke</h6></a>
+                                <ul>
+                                    <li><i class="fa-brands fa-steam"></i></li>
+                                    <li><i class="fa-brands fa-xbox"></i></li>
+                                </ul>
+                                <a href="#"><p class="price">$48.31</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="game-card">
+                            <div class="thumb">
+                                <img src="assets/images/product/img6.png" alt="...">
+                            </div>
+                            <div class="content">
+                                <a href="#"><h6 class="title">From Suace ORDER TR UBOX One / Ubox Series X|S CD Ke</h6></a>
+                                <ul>
+                                    <li><i class="fa-brands fa-steam"></i></li>
+                                    <li><i class="fa-brands fa-xbox"></i></li>
+                                </ul>
+                                <a href="#"><p class="price">$48.31</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="game-card">
+                            <div class="thumb">
+                                <img src="assets/images/product/img7.png" alt="...">
+                            </div>
+                            <div class="content">
+                                <a href="#"><h6 class="title">From Suace ORDER TR UBOX One / Ubox Series X|S CD Ke</h6></a>
+                                <ul>
+                                    <li><i class="fa-brands fa-steam"></i></li>
+                                    <li><i class="fa-brands fa-xbox"></i></li>
+                                </ul>
+                                <a href="#"><p class="price">$48.31</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="game-card">
+                            <div class="thumb">
+                                <img src="assets/images/product/img8.png" alt="...">
+                            </div>
+                            <div class="content">
+                                <a href="#"><h6 class="title">From Suace ORDER TR UBOX One / Ubox Series X|S CD Ke</h6></a>
+                                <ul>
+                                    <li><i class="fa-brands fa-steam"></i></li>
+                                    <li><i class="fa-brands fa-xbox"></i></li>
+                                </ul>
+                                <a href="#"><p class="price">$48.31</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="game-card">
+                            <div class="thumb">
+                                <img src="assets/images/product/img9.png" alt="...">
+                            </div>
+                            <div class="content">
+                                <a href="#"><h6 class="title">From Suace ORDER TR UBOX One / Ubox Series X|S CD Ke</h6></a>
+                                <ul>
+                                    <li><i class="fa-brands fa-steam"></i></li>
+                                    <li><i class="fa-brands fa-xbox"></i></li>
+                                </ul>
+                                <a href="#"><p class="price">$48.31</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="game-card">
+                            <div class="thumb">
+                                <img src="assets/images/product/img10.png" alt="...">
+                            </div>
+                            <div class="content">
+                                <a href="#"><h6 class="title">From Suace ORDER TR UBOX One / Ubox Series X|S CD Ke</h6></a>
+                                <ul>
+                                    <li><i class="fa-brands fa-steam"></i></li>
+                                    <li><i class="fa-brands fa-xbox"></i></li>
+                                </ul>
+                                <a href="#"><p class="price">$48.31</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="game-card">
+                            <div class="thumb">
+                                <img src="assets/images/product/img11.png" alt="...">
+                            </div>
+                            <div class="content">
+                                <a href="#"><h6 class="title">From Suace ORDER TR UBOX One / Ubox Series X|S CD Ke</h6></a>
+                                <ul>
+                                    <li><i class="fa-brands fa-steam"></i></li>
+                                    <li><i class="fa-brands fa-xbox"></i></li>
+                                </ul>
+                                <a href="#"><p class="price">$48.31</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="game-card">
+                            <div class="thumb">
+                                <img src="assets/images/product/img12.png" alt="...">
+                            </div>
+                            <div class="content">
+                                <a href="#"><h6 class="title">From Suace ORDER TR UBOX One / Ubox Series X|S CD Ke</h6></a>
+                                <ul>
+                                    <li><i class="fa-brands fa-steam"></i></li>
+                                    <li><i class="fa-brands fa-xbox"></i></li>
+                                </ul>
+                                <a href="#"><p class="price">$48.31</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="col-lg-12 justify-content-end d-flex">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">«</span>
+                        </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">»</span>
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- login section -->
+<!-- < add to cart components -->
+
+<div class="cart-box animate__backInRight">
+    <button class="close--btn"><i class="fa-solid fa-xmark"></i></button>
+    <div class="form--check mb-20">
+        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        <label class="form-check-label" for="chekbox-0">
+            SELECT ALL (04 ITEMS)
+        </label>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img1.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img2.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img3.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img4.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img3.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img2.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img1.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img2.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img3.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img4.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img2.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img1.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img1.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+
+    <button class="btn btn--base w-100"> Proceed To Checkout (1)</button>
+</div>
+
+
+<!-- add to cart components /> -->
+
+<!-- Footer -->
+<!-- ==================== Footer Start Here ==================== -->
+<footer class="footer-area my-120" style="background-image: url(assets/images/common/footer-bg.png);">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row gy-4 justify-content-center">
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer-item">
+                        <div class="footer-item--logo wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                            <a href="index.html" class="footer-logo-normal" id="footer-logo-normal"> <img src="assets/images/logo/footer-logo.png" alt=""></a>
+                        </div>
+                        <p class="footer-item--desc wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">Ipsum pretium earum? Totam! Aliquet felis. Nonummy cum posuere. Primis. Magnam nec, tempora tellus.</p>
+
+                       
+                    </div>
+                </div> 
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item--title">Useful Link</h5>
+                        <ul class="footer--menu">
+                            <li class="menu--item"><a href="_blogs.html" class="menu--link"><i class="fa-solid fa-angles-right"></i> Our Blog </a></li>
+                            <li class="menu--item"><a href="about.html" class="menu--link"><i class="fa-solid fa-angles-right"></i> About Us </a></li>
+                            <li class="menu--item"><a href="terms-of-service.html" class="menu--link"><i class="fa-solid fa-angles-right"></i> Privacy Policy</a></li>
+                            <li class="menu--item"><a href="terms-of-service.html" class="menu--link"><i class="fa-solid fa-angles-right"></i> Term Of Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item--title">Cottagey</h5>
+                        <ul class="footer-menu">
+                          <li class="menu--item"><a href="login.html" class="menu--link"><i class="fa-solid fa-angles-right"></i> Dashboard</a></li>
+                            <li class="menu--item"><a href="login.html" class="menu--link"><i class="fa-solid fa-angles-right"></i> My Profile </a></li>
+                            <li class="menu--item"><a href="dashboard.html" class="menu--link"><i class="fa-solid fa-angles-right"></i> Notification</a></li>
+                            <li class="menu--item"><a href="dashboard.html" class="menu--link"><i class="fa-solid fa-angles-right"></i> My Ads</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item--title">Contact Us</h5>
+                        <div class="footer-contact-info mb-3">
+                          <i class="fa-solid fa-mobile-screen-button"></i>
+                          <p><a href="tel:+8800000000000">+880 0000 000 000</a> </p>
+                        </div>    
+                        <div class="footer-contact-info mb-3">
+                          <i class="fa-regular fa-envelope"></i>
+                          <p><a href="mailto:wstacksltd@gmail.com">avronsoft@gmail.com</a></p>
+                        </div>  
+                        <div class="footer-contact-info mb-3">
+                            <i class="fa-regular fa-envelope"></i>
+                            <p><a href="mailto:wstacksltd@gmail.com">avronsoft@gmail.com</a></p>
+                          </div>  
+                        <ul class="social-list wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+                            <li class="social-list--item"><a href="https://www.facebook.com" class="social-list__link icon-wrapper"><div class="icon"><i class="fab fa-facebook-f"></i></div></a> </li>
+                            <li class="social-list--item"><a href="https://www.twitter.com" class="social-list__link icon-wrapper active"><div class="icon"><i class="fa-brands fa-x-twitter"></i></div> </a></li>
+                            <li class="social-list--item"><a href="https://www.linkedin.com" class="social-list__link icon-wrapper"> <div class="icon"><i class="fab fa-linkedin-in"></i></div></a></li>
+                            <li class="social-list--item"><a href="https://www.pinterest.com" class="social-list__link icon-wrapper"> <div class="icon"><i class="fab fa-instagram"></i></div></a></li>
+                        </ul>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+  <!-- Footer Top End-->
+  
+    <!-- bottom Footer -->
+    <div class="bottom-footer py-3">
+        <div class="container">
+            <div class="row text-center gy-2">
+                <div class="col-lg-12">
+                    <div class="bottom-footer-text"> &copy; Copyright 2023 . All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- ==================== Footer End Here ==================== -->
+  
+
+
+
+<div class="scroll-top show">
+  <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 197.514;"></path>
+  </svg>
+</div>
+
+<!-- footer -->
+
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Js -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Appear -->
+<script src="assets/js/jquery.appear.min.js"></script>
+<!-- wow js -->
+<script src="assets/js/wow.min.js"></script>
+<!-- splitting js -->
+<script src="assets/js/splitting.min.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
