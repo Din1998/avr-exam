@@ -3,16 +3,6 @@
 (function ($) {
   "use strict";
 
-  $('.navbar-toggler.header-button').on('click', function () {
-    if ($('.body-overlay').hasClass('show')) {
-      $('.body-overlay').removeClass('show');
-    } else {
-      $('.body-overlay').addClass('show');
-    }
-  });
-  $('.body-overlay').on('click', function () {
-    $('.header-button').trigger('click');
-  });
 
 
 
@@ -30,10 +20,7 @@
     }
 
 
-    $('.mousehover-item').on('mouseover', function () {
-      $('.mousehover-item').removeClass('active')
-      $(this).addClass('active')
-    });
+
 
     // sidebar dropdown
     $(".has-dropdown > a").click(function (e) {
@@ -61,28 +48,6 @@
       $(".sidebar-overlay").removeClass('show');
     });
 
-
-    // increment discriminant
-    const productQty = $(".product-qty");
-    productQty.each(function () {
-      const qtyIncrement = $(this).find(".product-qty__increment");
-      const qtyDecrement = $(this).find(".product-qty__decrement");
-      let qtyValue = $(this).find(".product-qty__value");
-      qtyIncrement.on("click", function () {
-        var oldValue = parseFloat(qtyValue.val());
-        var newVal = oldValue + 1;
-        qtyValue.val(newVal).trigger("change");
-      });
-      qtyDecrement.on("click", function () {
-        var oldValue = parseFloat(qtyValue.val());
-        if (oldValue <= 0) {
-          var newVal = oldValue;
-        } else {
-          var newVal = oldValue - 1;
-        }
-        qtyValue.val(newVal).trigger("change");
-      });
-    });
 
 
 
@@ -206,6 +171,7 @@
       var progress = pathLength - (scroll * pathLength / height);
       progressPath.style.strokeDashoffset = progress;
     }
+    
     updateProgress();
     $(window).scroll(updateProgress);
     var offset = 50;

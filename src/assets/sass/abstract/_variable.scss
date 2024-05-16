@@ -42,22 +42,22 @@
   --body-color: 0, 0, 100%;
 
   --border-color: 0 0% 88%;
+
   --background: 0, 0%, 97%;
+
   --footer-bg: 36, 76%, 10%;
 
 
   --border-radius: 16px;
+
   --border-radius-sm: 4px;
 
 
 
   --header-box-shadow: 0px -1px 15px 3px hsl(var(--black) /.3);
-
-
   --mobile-box-shadow: 0px -1px 5px 0px hsl(var(--black) /.92);
 
   --box-shadow: 0px 2px 15px hsl(var(--black) /.05);
-
   --gradient-bg: linear-gradient(95.26deg, hsl(var(--base)) 0%, hsl(var(--secondary)) 100%);
 
   --card-bg: hsl(240, 1%, 15%);
@@ -224,17 +224,15 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px hsl(var(--base)/.2);
-
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--base)/.5);
-
+  background: hsl(var(--base)/.7);
 }
 
 ::-webkit-scrollbar-thumb:hover {

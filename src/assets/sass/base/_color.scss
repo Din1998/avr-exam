@@ -1,6 +1,9 @@
-/*====================== Color Variable ====================*/
+
 .text--base {
     color: hsl(var(--base)) !important;
+}
+.text--white {
+    color: hsl(var(--white)) !important;
 }
 .text--primary {
     color: hsl(var(--primary)) !important;;
