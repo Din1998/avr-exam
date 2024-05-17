@@ -1035,7 +1035,7 @@ button.mfp-close {
     z-index: -9;
 }
 
-.base-radius {
+.base--radius {
     border-radius: 12px !important;
 }
 
