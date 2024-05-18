@@ -31,7 +31,7 @@
     }
 
     &.fixed-header {
-        background-color: hsl(var(--body-color));
+        background-color: hsl(var(--white));
         position: fixed;
         top: 0px;
         animation: slide-down 0.8s;
@@ -46,7 +46,21 @@
         }
 
         .header-wrapper .main-menu li a {
-            color: hsl(var(--white));
+            color: hsl(var(--black));
+        }
+
+        .login--btn{
+            border: 1px solid hsl(var(--base));
+            color: hsl(var(--base));
+        }
+        .language-box .select{
+            color: hsl(var(--base));
+        }
+        .language-box i {
+            color: hsl(var(--base));
+        }
+        .header-wrapper {
+            padding: 16px 0px;
         }
     }
 

@@ -18,7 +18,7 @@
         right: -20%;
         z-index: -1;
 
-        img{
+        img {
             max-width: 100%;
             max-height: 100%;
             object-fit: cover;
@@ -35,23 +35,54 @@
 
         position: relative;
 
-        img {
-            max-width: 100%;
-            max-width: 100%;
-            object-fit: cover;
+        .circle-btn--wrap {
+            position: absolute;
+            left: 0px;
+            top: 3%;
         }
 
-        .circle--bg {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            right: 0%;
-            transform: translate(-50%, -50%);
-            background-color: hsl(var(--base));
-            filter: blur(130px);
-            z-index: -1;
+        .thumb {
+            img {
+                max-width: 100%;
+                max-width: 100%;
+                object-fit: cover;
+            }
         }
+
+        .trust-card {
+            position: absolute;
+            bottom: 10%;
+            right: 0px;
+            padding: 16px 20px;
+
+
+            .icon {
+                width: 44px;
+                height: 44px;
+            }
+
+            .content {
+
+                .sub-title {
+                    font-size: 15px;
+                }
+            }
+        }
+
+
     }
+}
+
+
+.circle--bg {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(var(--base));
+    filter: blur(130px);
+    z-index: -1;
 }

@@ -31,5 +31,69 @@
 }
 
 .section--bg {
-    background-color: var(--section-bg);
+    background-color: hsl(var(--base)/0.1);
+}
+
+// bg hover
+
+.hover-bg--white {
+    &:hover{
+        background-color: hsl(var(--white)) !important;
+
+    }
+}
+.hover-bg--black {
+    &:hover{
+        background-color: hsl(var(--black)) !important;
+
+    }
+}
+.hover-bg--base {
+    &:hover{
+        background-color: hsl(var(--base)) !important;
+
+    }
+}
+.hover-bg--primary {
+    &:hover{
+        background-color: hsl(var(--primary)) !important;
+
+    }
+}
+.hover-bg--secondary {
+    &:hover{
+        background-color: hsl(var(--secondary)) !important;
+
+    }
+}
+.hover-bg--success {
+    &:hover{
+        background-color: hsl(var(--success)) !important;
+
+    }
+}
+.hover-bg--danger {
+    &:hover{
+        background-color: hsl(var(--danger)) !important;
+
+    }
+}
+.hover-bg--warning {
+    &:hover{
+        background-color: hsl(var(--warning)) !important;
+
+    }
+}
+.hover-bg--info {
+    &:hover{
+        background-color: hsl(var(--info)) !important;
+
+    }
+}
+
+.hover-bg--violet {
+    &:hover{
+        background-color: hsl(var(--violet)) !important;
+
+    }
 }

@@ -77,7 +77,36 @@
 }
 
 
+//  Dots
+.slick-dots {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -38px;
 
+  li {
+    display: inline-block;
+
+    button {
+      border: none;
+      background-color: hsl(var(--base)/0.3);
+      color: hsl(var(--white));
+      margin: 0 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      text-indent: -9999px;
+
+    }
+
+    &.slick-active button {
+      background-color: hsl(var(--base));
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
 
 /*================= Text Underline Hover ================*/
 .text-hover a {

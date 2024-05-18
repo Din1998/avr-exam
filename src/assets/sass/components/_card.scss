@@ -143,16 +143,21 @@
 
 // blog card
 .blog-card {
-  border-radius: 9px;
+
   overflow: hidden;
   position: relative;
-  padding: 32px;
+
   border: 1px solid hsl(var(--white) / 0.1);
   background-color: hsl(var(--body-color));
 
+  .thumb--wrap {
+    padding: 8px;
+    border: 1px dashed hsl(var(--black)/0.1);
+  }
+
   .thumb {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
 
     img {
@@ -161,20 +166,24 @@
   }
 
   .blog-content {
-    padding-top: 32px;
+    padding-top: 44px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    position: relative;
 
     .date-time {
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 1.28;
-      text-align: left;
-      margin-bottom: 14px;
-      span{
-        color: hsl(var(--white));
+      width: 72px;
+      height: 72px;
+      border: 3px solid hsl(var(--white));
+      position: absolute;
+      top: -40px;
+      left: 30px;
+
+      .date{
+        font-size: 32px;
       }
+
     }
 
     .title {
@@ -413,233 +422,55 @@
   border: 1px solid hsl(var(--white) / 0.1);
 }
 
-// deposit card
-.hype--card {
-  background-color: hsl(var(--cards-bg));
-  border-radius: 9px;
-  padding: 42px 32px;
-  position: relative;
+// base card
+.product-card {
+  border: 1px solid hsl(var(--black)/0.1);
+  gap: 24px;
+  padding: 20px 14px;
+  transition: 0.2s linear;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: -6px;
-    right: 0px;
-    height: 18px;
-    width: 100%;
-    background-color: hsl(var(--base));
-    border-bottom-left-radius: 14px;
-    border-top-right-radius: 14px;
-    z-index: -1;
+  .icon {
+    width: 60px;
+    height: 60px;
+    background: hsl(var(--base)/0.1);
 
-
-  }
-
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -6px;
-    left: 0px;
-    height: 18px;
-    width: 100%;
-    background-color: hsl(var(--base));
-    border-bottom-left-radius: 14px;
-    border-bottom-right-radius: 14px;
-    z-index: -1;
-  }
-
-
-  .card--header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: start;
-    flex-direction: column;
-    gap: 16px;
-    position: absolute;
-    top: -98px;
-    left: 0px;
-    background-color: hsl(var(--cards-bg));
-    padding: 24px 70px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: -6px;
-      left: 0px;
-      height: 18px;
-      width: 100%;
-      background-color: hsl(var(--base));
-      border-top-left-radius: 14px;
-      border-top-right-radius: 14px;
-      z-index: -1;
-
-    }
-
-
-  }
-
-  .discription {
-    text-align: center;
-    margin-bottom: 26px;
-  }
-
-  .status {
-    border-radius: 31px;
-    padding: 4px 16px;
-
-    &--basic {
-      background: hsl(var(--white)/0.1);
-
-      .name {
-        color: hsl(var(--base));
-      }
-    }
-
-    &--premium {
-      background: hsl(var(--yellow));
-
-      .name {
-        color: hsl(var(--black));
-      }
+    i {
+      font-size: 26px;
+      color: hsl(var(--white));
     }
   }
 
-
-  .price--wrap {
-    padding: 16px;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0px;
-      right: 0px;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(90deg, #171B26 0%, rgba(247, 147, 26, 0.18) 45%, #171B26 100%);
+  .content-wrap {
+    .title {
+      font-size: 20px;
+      line-height: 28px;
     }
 
-
-    .price {
-      font-size: 48px !important;
-      font-weight: 600;
-      line-height: 34px;
-      margin-bottom: 0px;
-      color: hsl(var(--base));
-    }
-
-    .days {
-      font-size: 14.771px;
-      color: hsl(var(--black)/0.4);
-    }
-
-
-  }
-
-  .item--wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    gap: 24px;
-    padding: 30px 0px 68px 0px;
-
-
-    .item--list {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      border-bottom: 1px solid hsl(var(--white)/0.04);
-      width: 100%;
-
-      &:last-child {
-        border-bottom: none;
-      }
-
-      .title {
-        margin-bottom: 24px;
-      }
-
-      .range-wrap {
-        background-color: hsl(var(--white)/0.06);
-        padding: 20px;
-        border-radius: 80px;
-        margin-bottom: 24px;
-
-        .title {
-          margin-bottom: 0px;
-          color: hsl(var(--blue));
-        }
-
-      }
-
-
+    .sub-title {
+      font-size: 16px;
+      line-height: 20px;
     }
   }
-
 }
 
+
 // testimonial cards
+
 .testimonial-card {
   display: flex !important;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  position: relative;
-  z-index: 1;
-
-  .icon-wrap{
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    i{
-      font-size: 80px;
-      color: hsl(var(--white)/0.06);
-
-    }
-  }
 
   .title {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 43px;
-    text-align: center;
+    font-size: 32px;
+    line-height: 45px;
+    font-style: italic;
+    margin-bottom: 40px;
   }
 
-  .name {
-    text-align: center;
-    font-size: 20px;
-    span{
-      color: hsl(var(--white)/0.7);
-      font-weight: 400;
-    }
-  }
 
-  .user-thumb {
-    width: 79.6px;
-    height: 79.6px;
-    border-radius: 50%;
-    border: 5px solid hsl(var(--white));
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
 
 
 }
@@ -697,6 +528,7 @@
       padding: 20px 0px;
       border-bottom: 1px dashed hsl(var(--white) / 0.05);
       color: hsl(var(--base));
+
       .info {
         display: flex;
         justify-content: flex-start;
@@ -986,7 +818,8 @@
     width: 75.215px;
     height: 39.82px;
     flex-shrink: 0;
-    img{
+
+    img {
       max-width: 100%;
       max-height: 100%;
       object-fit: cover;
@@ -995,8 +828,8 @@
 }
 
 // transaction card
-.transaction-card{
-  background-color:  hsl(var(--cards-bg));
+.transaction-card {
+  background-color: hsl(var(--cards-bg));
   padding: 32px;
   border-radius: 9px;
   position: relative;

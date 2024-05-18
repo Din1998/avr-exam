@@ -16,9 +16,7 @@
 }
 
 @media (max-width: 1399px) {
-    .about-us .thumb-wrap .circle-btn--wrap {
-        right: -18%;
-    }
+
 }
 
 @media (max-width:1199px) {
@@ -186,19 +184,7 @@
         top: 0px;
     }
 
-    .hype--card .card--header {
-        top: 0px;
-        left: 0px;
-        padding: 24px 30px;
-    }
 
-    .hype--card .card--header::after {
-        content: none;
-    }
-
-    .hype--card::after {
-        border-top-left-radius: 14px;
-    }
 
     .profit-card::before {
         display: none;
@@ -338,12 +324,7 @@
         display: none;
     }
 
-    .about-us .thumb-wrap .circle-btn--wrap {
-        right: 6%;
-        bottom: 10px !important;
-        transform: none;
-        top: auto;
-    }
+
 
     .hero-left-content .hero-title {
         font-size: 46px;

@@ -1,8 +1,4 @@
 
-.accordion-area {
-    position: relative;
-    z-index: 1;
-}
 
 .custom--accordion {
     .accordion-item {
@@ -16,8 +12,8 @@
             &::after {
                 content: "";
                 position: absolute;
-                top: 50px;
-                left: 20px;
+                top: 56px;
+                left: -37px;
                 height: 67%;
                 width: 3px;
                 background: hsl(var(--base));
@@ -62,9 +58,8 @@
     }
 
     .accordion-body {
-        background-color: transparent;
-        color: hsl(var(--white)/0.7);
-        padding-left: 40px;
+        background-color: hsl(var(--white)/0.02);
+        color: hsl(var(--black)/0.7);
 
         .text {
             max-width: 60%;
@@ -83,12 +78,12 @@
     &:last-of-type .accordion-button.collapsed {
         border-radius: 0px;
         color: hsl(var(--body-color));
-        background: transparent;
+        background: hsl(var(--white)/0.02);
     }
 
     .accordion-button {
-        background-color: transparent;
-        color: hsl(var(--white)) !important;
+        background-color: hsl(var(--white));
+        color: hsl(var(--black)) !important;
         font-size: 20px;
         padding: 0px 20px;
         border-radius: 8px;
@@ -109,10 +104,9 @@
         }
 
         &:not(.collapsed) {
-            color: hsl(var(--base)) !important;
-            background-color: transparent !important;
+            color: hsl(var(--white));
+            background-color: hsl(var(--white)/0.02) !important;
             box-shadow: none;
-            font-weight: 600;
 
             &::after {
                 transform: rotate(0deg);
