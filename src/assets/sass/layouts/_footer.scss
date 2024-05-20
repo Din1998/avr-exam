@@ -198,37 +198,6 @@
     }
 }
 
-// subscribe box
-.footer-subscribe-box {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
-    form {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .footer-input {
-        width: 376px;
-        border: 1px solid hsl(var(--base));
-        background: hsl(var(--white));
-        color: hsl(var(--white)) !important;
-
-        &::placeholder {
-            color: hsl(var(--white)/0.7) !important;
-            font-size: 14px;
-        }
-    }
-
-    .search-btn {
-        padding: 7px 20px;
-        border-radius: 4px;
-    }
-
-}
 
 
 .bottom-footer {

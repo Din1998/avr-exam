@@ -22,12 +22,12 @@
 
 
 .form--label {
-  color: hsl(var(--white));
+  color: hsl(var(--black));
   margin-bottom: 8px;
 }
 
 .input-group-text{
-  color: hsl(var(--white));
+  color: hsl(var(--black));
 }
 
 .form--control {
@@ -37,17 +37,17 @@
   padding: 10px 16px;
   border-radius: 4px;
   background-color: transparent;
-  color: hsl(var(--white));
+  color: hsl(var(--black));
   line-height: 26px;
-  border: 1px solid hsl(var(--white)/.1);
+  border: 1px solid hsl(var(--black)/.1);
 
   &::placeholder {
-    color: hsl(var(--white)/0.4) !important;
+    color: hsl(var(--black)/0.4) !important;
     font-size: 16px;
   }
 
   &:focus {
-    color: hsl(var(--white));
+    color: hsl(var(--black));
     box-shadow: none;
     border: 1px solid hsl(var(--base)/.3);
     border-radius: 4px;

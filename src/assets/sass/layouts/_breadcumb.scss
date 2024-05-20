@@ -1,7 +1,7 @@
 
 .breadcumb {
     position: relative;
-    padding: 70px 0px;
+    padding: 105px 0px;
     overflow: hidden;
     z-index: 1;
     border-bottom: 1px solid hsl(var(--white) / 0.08);
@@ -14,6 +14,12 @@
         padding: 100px 0px 60px 0px;
     }
 
+    .breadcumb-bg--img{
+        position: absolute;
+        top: -60px;
+        left: 0px;
+    }
+
 
     &--wrapper {
         display: flex;
@@ -24,11 +30,12 @@
 
 
         &--title {
-            font-weight: 800;
-            font-size: 40px;
+
+            font-size: 48px;
             margin: 0px !important;
             color: hsl(var(--black));
             text-align: center;
+            line-height: 60px;
         }
 
     }
@@ -57,12 +64,11 @@
     }
 
     &--icon {
-        margin-top: 4px;
         color: hsl(var(--base));
     }
 
     &--link {
-        color: hsl(var(--white)) !important;
+        color: hsl(var(--base)) !important;
         font-weight: 600;
 
         &:hover {

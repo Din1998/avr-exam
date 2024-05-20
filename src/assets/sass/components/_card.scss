@@ -426,7 +426,7 @@
 .product-card {
   border: 1px solid hsl(var(--black)/0.1);
   gap: 24px;
-  padding: 20px 14px;
+  padding: 30px;
   transition: 0.2s linear;
 
   .icon {
@@ -859,5 +859,51 @@
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px;
     z-index: -1;
+  }
+}
+
+// category card
+
+.category-card {
+  border: 1px solid hsl(var(--black)/0.1);
+  gap: 24px;
+  padding: 30px;
+  &:hover {
+      .icon {
+          background: hsl(var(--white)/0.1);
+          i {
+              color: hsl(var(--white)) !important;
+          }
+      }
+      .content-wrap {
+          .title {
+             color: hsl(var(--white));
+          }
+          .sub-title {
+              color: hsl(var(--white)) !important;
+
+          }
+      }
+  }
+  .icon {
+      width: 60px;
+      height: 60px;
+      background: hsl(var(--base)/0.1);
+
+      i {
+          font-size: 26px;
+          color: hsl(var(--white));
+      }
+  }
+  .content-wrap {
+      .title {
+          font-size: 20px;
+          line-height: 28px;
+          margin-bottom: 0px;
+      }
+      .sub-title {
+          font-size: 16px;
+          line-height: 20px;
+      }
   }
 }
