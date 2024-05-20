@@ -202,16 +202,18 @@
 			}
 		}
     }
-    // @include md-screen {
-    //     tbody {
-	// 		tr {
-	// 			td {
-	// 				border: none;
-	// 			}
-	// 		}
-	// 	}
-    // }
+    @include md-screen {
+        tbody {
+			tr {
+				td {
+					border: none;
+				}
+			}
+		}
+    }
 }
+
+
 .table--responsive--xl {
     @include lg-screen {
         thead {
@@ -254,6 +256,9 @@
 		}
     }
 }
+
+
+
 .table--responsive--xl {
     @include xl-screen {
         thead {
@@ -306,30 +311,6 @@
 }
 
 
-
-
-// copy script input field design
-
-.copy-script{
-	position: relative;
-	.script-copy-btn{
-		position: absolute;
-		top: 4px;
-		right: 4px;
-	}
-}
-
-.action-clm {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    gap: 4px;
-}
-
-
-
-
-
 @media(max-width: 992px){
 	.table {
 		tbody {
@@ -338,7 +319,6 @@
 					border-bottom: 1px solid  hsl(var(--dark) / 0.03);
 					background: hsl(var(--base)/0.03);
 				}
-				
 			}
 		}
 	}

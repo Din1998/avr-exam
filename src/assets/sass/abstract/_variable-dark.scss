@@ -172,16 +172,16 @@
         width: 120px;
         color: hsl(var(--white)) !important;
     }
-    .breadcumb__link {
+    .breadcrumb__link {
         color: hsl(var(--white)/.6);
     }
-    .breadcumb__title {
+    .breadcrumb__title {
         color: hsl(var(--white));
     }
-    .breadcumb__item {
+    .breadcrumb__item {
         color: hsl(var(--white)/.6);
     }
-    .breadcumb__item-text {
+    .breadcrumb__item-text {
         color: hsl(var(--white)/.6);
     }
     .blog-sidebar__title {
@@ -444,7 +444,7 @@
     .experience__content h3 {
         color: hsl(var(--white)/0.8);
     }
-    .breadcumb::after {
+    .breadcrumb::after {
         background: hsl(var(--dark)/0.7);
     }
 

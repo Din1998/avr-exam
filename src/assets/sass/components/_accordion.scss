@@ -1,14 +1,13 @@
 
 
 .custom--accordion {
+
     .accordion-item {
         background-color: transparent !important;
         border: none;
         border-radius: 0;
-
         &.active {
             position: relative;
-
             &::after {
                 content: "";
                 position: absolute;
@@ -26,11 +25,9 @@
         }
 
         .accordion-header {
-
             display: flex;
             align-items: center;
             position: relative;
-
             .number {
                 position: absolute;
                 top: 0px;
@@ -42,9 +39,6 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
-
-
                 h6 {
                     margin-bottom: 0px;
                     color: hsl(var(--white));
@@ -54,7 +48,6 @@
 
         }
 
-
     }
 
     .accordion-body {
@@ -63,7 +56,6 @@
 
         .text {
             max-width: 60%;
-
             @include msm-screen {
                 max-width: 100%;
             }
@@ -88,10 +80,8 @@
         padding: 0px 20px;
         border-radius: 8px;
 
-
         @include msm-screen {
             font-size: 18px;
-          
             padding-right: 30px;
         }
 

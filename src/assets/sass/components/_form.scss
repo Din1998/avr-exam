@@ -1,4 +1,4 @@
-/*====================== Form Style ====================*/
+/* Form Style */
 .search-box {
   .input--group {
     .form--control {
@@ -109,71 +109,6 @@
 
 
 
-.search-form--control {
-  font-weight: 500;
-  outline: none;
-  width: 100%;
-  padding: 20px 44px;
-  background-color: hsl(var(--body-color)/.1);
-  border: 1px solid hsl(var(--base) / .20);
-  color: hsl(var(--dark)) !important;
-  line-height: 1;
-  border-radius: 0px !important;
-  padding-right: 160px !important;
-
-  &::placeholder {
-    color: hsl(var(--black)/0.5);
-    font-size: 16px;
-  }
-
-  &:focus {
-    color: hsl(var(--dark));
-    box-shadow: none;
-    border-color: hsl(var(--base));
-    background-color: hsl(var(--body-color)/.05);
-  }
-
-  &:disabled,
-  &[readonly] {
-    background-color: hsl(var(--base)/.5);
-    ;
-    opacity: 1;
-    border: 0;
-  }
-
-  &[type="password"] {
-    color: hsl(var(--dark)/.5);
-
-    &:focus {
-      color: hsl(var(--dark));
-    }
-  }
-
-  &[type="file"] {
-    line-height: 60px;
-    padding: 0;
-    position: relative;
-
-    &::file-selector-button {
-      border: 1px solid hsl(var(--black) / .08);
-      padding: 4px 6px;
-      border-radius: .2em;
-      background-color: hsl(var(--base) / .9);
-      transition: .2s linear;
-      line-height: 25px;
-      position: relative;
-      margin-left: 15px;
-      color: hsl(var(--body-color));
-
-      &:hover {
-        background-color: hsl(var(--base));
-        border: 1px solid hsl(var(--base));
-        color: hsl(var(--white));
-      }
-    }
-  }
-}
-
 textarea.form--control {
   height: 220px;
   padding: 15px;
@@ -260,7 +195,7 @@ input[type=number] {
   }
 }
 
-// ============== Select here ==================
+
 
 // Form Select  
 .form--select {
@@ -283,7 +218,7 @@ input[type=number] {
   }
 }
 
-/*=========== Custom Checkbox Design ===========*/
+/* Custom Checkbox Design */
 .form--check {
   display: flex;
   flex-wrap: wrap;
@@ -353,7 +288,7 @@ input[type=number] {
   }
 }
 
-/*==========  Custom Radion Design ============*/
+/*  Custom Radio Design */
 .form--radio {
   display: flex;
   align-items: center;
@@ -457,33 +392,10 @@ input[type=number] {
   }
 }
 
-.choose-domain {
-  .input-group {
-    &.country-code {
-      @include xsm-screen {
-        flex-direction: column;
-
-        .form--control {
-          margin: 5px;
-          border-radius: 10px !important;
-        }
-
-        .input-group-text {
-          width: 70px;
-          border-radius: 10px !important;
-        }
-      }
-
-      select.select.form--control {
-        width: 120px;
-        color: hsl(var(--dark));
-      }
-    }
-  }
-}
 
 /*  Custom Switch End Design */
-// ----------------------------- Calander Icon --------------
+
+//  Calender Icon 
 ::-webkit-calendar-picker-indicator {
   filter: invert(.5);
 }
@@ -497,7 +409,6 @@ input[type=number] {
 
 
 //   select input field
-
 .f-dropdown {
   --max-scroll: 3;
   position: relative;
@@ -697,6 +608,14 @@ input[type=number] {
         transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
     }
   }
+}
+
+
+
+
+
+.search-input {
+  padding-right: 40px !important;
 }
 
 /* --------------------------- */

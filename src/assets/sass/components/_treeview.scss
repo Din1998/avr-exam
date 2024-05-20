@@ -22,13 +22,16 @@
     }
   }
 }
+
 .tree-view:first-child{
     border-left: none;
 }
+
 #ul{
   margin:0;
   padding:0;
 }
+
 .caret{
   cursor:pointer;
   user-select:none;
@@ -38,6 +41,7 @@
     content: none !important;
     }
 }
+
 .caret::before {
     position: absolute;
     content: "\25B6";
@@ -46,13 +50,16 @@
     color: hsl(var(--base));
     display: inline-block;
 }
+
 .caret-down::before {
   transform: rotate(90deg);  
 }
+
 .nested{
-  display:none;
+  display: none;
   border-left: 2px dashed hsl(var(--white)/0.1);
 }
+
 .active{
   display: block;
 }

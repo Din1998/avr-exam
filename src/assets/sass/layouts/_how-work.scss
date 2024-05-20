@@ -22,7 +22,6 @@
 
 
 
-
 // about section
 .about-thumb-wrap {
     display: flex;
@@ -48,89 +47,13 @@
     }
 }
 
-.about-content-box {
-    display: flex;
-    justify-content: flex-start;
-    align-items: start;
-    flex-direction: column;
-    gap: 24px;
-    padding: 20px 14px;
-
-    .icon-wrap {
-        width: 74px;
-        height: 74px;
-        border-radius: 50%;
-        padding: 6px;
-        border: 1px dashed hsl(var(--black)/0.1);
-
-        .icon {
-            width: 61px;
-            height: 61px;
-            background: hsl(var(--base));
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            i {
-                font-size: 26px;
-                color: hsl(var(--white));
-            }
-        }
 
 
-    }
-}
-
-
-.about-content-box1 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
-    flex-direction: column;
-    gap: 24px;
-    padding: 20px 14px;
-
-    .icon-wrap {
-        width: 74px;
-        height: 74px;
-        border-radius: 50%;
-        padding: 6px;
-        border: 1px dashed hsl(var(--black)/0.1);
-
-        .icon {
-            width: 61px;
-            height: 61px;
-            background: hsl(var(--base));
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            i {
-                font-size: 26px;
-                color: hsl(var(--white));
-            }
-        }
-    }
-
-    .content-wrap {
-        .title {
-            text-align: end;
-        }
-
-        .sub-title {
-            text-align: end;
-        }
-    }
-}
 
 
 
 // how it works
 .how-work--box {
-
-
     &::after {
         content: "";
         position: absolute;
@@ -141,16 +64,13 @@
         background: hsl(var(--black) / 0.1);
     }
 
-    
     &::before {
         content: "\f054";
         font-family: FontAwesome;
         position: absolute;
         top: 21%;
         right: -30px;
-        
     }
-
 
     .icon-wrap {
         width: 144px;
@@ -162,39 +82,30 @@
             height: 118px;
             border: 1px dashed hsl(var(--black)/0.1);
         }
-
         i {
             font-size: 36.789px;
         }
-
     }
 
     .content-wrap {
-  
         .title {
             font-size: 20px;
             margin-bottom: 4px;
-
         }
-
-       
     }
 }
 
 .how-it--work {
     position: relative;
-
     .section-thumb1 {
         position: absolute;
         bottom: 10%;
         left: 10%;
-
     }
     .section-thumb2 {
         position: absolute;
         top: 35%;
         right: 10%;
-
     }
 }
 

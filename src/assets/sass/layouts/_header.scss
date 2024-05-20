@@ -432,9 +432,8 @@
 
 
 
-// header two
+// header design two
 .header-two {
-
     .header-bg--img {
         position: absolute;
         top: 0px;
@@ -469,9 +468,6 @@
 
 
     }
-
-
-
 }
 
 
@@ -514,67 +510,6 @@
 
 
 
-// Login Registration
-.login-registration-list {
-
-    @include md-screen {
-        padding-right: 0;
-    }
-
-    &__item {
-        padding-right: 8px;
-        color: hsl(var(--black));
-        position: relative;
-
-        &:last-child::before {
-            display: none;
-        }
-
-        &::before {
-            position: absolute;
-            content: "";
-            width: 1px;
-            height: 12px;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: hsl(var(--dark)/.5);
-        }
-    }
-
-    &__icon {
-        color: hsl(var(--black));
-        margin-right: 10px;
-        font-size: 16px;
-
-        i {
-            color: hsl(var(--black));
-
-        }
-    }
-
-    &__link {
-        color: hsl(var(--black));
-        font-weight: 400;
-        font-family: var(--body-font);
-
-        @include msm-screen {
-            font-size: 15px;
-        }
-
-        &:hover {
-            color: hsl(var(--black));
-
-            .login-registration-list__icon {
-                color: hsl(var(--black));
-            }
-
-            @include md-screen {
-                color: hsl(var(--black));
-            }
-        }
-    }
-}
 
 // Language Box
 .language-box {
@@ -601,6 +536,7 @@
     }
 }
 
+// header login button
 .login--btn {
     color: hsl(var(--white));
     font-weight: 600;
@@ -615,92 +551,4 @@
 
 
 
-@media(max-width:480px) {
-    li.login-registration-list__item {
-        display: none;
-    }
 
-    .menu-wrapper {
-        display: none;
-    }
-}
-
-
-
-
-
-
-// Responsive code
-@media (max-width:1199px) {
-    .header-wrapper .main-menu a {
-        margin: 0px;
-    }
-
-    .header-wrapper .menu-list-wrapper ul {
-        gap: 0px;
-    }
-
-    .header-wrapper .search-box-wrap {
-        width: 500px;
-    }
-}
-
-@media (max-width:992px) {
-    .header-wrapper .search-box-wrap {
-        display: none;
-    }
-
-    .header-wrapper-2 {
-        display: none;
-    }
-
-    .scrolled {
-        display: flex !important;
-    }
-}
-
-@media (max-width: 769px) {
-    .ham__menu {
-        display: block !important;
-    }
-
-    .language-dropdown {
-        width: 90px;
-        position: fixed;
-        top: 44px;
-        right: 74px !important;
-
-    }
-}
-
-@media (max-width:620px) {
-    .mobile-search-box {
-        display: block;
-    }
-
-    .input-show {
-        display: none !important;
-    }
-
-}
-
-@media (max-width:450px) {
-    .mobile-search-input {
-        width: 100% !important;
-    }
-}
-
-@media (max-width: 426px) {
-
-
-    .mobile-search-input {
-        padding: 2px 10px !important;
-    }
-}
-
-@media (max-width: 321px) {
-
-    .language-dropdown {
-        right: 52px !important;
-    }
-}

@@ -1,4 +1,4 @@
-/*====================== Border Color ====================*/
+// border color
 .border--base {
     border-color: hsl(var(--base)) !important;
 }
@@ -22,4 +22,105 @@
 }
 .border--violet {
     border-color: hsl(var(--violet)) !important;
+}
+
+
+// border solid and dash
+.border-solid--base{
+    border-top: 1px solid hsl(var(--base)) !important;
+}
+.border-dash--base{
+    border-top: 1px dashed hsl(var(--base)) !important;
+}
+
+.border-solid--black{
+    border-top: 1px solid hsl(var(--black)) !important;
+}
+.border-dash--black{
+    border-top: 1px dashed hsl(var(--black)) !important;
+}
+
+.border-top {
+    border-top: 1px solid hsl(var(--black)/0.1) !important;
+}
+.border-left {
+    border-left: 1px solid hsl(var(--black)/0.1) !important;
+}
+
+.border-right {
+    border-right: 1px solid hsl(var(--black)/0.1) !important;
+}
+.border-bottom {
+    border-bottom: 1px solid hsl(var(--black)/0.1) !important;
+}
+
+
+// light border
+.border-solid--black1{
+    border-top: 1px solid hsl(var(--black)/.1) !important;
+}
+.border-dash--black1{
+    border-top: 1px dashed hsl(var(--black)/1) !important;
+}
+
+.border-solid--black2{
+    border-top: 1px solid hsl(var(--black)/.2) !important;
+}
+.border-dash--black2{
+    border-top: 1px dashed hsl(var(--black)/2) !important;
+}
+
+.border-solid--black3{
+    border-top: 1px solid hsl(var(--black)/.3) !important;
+}
+.border-dash--black3{
+    border-top: 1px dashed hsl(var(--black)/3) !important;
+}
+
+.border-solid--black4{
+    border-top: 1px solid hsl(var(--black)/.4) !important;
+}
+.border-dash--black4{
+    border-top: 1px dashed hsl(var(--black)/4) !important;
+}
+
+.border-solid--black5{
+    border-top: 1px solid hsl(var(--black)/.5) !important;
+}
+.border-dash--black5{
+    border-top: 1px dashed hsl(var(--black)/5) !important;
+}
+
+
+
+
+// border none
+.border-top--noe {
+    border-top: none !important;
+}
+
+.border-left--none {
+    border-left: none !important;
+}
+
+.border-right--none {
+    border-right: none !important;
+}
+
+.border-bottom--none {
+    border-bottom: none !important;
+}
+
+// border first and list
+
+.border-first--none{
+    &:first-child {
+        border: none;
+    }
+}
+
+.border-last--none{
+    &:last-child {
+        border: none;
+    }
 }

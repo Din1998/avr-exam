@@ -28,7 +28,6 @@
             }
             img {
                 border-radius: 12px;
-                @include fit_image;
             }
         }
         &--content {

@@ -5,283 +5,226 @@
     min-height: 100vh;
 }
 
-    .user-profile {
-        background: var(--gradient-bg);
-        border-radius: 8px;
-        padding: 36px 0px;
-    }
+.user-profile {
+    background: var(--gradient-bg);
+    border-radius: 8px;
+    padding: 36px 0px;
+}
 
 
 
-    .dashboard_profile_wrap .profile_photo:hover::before {
-        visibility: visible;
-        opacity: .7;
-    }
+.dashboard_profile_wrap .profile_photo:hover::before {
+    visibility: visible;
+    opacity: .7;
+}
 
-    .dashboard_profile_wrap .profile_photo:hover .photo_upload i {
-        visibility: visible;
-        opacity: 1;
-    }
+.dashboard_profile_wrap .profile_photo:hover .photo_upload i {
+    visibility: visible;
+    opacity: 1;
+}
 
-    .dashboard_profile {
-        &__details {
-            ul {
-                li {
-                    a {
-                        display: block;
-                        font-size: 17px;
-                        transition: all .3s ease-in-out;
+.dashboard_profile {
+    &__details {
+        ul {
+            li {
+                a {
+                    display: block;
+                    font-size: 17px;
+                    transition: all .3s ease-in-out;
 
-                        i {
-                            margin-right: 10px;
-                        }
-
-                        &:hover {
-                            color: hsl(var(--black));
-                        }
-
-                        &.active {
-                            color: hsl(var(--base));
-                        }
+                    i {
+                        margin-right: 10px;
                     }
 
+                    &:hover {
+                        color: hsl(var(--black));
+                    }
+
+                    &.active {
+                        color: hsl(var(--base));
+                    }
                 }
+
             }
         }
     }
+}
 
-    .dashboard-body {
-        position: relative;
+.dashboard-body {
+    position: relative;
 
-        &__bar {
-            display: none;
-
-            @include lg-screen {
-                display: block;
-            }
-
-            &-icon {
-                color: hsl(var(--white));
-                font-size: 25px;
-                margin-bottom: 10px;
-                cursor: pointer;
-                width: 50px;
-                height: 40px;
-                background-color: hsl(var(--base));
-                text-align: center;
-                padding: 2px 8px;
-                border-radius: 3px;
-            }
-        }
-
-
-    }
-
-    .selling-group-item span {
-        font-size: 14px;
-    }
-
-    .message-send__content.section-bg-two {
-        padding: 3px 5px;
-        margin-bottom: 5px;
-    }
-
-    .message-send__content.section-bg-two p {
-        font-size: 14px;
-    }
-
-    ul.list.d-flex.message-send__history {
-        font-size: 12px;
-    }
-
-    .message-send {
-        margin-bottom: 10px;
-    }
-
-    .message-receive__history-item {
-        margin-right: 20px;
-        position: relative;
-    }
-
-    .message-receive__history-item:last-child {
-        margin-right: 0;
-    }
-
-    .message-receive__history-item:after {
-        position: absolute;
-        top: 9px;
-        right: -13px;
-        content: "";
-        background: hsl(var(--base));
-        height: 4px;
-        width: 4px;
-        border-radius: 50%;
-    }
-
-    .message-receive__history-item:last-child:after {
+    &__bar {
         display: none;
-    }
 
-    .milestones-action {
-        cursor: pointer;
-    }
-
-    .cursor-pointer {
-        cursor: pointer;
-    }
-
-    /*======= Dashboard wizard=======*/
-    .wizard-card {
-        background-color: hsl(var(--cards-bg));
-        padding: 20px;
-        border-radius: 8px;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-
-        .content-wrap {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            .icon-wrap {
-                width: 39px;
-                height: 39px;
-                border-radius: 50%;
-                background-color: hsl(var(--base));
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                overflow: hidden;
-                z-index: 1;
-
-                &::after{
-                    content: "";
-                    position: absolute;
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 4px;
-                    background-color: hsl(var(--black)/0.1);
-                    bottom: 0px;
-                    right: 0px;
-                    z-index: -1;
-                }
-                i{
-                    color: hsl(var(--white));
-                }
-            }
-            .title{
-                font-size: 18px;
-                font-weight: 400;
-                margin-bottom: 0px;
-                color: hsl(var(--white)/0.6);
-            }
+        @include lg-screen {
+            display: block;
         }
 
-        .amount-wrap{
-            .amount{
-                font-size: 20px;
-                font-weight: 500;
-                margin-bottom: 0px;
-            }   
-        }
-
-
-    }
-
-    .selling-group-item {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid hsl(var(--base) /.2);
-        padding: 6px 0;
-    }
-
-    .card-header.selling-header {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    .card-primary {
-        background-color: hsl(var(--primary)/.6);
-
-        .dashboard-card__icon {
-            background-color: hsl(var(--primary));
+        &-icon {
+            color: hsl(var(--white));
+            font-size: 25px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            width: 50px;
+            height: 40px;
+            background-color: hsl(var(--base));
+            text-align: center;
+            padding: 2px 8px;
+            border-radius: 3px;
         }
     }
 
-    .card-violet {
-        background-color: hsl(var(--violet)/.6);
 
-        .dashboard-card__icon {
-            background-color: hsl(var(--violet));
-        }
+}
+
+.selling-group-item span {
+    font-size: 14px;
+}
+
+.message-send__content.section-bg-two {
+    padding: 3px 5px;
+    margin-bottom: 5px;
+}
+
+.message-send__content.section-bg-two p {
+    font-size: 14px;
+}
+
+ul.list.d-flex.message-send__history {
+    font-size: 12px;
+}
+
+.message-send {
+    margin-bottom: 10px;
+}
+
+.message-receive__history-item {
+    margin-right: 20px;
+    position: relative;
+}
+
+.message-receive__history-item:last-child {
+    margin-right: 0;
+}
+
+.message-receive__history-item:after {
+    position: absolute;
+    top: 9px;
+    right: -13px;
+    content: "";
+    background: hsl(var(--base));
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+}
+
+.message-receive__history-item:last-child:after {
+    display: none;
+}
+
+.milestones-action {
+    cursor: pointer;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+
+.selling-group-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(var(--base) /.2);
+    padding: 6px 0;
+}
+
+.card-header.selling-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card-primary {
+    background-color: hsl(var(--primary)/.6);
+
+    .dashboard-card__icon {
+        background-color: hsl(var(--primary));
     }
+}
 
-    .card-success {
-        background-color: hsl(var(--success)/.6);
+.card-violet {
+    background-color: hsl(var(--violet)/.6);
 
-        .dashboard-card__icon {
-            background-color: hsl(var(--success));
-        }
+    .dashboard-card__icon {
+        background-color: hsl(var(--violet));
     }
+}
 
-    .card-danger {
-        background-color: hsl(var(--danger)/.4);
+.card-success {
+    background-color: hsl(var(--success)/.6);
 
-        .dashboard-card__icon {
-            background-color: hsl(var(--danger));
-        }
+    .dashboard-card__icon {
+        background-color: hsl(var(--success));
     }
+}
 
-    .card-warning {
-        background-color: hsl(var(--warning)/.6);
+.card-danger {
+    background-color: hsl(var(--danger)/.4);
 
-        .dashboard-card__icon {
-            background-color: hsl(var(--warning));
-        }
+    .dashboard-card__icon {
+        background-color: hsl(var(--danger));
     }
+}
 
-    .card-info {
-        background-color: hsl(var(--info)/.6);
+.card-warning {
+    background-color: hsl(var(--warning)/.6);
 
-        .dashboard-card__icon {
-            background-color: hsl(var(--info));
-        }
+    .dashboard-card__icon {
+        background-color: hsl(var(--warning));
     }
+}
 
-    .card-success-1 {
-        background-color: hsl(var(--success)/.3);
+.card-info {
+    background-color: hsl(var(--info)/.6);
 
-        .dashboard-card__icon {
-            background-color: hsl(var(--success));
-        }
+    .dashboard-card__icon {
+        background-color: hsl(var(--info));
     }
+}
 
-    .card-primary-1 {
-        background-color: hsl(var(--primary)/.4);
+.card-success-1 {
+    background-color: hsl(var(--success)/.3);
 
-        .dashboard-card__icon {
-            background-color: hsl(var(--primary));
-        }
+    .dashboard-card__icon {
+        background-color: hsl(var(--success));
     }
+}
 
-    .card-violet-1 {
-        background-color: hsl(var(--violet)/.3);
+.card-primary-1 {
+    background-color: hsl(var(--primary)/.4);
 
-        .dashboard-card__icon {
-            background-color: hsl(var(--violet)/.8);
-        }
+    .dashboard-card__icon {
+        background-color: hsl(var(--primary));
     }
+}
 
-    .dashboard-body .single-service__icon img {
-        width: 160px !important;
-        padding: 5px;
-        border: 3px solid hsl(var(--base)/0.06);
-        height: 60px;
-        object-fit: contain;
+.card-violet-1 {
+    background-color: hsl(var(--violet)/.3);
+
+    .dashboard-card__icon {
+        background-color: hsl(var(--violet)/.8);
     }
+}
+
+.dashboard-body .single-service__icon img {
+    width: 160px !important;
+    padding: 5px;
+    border: 3px solid hsl(var(--base)/0.06);
+    height: 60px;
+    object-fit: contain;
+}
 
 .dashboard-chart {
     padding: 20px;
@@ -402,42 +345,8 @@
     }
 }
 
-// responsive code
-@media(max-width: 530px) {
-    .dashboard-header {
-        padding: 12px;
-        ul {
-            gap: 8px;
-            margin-left: 8px;
 
-            .language {
-                display: none;
-            }
 
-            .home-btn-1 {
-                display: none;
-            }
-
-            .home-btn-2 {
-                display: block !important;
-                margin: 0px 16px 0px 16px;
-
-                i {
-                    color: hsl(var(--white));
-                    font-size: 22px;
-                }
-            }
-        }
-
-        .home-mobile {
-            display: block;
-        }
-
-        .home-2 {
-            display: none;
-        }
-    }
-}
 
 .search-box {
     position: relative;
@@ -456,26 +365,6 @@
 
 
 //   advertisement text are
-.ad-text-area {
-    height: 70px;
-    width: 100%;
-    font-weight: 500;
-    outline: none;
-    width: 100%;
-    padding: 10px 10px;
-    border-radius: 4px;
-    background-color: hsl(var(--body-color)/.1);
-    border: 1px solid hsl(var(--base)/0.3);
-    color: hsl(var(--dark)) !important;
-    line-height: 1;
-
-    &:focus {
-        color: hsl(var(--dark));
-        box-shadow: none;
-        border-color: hsl(var(--base));
-        background-color: hsl(var(--body-color)/.05);
-    }
-}
 
 .navigator-text {
     position: relative;
@@ -553,23 +442,7 @@
     margin-left: 267px;
 }
 
-@media(max-width:1199px) {
-    .dashboard-container-wrap {
-        margin-left: 0px;
-    }
-}
-
-@media(max-width: 768px) {
-    .dashboard-header ul .search {
-        display: none;
-    }
-
-    .dashboard-header ul .settings {
-        display: none;
-    }
-}
 
 .dashboard-chart {
     background: hsl(var(--white));
 }
-
