@@ -32,9 +32,6 @@
 .bg--yellow {
     background-color: hsl(var(--yellow)) !important;
 }
-.bg--teal {
-    background-color: hsl(var(--teal)) !important;
-}
 .bg--orange {
     background-color: hsl(var(--orange)) !important;
 }
@@ -59,7 +56,7 @@
 
 // section light bg color based on base color
 .section--bg {
-    background-color: hsl(var(--base)/0.1);
+    background-color: hsl(var(--base)/0.04);
 }
 
 

@@ -10,9 +10,7 @@
         <div class="sidebar-menu">
             <span class="sidebar-menu__close"><i class="las la-times"></i></span>
             <div class="logo-wrapper px-3">
-                <a href="index.html" class="normal-logo" id="normal-logo"> <img src="assets/images/logo/logo.png"
-                        alt=""></a>
-
+                <a href="index.html" class="normal-logo" id="normal-logo"> <img src="assets/images/logo/logo.png" alt=""></a>
             </div>
 
             <ul class="sidebar-menu-list">
@@ -24,21 +22,21 @@
                 </li>
 
                 <li class="sidebar-menu-list__item">
-                    <a href="invest.html" class="sidebar-menu-list__link">
-                        <span class="icon"><i class="fa-solid fa-filter-circle-dollar"></i></span>
-                        <span class="text">Investment</span>
+                    <a href="exam-list.html" class="sidebar-menu-list__link">
+                        <span class="icon"><i class="fa-solid fa-list"></i></span>
+                        <span class="text">Exam List</span>
                     </a>
                 </li>
                 <li class="sidebar-menu-list__item">
-                    <a href="scheduleinvesment.html" class="sidebar-menu-list__link">
-                        <span class="icon"><i class="fa-solid fa-file-invoice-dollar"></i></span>
-                        <span class="text">Schedule Investment</span>
+                    <a href="mcq-history.html" class="sidebar-menu-list__link">
+                        <span class="icon"><i class="fa-regular fa-lightbulb"></i></span>
+                        <span class="text">MCQ Exam History</span>
                     </a>
                 </li>
                 <li class="sidebar-menu-list__item">
-                    <a href="stacking.html" class="sidebar-menu-list__link">
-                        <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
-                        <span class="text">Staking</span>
+                    <a href="written-history.html" class="sidebar-menu-list__link">
+                        <span class="icon"><i class="fa-solid fa-file-pen"></i></span>
+                        <span class="text">Written Exam History</span>
                     </a>
                 </li>
             
@@ -64,21 +62,23 @@
 
                 <li class="sidebar-menu-list__item has-dropdown">
                     <a href="javascript:void(0)" class="sidebar-menu-list__link">
-                        <span class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></span>
+                        <span class="icon"><i class="fa-solid fa-sack-dollar"></i></span>
                         <span class="text">Withdraw</span>
                     </a>
                     <div class="sidebar-submenu">
                         <ul class="sidebar-submenu-list">
                             <li class="sidebar-submenu-list__item">
-                                <a href="#" class="sidebar-submenu-list__link">Withdraw Now</a>
+                                <a href="deposit.html" class="sidebar-submenu-list__link">Withdraw Now</a>
                             </li>
                             <li class="sidebar-submenu-list__item">
-                                <a href="#" class="sidebar-submenu-list__link">Withdraw Log</a>
+                                <a href="log.html" class="sidebar-submenu-list__link">Withdraw Log</a>
                             </li>
                           
                         </ul>
                     </div>
                 </li>
+
+             
 
               
                
@@ -90,12 +90,7 @@
                 </li>
 
              
-                <li class="sidebar-menu-list__item">
-                    <a href="transfer.html" class="sidebar-menu-list__link ">
-                        <span class="icon"><i class="fa-solid fa-rotate"></i></span>
-                        <span class="text">Transfer</span>
-                    </a>
-                </li>
+          
 
                 <li class="sidebar-menu-list__item">
                     <a href="refarral.html" class="sidebar-menu-list__link ">
@@ -146,16 +141,18 @@
                         <div class="dashboard-body">
                             <!-- < dashboard header -->
                             <div class="row mb-4">
-                                <div class="dashboard-header">
-                                    <div class="navigator-text">
+                                <div class="dashboard-header bg--base d-flex justify-content-between align-items-center">
+
+                                    <div class="navigator-text d-flex justify-content-center align-items-center">
                                         <div class="dashboard-body__bar">
                                             <span class="dashboard-body__bar-icon"><i class="las la-bars"></i></span>
                                         </div>
                                         <h6>Dashboard</h6>
                                     </div>
-                                    <ul>
 
-                                        <li class="language">
+                                    <ul class="d-flex justify-content-center align-items-center gap--32">
+
+                                        <li class="language ">
                                             <div class="language-box">
                                                 <select class="select">
                                                     <option selected="">EN</option>
@@ -180,15 +177,14 @@
 
                             <div class="row mx-xxl-5 mx-lg-0  pb-4">
                                 <div class="col-lg-12">
-                                    <div
-                                        class="base--card d-flex gap-3 flex-wrap justify-content-between align-items-center">
-                                        <div class="tap--balance">
+                                    <div class="base--card bg--white d-flex gap-3 flex-wrap justify-content-between align-items-center">
+                                        <div class="tap--balance d-flex justify-content-start align-items-center">
                                             <div class="circle--icon">
                                                 <i class="fa-solid fa-dollar-sign"></i>
                                             </div>
                                             <div class="content-wrap w-100">
-                                                <h6 class="textt mb-0">Tap For Balance</h6>
-                                                <h6 class="balance mb-0 d-none">$1234</h6>
+                                                <h6 class="textt fw--400 mb-0">Tap For Balance</h6>
+                                                <h6 class="balance fw--400 mb-0 d-none">$1234</h6>
                                             </div>
                                         </div>
 
@@ -205,12 +201,12 @@
                             <div class="row gy-4 mx-xxl-5 mx-lg-0 pb-4">
                                 <div class="col-xxl-3 col-xl-4 col-lg-6 col-sm-6">
                                     <a class="d-block" href="#">
-                                        <div class="wizard-card">
-                                            <div class="content-wrap">
-                                                <div class="icon-wrap bg--success">
+                                        <div class="wizard-card d-flex flex-column gap--24 bg--white">
+                                            <div class="content-wrap d-flex align-items-center gap--12">
+                                                <div class="icon-wrap d-flex justify-content-center align-items-center position-relative overflow-hidden z--1 bg--success">
                                                     <i class="fa-solid fa-sack-dollar"></i>
                                                 </div>
-                                                <h6 class="title">Deposit</h6>
+                                                <h6 class="title fw--400 mb-0">Deposit</h6>
                                             </div>
                                             <div class="amount-wrap">
                                                 <h6 class="amount">$78,124.00</h6>
@@ -220,12 +216,12 @@
                                 </div>
                                 <div class="col-xxl-3 col-xl-4 col-lg-6 col-sm-6">
                                     <a class="d-block" href="#">
-                                        <div class="wizard-card">
-                                            <div class="content-wrap">
-                                                <div class="icon-wrap bg--warning">
+                                        <div class="wizard-card d-flex flex-column gap--24 bg--white">
+                                            <div class="content-wrap d-flex align-items-center gap--12">
+                                                <div class="icon-wrap d-flex justify-content-center align-items-center position-relative overflow-hidden z--1 bg--warning">
                                                     <i class="fa-solid fa-check-to-slot"></i>
                                                 </div>
-                                                <h6 class="title">Withdraw</h6>
+                                                <h6 class="title fw--400 mb-0">Withdraw</h6>
                                             </div>
                                             <div class="amount-wrap">
                                                 <h6 class="amount">$78,124.00</h6>
@@ -235,12 +231,12 @@
                                 </div>
                                 <div class="col-xxl-3 col-xl-4 col-lg-6 col-sm-6">
                                     <a class="d-block" href="#">
-                                        <div class="wizard-card">
-                                            <div class="content-wrap">
-                                                <div class="icon-wrap bg--danger">
+                                        <div class="wizard-card d-flex flex-column gap--24 bg--white">
+                                            <div class="content-wrap d-flex align-items-center gap--12">
+                                                <div class="icon-wrap d-flex justify-content-center align-items-center position-relative overflow-hidden z--1 bg--danger">
                                                     <i class="fa-solid fa-right-left"></i>
                                                 </div>
-                                                <h6 class="title">Transactions</h6>
+                                                <h6 class="title fw--400 mb-0">Transactions</h6>
                                             </div>
                                             <div class="amount-wrap">
                                                 <h6 class="amount">$78,124.00</h6>
@@ -248,245 +244,148 @@
                                         </div>
                                     </a>
                                 </div>
+                    
+                              
+                          
+                           
                                 <div class="col-xxl-3 col-xl-4 col-lg-6 col-sm-6">
                                     <a class="d-block" href="#">
-                                        <div class="wizard-card">
-                                            <div class="content-wrap">
-                                                <div class="icon-wrap bg--base">
-                                                    <i class="fa-solid fa-coins"></i>
-                                                </div>
-                                                <h6 class="title">FDR</h6>
-                                            </div>
-                                            <div class="amount-wrap">
-                                                <h6 class="amount">$78,124.00</h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-sm-6">
-                                    <a class="d-block" href="#">
-                                        <div class="wizard-card">
-                                            <div class="content-wrap">
-                                                <div class="icon-wrap bg--info">
-                                                    <i class="fa-solid fa-piggy-bank"></i>
-                                                </div>
-                                                <h6 class="title">DPS</h6>
-                                            </div>
-                                            <div class="amount-wrap">
-                                                <h6 class="amount">$78,124.00</h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-sm-6">
-                                    <a class="d-block" href="#">
-                                        <div class="wizard-card">
-                                            <div class="content-wrap">
-                                                <div class="icon-wrap bg--violet">
-                                                    <i class="fa-solid fa-hand-holding-dollar"></i>
-                                                </div>
-                                                <h6 class="title">Loan</h6>
-                                            </div>
-                                            <div class="amount-wrap">
-                                                <h6 class="amount">$78,124.00</h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-sm-6">
-                                    <a class="d-block" href="#">
-                                        <div class="wizard-card">
-                                            <div class="content-wrap">
-                                                <div class="icon-wrap bg--warning">
-                                                    <i class="fa-solid fa-rotate"></i>
-                                                </div>
-                                                <h6 class="title">Transfer</h6>
-                                            </div>
-                                            <div class="amount-wrap">
-                                                <h6 class="amount">$78,124.00</h6>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-sm-6">
-                                    <a class="d-block" href="#">
-                                        <div class="wizard-card">
-                                            <div class="content-wrap">
-                                                <div class="icon-wrap bg--success">
+                                        <div class="wizard-card d-flex flex-column gap--24 bg--white">
+                                            <div class="content-wrap d-flex align-items-center gap--12">
+                                                <div class="icon-wrap d-flex justify-content-center align-items-center position-relative overflow-hidden z--1 bg--purple">
                                                     <i class="fa-solid fa-headset"></i>
                                                 </div>
-                                                <h6 class="title">Support Ticket</h6>
+                                                <h6 class="title fw--400 mb-0">Support Ticket</h6>
+                                            </div>
+                                            <div class="amount-wrap">
+                                                <h6 class="amount">78,124.00</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-sm-6">
+                                    <a class="d-block" href="#">
+                                        <div class="wizard-card d-flex flex-column gap--24 bg--white">
+                                            <div class="content-wrap d-flex align-items-center gap--12">
+                                                <div class="icon-wrap d-flex justify-content-center align-items-center position-relative overflow-hidden z--1 bg--info">
+                                                    <i class="fa-solid fa-headset"></i>
+                                                </div>
+                                                <h6 class="title fw--400 mb-0">Total Exam</h6>
+                                            </div>
+                                            <div class="amount-wrap">
+                                                <h6 class="amount">78,124.00</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-sm-6">
+                                    <a class="d-block" href="#">
+                                        <div class="wizard-card d-flex flex-column gap--24 bg--white">
+                                            <div class="content-wrap d-flex align-items-center gap--12">
+                                                <div class="icon-wrap d-flex justify-content-center align-items-center position-relative overflow-hidden z--1 bg--base">
+                                                    <i class="fa-solid fa-headset"></i>
+                                                </div>
+                                                <h6 class="title fw--400 mb-0">Pending Exam</h6>
+                                            </div>
+                                            <div class="amount-wrap">
+                                                <h6 class="amount">78,124.00</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-sm-6">
+                                    <a class="d-block" href="#">
+                                        <div class="wizard-card d-flex flex-column gap--24 bg--white">
+                                            <div class="content-wrap d-flex align-items-center gap--12">
+                                                <div class="icon-wrap d-flex justify-content-center align-items-center position-relative overflow-hidden z--1 bg--blue">
+                                                    <i class="fa-solid fa-headset"></i>
+                                                </div>
+                                                <h6 class="title fw--400 mb-0">MCQ Exam</h6>
+                                            </div>
+                                            <div class="amount-wrap">
+                                                <h6 class="amount">78,124.00</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-sm-6">
+                                    <a class="d-block" href="#">
+                                        <div class="wizard-card d-flex flex-column gap--24 bg--white">
+                                            <div class="content-wrap d-flex align-items-center gap--12">
+                                                <div class="icon-wrap d-flex justify-content-center align-items-center position-relative overflow-hidden z--1 bg--violet">
+                                                    <i class="fa-solid fa-headset"></i>
+                                                </div>
+                                                <h6 class="title fw--400 mb-0">Written Exam</h6>
                                             </div>
                                             <div class="amount-wrap">
                                                 <h6 class="amount">$78,124.00</h6>
                                             </div>
                                         </div>
                                     </a>
-                                </div>
-                            </div>
-
-
-                            <div class="row gy-4 mx-xxl-5 mx-lg-0  pb-4">
-                                <div class="col-lg-4">
-                                    <div class="base--card">
-                                        <h6 class="mb-4">Investment Progress</h6>
-
-                                        <ul class="progress-list d-flex flex-column gap-3">
-                                            <li class="d-flex gap-2">
-                                                <div class="icon-wrap bg--success">
-                                                    <i class="fa-solid fa-sack-dollar"></i>
-                                                </div>
-                                                <div class="content--wrap">
-                                                    <h6 class="title mb-0">Total Investment</h6>
-                                                    <p class="subtitle">100% investment is 0.00 USD</p>
-                                                </div>
-                                            </li>
-                                            <li class="d-flex gap-2">
-                                                <div class="icon-wrap bg--warning">
-                                                    <i class="fa-solid fa-sack-dollar"></i>
-                                                </div>
-                                                <div class="content--wrap">
-                                                    <h6 class="title mb-0">Complate Investment</h6>
-                                                    <p class="subtitle">100% investment is 0.00 USD</p>
-                                                </div>
-                                            </li>
-                                            <li class="d-flex gap-2">
-                                                <div class="icon-wrap bg--violet">
-                                                    <i class="fa-solid fa-sack-dollar"></i>
-                                                </div>
-                                                <div class="content--wrap">
-                                                    <h6 class="title mb-0">Running Investment</h6>
-                                                    <p class="subtitle">100% investment is 0.00 USD</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="base--card">
-                                        <h6 class="mb-4">Invested Wallets</h6>
-
-                                        <ul class="progress-list d-flex flex-column gap-3">
-                                            <li class="d-flex gap-2">
-                                                <div class="icon-wrap bg--success">
-                                                    <i class="fa-solid fa-sack-dollar"></i>
-                                                </div>
-                                                <div class="content--wrap">
-                                                    <h6 class="title mb-0">Total Investment</h6>
-                                                    <p class="subtitle">100% investment is 0.00 USD</p>
-                                                </div>
-                                            </li>
-                                            <li class="d-flex gap-2">
-                                                <div class="icon-wrap bg--warning">
-                                                    <i class="fa-solid fa-sack-dollar"></i>
-                                                </div>
-                                                <div class="content--wrap">
-                                                    <h6 class="title mb-0">Complate Investment</h6>
-                                                    <p class="subtitle">100% investment is 0.00 USD</p>
-                                                </div>
-                                            </li>
-                                            <li class="d-flex gap-2">
-                                                <div class="icon-wrap bg--violet">
-                                                    <i class="fa-solid fa-sack-dollar"></i>
-                                                </div>
-                                                <div class="content--wrap">
-                                                    <h6 class="title mb-0">Running Investment</h6>
-                                                    <p class="subtitle">100% investment is 0.00 USD</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="base--card">
-                                        <h6 class="mb-4">Profit History</h6>
-
-                                        <ul class="progress-list d-flex flex-column gap-3">
-                                            <li class="d-flex gap-2">
-                                                <div class="icon-wrap bg--success">
-                                                    <i class="fa-solid fa-sack-dollar"></i>
-                                                </div>
-                                                <div class="content--wrap">
-                                                    <h6 class="title mb-0">Total Investment</h6>
-                                                    <p class="subtitle">100% investment is 0.00 USD</p>
-                                                </div>
-                                            </li>
-                                            <li class="d-flex gap-2">
-                                                <div class="icon-wrap bg--warning">
-                                                    <i class="fa-solid fa-sack-dollar"></i>
-                                                </div>
-                                                <div class="content--wrap">
-                                                    <h6 class="title mb-0">Complate Investment</h6>
-                                                    <p class="subtitle">100% investment is 0.00 USD</p>
-                                                </div>
-                                            </li>
-                                            <li class="d-flex gap-2">
-                                                <div class="icon-wrap bg--violet">
-                                                    <i class="fa-solid fa-sack-dollar"></i>
-                                                </div>
-                                                <div class="content--wrap">
-                                                    <h6 class="title mb-0">Running Investment</h6>
-                                                    <p class="subtitle">100% investment is 0.00 USD</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
 
 
                             <div class="row mx-xxl-5 mx-lg-0  pb-4">
                                 <div class="col-lg-6">
-                                    <div class="base--card">
-                                        <h6>Latest Credits</h6>
+                                    <div class="base--card bg--white">
+                                        <h6>Exam History</h6>
                                         <div class="tbl-wrap">
                                             <table class="table table--responsive--lg">
                                                 <thead>
                                                     <tr>
-                                                        <th>S.N</th>
-                                                        <th>Date</th>
-                                                        <th>TRX</th>
-                                                        <th>Amount</th>
-
+                                                        <th>Title</th>
+                                                        <th>Subject</th>
+                                                        <th>Type</th>
+                                                        <th>Category</th>
+                                                        
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td data-label="S.N">01</td>
-                                                        <td data-label="Date">31 Jul, 2023 12:05 AM</td>
-                                                        <td data-label="TRX">51MKD4PTCPJF</td>
-                                                        <td data-label="Amount">$100.00</td>
+                                                        <td data-label="Title">General Knowledge</td>
+                                                        <td data-label="Subject">Basic General Knowledge</td>
+                                                        <td data-label="Type">MCQ</td>
+                                                        <td data-label="Category">General Knowledge</td>
                                                     </tr>
                                                     <tr>
-                                                        <td data-label="S.N">02</td>
-                                                        <td data-label="Date">31 Jul, 2023 12:05 AM</td>
-                                                        <td data-label="TRX">51MKD4PTCPJF</td>
-                                                        <td data-label="Amount">$100.00</td>
+                                                        <td data-label="Title">General Knowledge</td>
+                                                        <td data-label="Subject">Basic General Knowledge</td>
+                                                        <td data-label="Type">Written</td>
+                                                        <td data-label="Category">General Knowledge</td>
                                                     </tr>
                                                     <tr>
-                                                        <td data-label="S.N">03</td>
-                                                        <td data-label="Date">31 Jul, 2023 12:05 AM</td>
-                                                        <td data-label="TRX">51MKD4PTCPJF</td>
-                                                        <td data-label="Amount">$100.00</td>
+                                                        <td data-label="Title">General Knowledge</td>
+                                                        <td data-label="Subject">Basic General Knowledge</td>
+                                                        <td data-label="Type">MCQ</td>
+                                                        <td data-label="Category">General Knowledge</td>
                                                     </tr>
                                                     <tr>
-                                                        <td data-label="S.N">04</td>
-                                                        <td data-label="Date">31 Jul, 2023 12:05 AM</td>
-                                                        <td data-label="TRX">51MKD4PTCPJF</td>
-                                                        <td data-label="Amount">$100.00</td>
+                                                        <td data-label="Title">General Knowledge</td>
+                                                        <td data-label="Subject">Basic General Knowledge</td>
+                                                        <td data-label="Type">Written</td>
+                                                        <td data-label="Category">General Knowledge</td>
                                                     </tr>
                                                     <tr>
-                                                        <td data-label="S.N">05</td>
-                                                        <td data-label="Date">31 Jul, 2023 12:05 AM</td>
-                                                        <td data-label="TRX">51MKD4PTCPJF</td>
-                                                        <td data-label="Amount">$100.00</td>
+                                                        <td data-label="Title">General Knowledge</td>
+                                                        <td data-label="Subject">Basic General Knowledge</td>
+                                                        <td data-label="Type">Written</td>
+                                                        <td data-label="Category">General Knowledge</td>
                                                     </tr>
                                                     <tr>
-                                                        <td data-label="S.N">06</td>
-                                                        <td data-label="Date">31 Jul, 2023 12:05 AM</td>
-                                                        <td data-label="TRX">51MKD4PTCPJF</td>
-                                                        <td data-label="Amount">$100.00</td>
+                                                        <td data-label="Title">General Knowledge</td>
+                                                        <td data-label="Subject">Basic General Knowledge</td>
+                                                        <td data-label="Type">Written</td>
+                                                        <td data-label="Category">General Knowledge</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Title">General Knowledge</td>
+                                                        <td data-label="Subject">Basic General Knowledge</td>
+                                                        <td data-label="Type">MCQ</td>
+                                                        <td data-label="Category">General Knowledge</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -495,55 +394,61 @@
 
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="base--card">
-                                        <h6>Latest Credits</h6>
+                                    <div class="base--card bg--white">
+                                        <h6>Pending Exam</h6>
                                         <div class="tbl-wrap">
                                             <table class="table table--responsive--lg">
                                                 <thead>
                                                     <tr>
-                                                        <th>S.N</th>
-                                                        <th>Date</th>
-                                                        <th>TRX</th>
-                                                        <th>Amount</th>
-
+                                                        <th>Title</th>
+                                                        <th>Subject</th>
+                                                        <th>Type</th>
+                                                        <th>Category</th>
+                                                        
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td data-label="S.N">01</td>
-                                                        <td data-label="Date">31 Jul, 2023 12:05 AM</td>
-                                                        <td data-label="TRX">51MKD4PTCPJF</td>
-                                                        <td data-label="Amount">$100.00</td>
+                                                        <td data-label="Title">General Knowledge</td>
+                                                        <td data-label="Subject">Basic General Knowledge</td>
+                                                        <td data-label="Type">MCQ</td>
+                                                        <td data-label="Category">General Knowledge</td>
                                                     </tr>
                                                     <tr>
-                                                        <td data-label="S.N">02</td>
-                                                        <td data-label="Date">31 Jul, 2023 12:05 AM</td>
-                                                        <td data-label="TRX">51MKD4PTCPJF</td>
-                                                        <td data-label="Amount">$100.00</td>
+                                                        <td data-label="Title">General Knowledge</td>
+                                                        <td data-label="Subject">Basic General Knowledge</td>
+                                                        <td data-label="Type">Written</td>
+                                                        <td data-label="Category">General Knowledge</td>
                                                     </tr>
                                                     <tr>
-                                                        <td data-label="S.N">03</td>
-                                                        <td data-label="Date">31 Jul, 2023 12:05 AM</td>
-                                                        <td data-label="TRX">51MKD4PTCPJF</td>
-                                                        <td data-label="Amount">$100.00</td>
+                                                        <td data-label="Title">General Knowledge</td>
+                                                        <td data-label="Subject">Basic General Knowledge</td>
+                                                        <td data-label="Type">MCQ</td>
+                                                        <td data-label="Category">General Knowledge</td>
                                                     </tr>
                                                     <tr>
-                                                        <td data-label="S.N">04</td>
-                                                        <td data-label="Date">31 Jul, 2023 12:05 AM</td>
-                                                        <td data-label="TRX">51MKD4PTCPJF</td>
-                                                        <td data-label="Amount">$100.00</td>
+                                                        <td data-label="Title">General Knowledge</td>
+                                                        <td data-label="Subject">Basic General Knowledge</td>
+                                                        <td data-label="Type">Written</td>
+                                                        <td data-label="Category">General Knowledge</td>
                                                     </tr>
                                                     <tr>
-                                                        <td data-label="S.N">05</td>
-                                                        <td data-label="Date">31 Jul, 2023 12:05 AM</td>
-                                                        <td data-label="TRX">51MKD4PTCPJF</td>
-                                                        <td data-label="Amount">$100.00</td>
+                                                        <td data-label="Title">General Knowledge</td>
+                                                        <td data-label="Subject">Basic General Knowledge</td>
+                                                        <td data-label="Type">Written</td>
+                                                        <td data-label="Category">General Knowledge</td>
                                                     </tr>
                                                     <tr>
-                                                        <td data-label="S.N">06</td>
-                                                        <td data-label="Date">31 Jul, 2023 12:05 AM</td>
-                                                        <td data-label="TRX">51MKD4PTCPJF</td>
-                                                        <td data-label="Amount">$100.00</td>
+                                                        <td data-label="Title">General Knowledge</td>
+                                                        <td data-label="Subject">Basic General Knowledge</td>
+                                                        <td data-label="Type">Written</td>
+                                                        <td data-label="Category">General Knowledge</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Title">General Knowledge</td>
+                                                        <td data-label="Subject">Basic General Knowledge</td>
+                                                        <td data-label="Type">MCQ</td>
+                                                        <td data-label="Category">General Knowledge</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -551,30 +456,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- pagination -->
-                            <div class="row mx-xxl-5 mx-lg-0 my-4">
-                                <div class="col-lg-12 justify-content-end d-flex">
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination">
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Previous">
-                                                    <span aria-hidden="true">&laquo;</span>
-                                                </a>
-                                            </li>
-                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Next">
-                                                    <span aria-hidden="true">&raquo;</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <!-- / pagination -->
                         </div>
                     </div>
                 </div>

@@ -71,7 +71,7 @@
 .base--card {
   padding: 16px;
   border-radius: 8px;
-  border: 1px solid hsl(var(--white) / 0.1);
+  border: 1px solid hsl(var(--black) / 0.1);
 }
 
 // base card
@@ -129,8 +129,8 @@
 .dashboard_profile-card {
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid hsl(var(--white) / 0.09);
-
+  border: 1px solid hsl(var(--black) / 0.09);
+  background-color: hsl(var(--white));
 
   .dashboard_profile_wrap {
     position: relative;
@@ -177,7 +177,7 @@
 
     .info-wrap {
       padding: 20px 0px;
-      border-bottom: 1px dashed hsl(var(--white) / 0.05);
+      border-bottom: 1px dashed hsl(var(--black) / 0.1);
       color: hsl(var(--base));
 
       .info {
@@ -185,7 +185,7 @@
         justify-content: flex-start;
         align-items: center;
         gap: 12px;
-        color: hsl(var(--white) / 0.4);
+        color: hsl(var(--base) / 0.8);
         margin-bottom: 8px;
       }
     }
@@ -302,29 +302,18 @@
 
     /*======= Dashboard wizard=======*/
     .wizard-card {
-      background-color: hsl(var(--cards-bg));
+      
       padding: 20px;
       border-radius: 8px;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
+
 
       .content-wrap {
-          display: flex;
-          align-items: center;
-          gap: 12px;
+          
           .icon-wrap {
               width: 39px;
               height: 39px;
               border-radius: 50%;
               background-color: hsl(var(--base));
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              position: relative;
-              overflow: hidden;
-              z-index: 1;
-
               &::after{
                   content: "";
                   position: absolute;
@@ -342,9 +331,6 @@
           }
           .title{
               font-size: 18px;
-              font-weight: 400;
-              margin-bottom: 0px;
-              color: hsl(var(--white)/0.6);
           }
       }
 

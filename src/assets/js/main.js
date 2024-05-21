@@ -3,9 +3,6 @@
 (function ($) {
   "use strict";
 
-
-
-
   $(document).ready(function () {
 
     // odometer init
@@ -18,9 +15,6 @@
         });
       });
     }
-
-
-
 
     // sidebar dropdown
     $(".has-dropdown > a").click(function (e) {
@@ -47,11 +41,6 @@
       $(".sidebar-menu").removeClass('show-sidebar');
       $(".sidebar-overlay").removeClass('show');
     });
-
-
-
-
-
 
     $(".counterup-item").each(function () {
       $(this).isInViewport(function (status) {
@@ -145,94 +134,92 @@
   });
 
 
-
-
-
-
   $('.sidebar-overlay, .close-hide-show').on('click', function () {
     $('.sidebar-menu-wrapper').removeClass('show');
     $(".sidebar-overlay").removeClass('show');
   });
 
 
-  // tap to top
+
+
+  // tap to top with progress
+
   if ($('.scroll-top').length > 0) {
-    var scrollTopbtn = document.querySelector('.scroll-top');
-    var progressPath = document.querySelector('.scroll-top path');
-    var pathLength = progressPath.getTotalLength();
-    progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
-    progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
-    progressPath.style.strokeDashoffset = pathLength;
-    progressPath.getBoundingClientRect();
-    progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+    var $scrollTopBtn = $('.scroll-top');
+    var $progressPath = $('.scroll-top path');
+    var pathLength = $progressPath[0].getTotalLength();
+
+    $progressPath.css({
+      transition: 'none',
+      strokeDasharray: pathLength + ' ' + pathLength,
+      strokeDashoffset: pathLength,
+    });
+
+    $progressPath[0].getBoundingClientRect();
+    $progressPath.css({
+      transition: 'stroke-dashoffset 10ms linear'
+    });
+
     var updateProgress = function () {
       var scroll = $(window).scrollTop();
       var height = $(document).height() - $(window).height();
       var progress = pathLength - (scroll * pathLength / height);
-      progressPath.style.strokeDashoffset = progress;
-    }
-    
+      $progressPath.css('strokeDashoffset', progress);
+    };
+
     updateProgress();
-    $(window).scroll(updateProgress);
-    var offset = 50;
-    var duration = 800;
-    jQuery(window).on('scroll', function () {
-      if (jQuery(this).scrollTop() > offset) {
-        jQuery(scrollTopbtn).addClass('show');
+
+    $(window).on('scroll', updateProgress);
+
+    $(window).on('scroll', function () {
+      if ($(this).scrollTop() > 50) {
+        $scrollTopBtn.addClass('show');
       } else {
-        jQuery(scrollTopbtn).removeClass('show');
+        $scrollTopBtn.removeClass('show');
       }
     });
-    jQuery(scrollTopbtn).on('click', function (event) {
+
+    $scrollTopBtn.on('click', function (event) {
       event.preventDefault();
-      jQuery('html, body').animate({ scrollTop: 0 }, duration);
+      $('html, body').animate({ scrollTop: 0 }, 800);
       return false;
-    })
-
-
-
-
-
-    // slick
-    $('.testimonial-slider').slick({
-      dots: true,
-      infinite: false,
-      speed: 300,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      responsive: [
-        {
-          breakpoint: 1100,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          }
-        },
-
-        {
-          breakpoint: 780,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
     });
-
-
-
-
-
-
   }
+
+
+  // slick
+  $('.testimonial-slider').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+
+      {
+        breakpoint: 780,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
 
 
   // toggle show hide password
@@ -251,19 +238,16 @@
     }
   });
 
+
+
   // wow init
   new WOW().init();
-
-
-
 
   // slick update function
   function handleSlideArrows(slick) {
     var slidesToShow = slick.options.slidesToShow;
     var slideCount = slick.slideCount;
     var currentSlide = slick.currentSlide || 0;
-
-    console.log(currentSlide);
 
     if (currentSlide === 0) {
       $(slick.$slider).find('.slick-prev').hide();
@@ -279,7 +263,7 @@
   }
 
   // Initialize sliders
-  $('.item-slider1, .item-slider2, .item-slider3').slick({
+  $('.item-slider1').slick({
     dots: false,
     infinite: false,
     speed: 300,
@@ -332,10 +316,12 @@
   });
 
 
-  $('.item-slider1, .item-slider2, .item-slider3').each(function () {
+  $('.item-slider1').each(function () {
     var slickInstance = $(this).slick('getSlick');
     handleSlideArrows(slickInstance);
   });
+
+
 
 
   // tap to show balance
@@ -349,8 +335,6 @@
       $tapBalance.removeClass('transition-animation');
     }, 300);
   });
-
-
 
 
   // for accordion
@@ -379,25 +363,13 @@
     });
   });
 
-  $(".caret").click(function() {
+  $(".caret").click(function () {
     $(this).toggleClass("caret-down");
     $(this).next(".nested").toggleClass("active");
-});
+  });
 
   Splitting();
 
-
-
-  // parallax animation
-document.addEventListener("mousemove",parallax);
-function parallax(e){
-  document.querySelectorAll(".animation-img").forEach(function(move){
-    var movingValue = move.getAttribute("data-value");
-    var x = (e.clientX * movingValue) / 800;
-    var y = (e.clientY * movingValue) / 800;
-    move.style.transform = "translateX("+ x +"px) translateY("+ y +"px)";
-  })
-}
 
 })(jQuery);
 

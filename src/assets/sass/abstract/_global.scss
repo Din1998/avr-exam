@@ -23,13 +23,21 @@
   object-fit: cover;
 }
 
+// overflow hidden
+.overflow--hidden{
+  overflow: hidden;
+}
+
+// cursor pointer
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 
 // dashboard tap balance
 .tap--balance {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
+
   gap: 8px;
   background-color: hsl(var(--base) / 0.1);
   padding: 8px 12px;
@@ -41,14 +49,20 @@
   .textt {
     cursor: pointer;
     text-align: center;
+    font-size: 16px;
   }
 
   .balance {
     cursor: pointer;
     text-align: center;
+    font-size: 16px;
+
   }
 }
-
+.transition-animation {
+  animation-name: fadeInOut;
+  animation-duration: 2s;
+}
 
 
 //dashboard refer link 

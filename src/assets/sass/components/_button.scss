@@ -23,7 +23,6 @@ button {
     z-index: 1;
     text-align: center;
     text-transform: capitalize;
-    font-weight: 500;
     transition: .5s;
     font-family: var(--heading-font);
     font-size: 16px;
@@ -72,18 +71,17 @@ button {
 
     // Different Color Button Start 
     &--base {
-        background: hsl(var(--base));
+        background: hsl(var(--base)/.8);
         background-size: cover;
         background-repeat: no-repeat;
         color: hsl(var(--white));
         border-radius: 4px;
+        border: 1p solid transparent;
 
         &:hover,
         &:focus {
-            background: hsl(var(--white));
-            box-shadow: 0px 4px 8px 0px hsl(var(--base));
-            color: hsl(var(--base));
-
+            background: hsl(var(--base));
+            color: hsl(var(--white));
         }
 
         &.pill {

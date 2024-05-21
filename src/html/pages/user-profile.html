@@ -1,184 +1,182 @@
-
-
 <!-- dashboard section -->
 @@include('../partials/_templateTop.html')
-  <!-- header -->
+<!-- header -->
 
 
 <section class="dashboard-section">
     <div class="dashboard">
 
-      <!-- < dashboard side bar -->
-      <div class="sidebar-menu">
-        <span class="sidebar-menu__close"><i class="las la-times"></i></span>
-        <div class="logo-wrapper px-3">
-            <a href="index.html" class="normal-logo" id="normal-logo"> <img src="assets/images/logo/logo.png"
-                    alt=""></a>
+        <!-- < dashboard side bar -->
+        <div class="sidebar-menu">
+            <span class="sidebar-menu__close"><i class="las la-times"></i></span>
+            <div class="logo-wrapper px-3">
+                <a href="index.html" class="normal-logo" id="normal-logo"> <img src="assets/images/logo/logo.png"
+                        alt=""></a>
+            </div>
 
+            <ul class="sidebar-menu-list">
+                <li class="sidebar-menu-list__item">
+                    <a href="dashboard.html" class="sidebar-menu-list__link active">
+                        <span class="icon"><i class="fa-solid fa-border-all"></i></span>
+                        <span class="text">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-list__item">
+                    <a href="exam-list.html" class="sidebar-menu-list__link">
+                        <span class="icon"><i class="fa-solid fa-list"></i></span>
+                        <span class="text">Exam List</span>
+                    </a>
+                </li>
+                <li class="sidebar-menu-list__item">
+                    <a href="mcq-history.html" class="sidebar-menu-list__link">
+                        <span class="icon"><i class="fa-regular fa-lightbulb"></i></span>
+                        <span class="text">MCQ Exam History</span>
+                    </a>
+                </li>
+                <li class="sidebar-menu-list__item">
+                    <a href="written-history.html" class="sidebar-menu-list__link">
+                        <span class="icon"><i class="fa-solid fa-file-pen"></i></span>
+                        <span class="text">Written Exam History</span>
+                    </a>
+                </li>
+
+
+
+                <li class="sidebar-menu-list__item has-dropdown">
+                    <a href="javascript:void(0)" class="sidebar-menu-list__link">
+                        <span class="icon"><i class="fa-solid fa-circle-dollar-to-slot"></i></span>
+                        <span class="text">Deposit</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul class="sidebar-submenu-list">
+                            <li class="sidebar-submenu-list__item">
+                                <a href="deposit.html" class="sidebar-submenu-list__link">Deposit Now</a>
+                            </li>
+                            <li class="sidebar-submenu-list__item">
+                                <a href="log.html" class="sidebar-submenu-list__link">Deposit Log</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="sidebar-menu-list__item has-dropdown">
+                    <a href="javascript:void(0)" class="sidebar-menu-list__link">
+                        <span class="icon"><i class="fa-solid fa-sack-dollar"></i></span>
+                        <span class="text">Withdraw</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul class="sidebar-submenu-list">
+                            <li class="sidebar-submenu-list__item">
+                                <a href="deposit.html" class="sidebar-submenu-list__link">Withdraw Now</a>
+                            </li>
+                            <li class="sidebar-submenu-list__item">
+                                <a href="log.html" class="sidebar-submenu-list__link">Withdraw Log</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+
+
+
+
+                <li class="sidebar-menu-list__item">
+                    <a href="transection.html" class="sidebar-menu-list__link">
+                        <span class="icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></span>
+                        <span class="text">Transactions</span>
+                    </a>
+                </li>
+
+
+
+
+                <li class="sidebar-menu-list__item">
+                    <a href="refarral.html" class="sidebar-menu-list__link ">
+                        <span class="icon"><i class="fa-solid fa-retweet"></i></span>
+                        <span class="text">Referral</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-list__item">
+                    <a href="support-ticket.html" class="sidebar-menu-list__link">
+                        <span class="icon"><i class="fa-solid fa-headset"></i></span>
+                        <span class="text">Support Ticket</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-list__item has-dropdown">
+                    <a href="javascript:void(0)" class="sidebar-menu-list__link">
+                        <span class="icon"><i class="fa-solid fa-gears"></i></span>
+                        <span class="text">Setting</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul class="sidebar-submenu-list">
+                            <li class="sidebar-submenu-list__item">
+                                <a href="user-profile.html" class="sidebar-submenu-list__link">Profile
+                                    Setting</a>
+                            </li>
+                            <li class="sidebar-submenu-list__item">
+                                <a href="change-password.html" class="sidebar-submenu-list__link">Change
+                                    Password </a>
+                            </li>
+                            <li class="sidebar-submenu-list__item">
+                                <a href="two-fa-security.html" class="sidebar-submenu-list__link">2Fa Security
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+
+            </ul>
         </div>
-
-        <ul class="sidebar-menu-list">
-            <li class="sidebar-menu-list__item">
-                <a href="dashboard.html" class="sidebar-menu-list__link active">
-                    <span class="icon"><i class="fa-solid fa-border-all"></i></span>
-                    <span class="text">Dashboard</span>
-                </a>
-            </li>
-
-            <li class="sidebar-menu-list__item">
-                <a href="invest.html" class="sidebar-menu-list__link">
-                    <span class="icon"><i class="fa-solid fa-filter-circle-dollar"></i></span>
-                    <span class="text">Investment</span>
-                </a>
-            </li>
-            <li class="sidebar-menu-list__item">
-                <a href="scheduleinvesment.html" class="sidebar-menu-list__link">
-                    <span class="icon"><i class="fa-solid fa-file-invoice-dollar"></i></span>
-                    <span class="text">Schedule Investment</span>
-                </a>
-            </li>
-            <li class="sidebar-menu-list__item">
-                <a href="stacking.html" class="sidebar-menu-list__link">
-                    <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
-                    <span class="text">Staking</span>
-                </a>
-            </li>
-        
-
-
-            <li class="sidebar-menu-list__item has-dropdown">
-                <a href="javascript:void(0)" class="sidebar-menu-list__link">
-                    <span class="icon"><i class="fa-solid fa-circle-dollar-to-slot"></i></span>
-                    <span class="text">Deposit</span>
-                </a>
-                <div class="sidebar-submenu">
-                    <ul class="sidebar-submenu-list">
-                        <li class="sidebar-submenu-list__item">
-                            <a href="deposit.html" class="sidebar-submenu-list__link">Deposit Now</a>
-                        </li>
-                        <li class="sidebar-submenu-list__item">
-                            <a href="log.html" class="sidebar-submenu-list__link">Deposit Log</a>
-                        </li>
-                      
-                    </ul>
-                </div>
-            </li>
-
-            <li class="sidebar-menu-list__item has-dropdown">
-                <a href="javascript:void(0)" class="sidebar-menu-list__link">
-                    <span class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></span>
-                    <span class="text">Withdraw</span>
-                </a>
-                <div class="sidebar-submenu">
-                    <ul class="sidebar-submenu-list">
-                        <li class="sidebar-submenu-list__item">
-                            <a href="#" class="sidebar-submenu-list__link">Withdraw Now</a>
-                        </li>
-                        <li class="sidebar-submenu-list__item">
-                            <a href="#" class="sidebar-submenu-list__link">Withdraw Log</a>
-                        </li>
-                      
-                    </ul>
-                </div>
-            </li>
-
-          
-           
-            <li class="sidebar-menu-list__item">
-                <a href="transection.html" class="sidebar-menu-list__link">
-                    <span class="icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></span>
-                    <span class="text">Transactions</span>
-                </a>
-            </li>
-
-         
-            <li class="sidebar-menu-list__item">
-                <a href="transfer.html" class="sidebar-menu-list__link ">
-                    <span class="icon"><i class="fa-solid fa-rotate"></i></span>
-                    <span class="text">Transfer</span>
-                </a>
-            </li>
-
-            <li class="sidebar-menu-list__item">
-                <a href="refarral.html" class="sidebar-menu-list__link ">
-                    <span class="icon"><i class="fa-solid fa-retweet"></i></span>
-                    <span class="text">Referral</span>
-                </a>
-            </li>
-
-            <li class="sidebar-menu-list__item">
-                <a href="support-ticket.html" class="sidebar-menu-list__link">
-                    <span class="icon"><i class="fa-solid fa-headset"></i></span>
-                    <span class="text">Support Ticket</span>
-                </a>
-            </li>
-
-            <li class="sidebar-menu-list__item has-dropdown">
-                <a href="javascript:void(0)" class="sidebar-menu-list__link">
-                    <span class="icon"><i class="fa-solid fa-gears"></i></span>
-                    <span class="text">Setting</span>
-                </a>
-                <div class="sidebar-submenu">
-                    <ul class="sidebar-submenu-list">
-                        <li class="sidebar-submenu-list__item">
-                            <a href="user-profile.html" class="sidebar-submenu-list__link">Profile
-                                Setting</a>
-                        </li>
-                        <li class="sidebar-submenu-list__item">
-                            <a href="change-password.html" class="sidebar-submenu-list__link">Change
-                                Password </a>
-                        </li>
-                        <li class="sidebar-submenu-list__item">
-                            <a href="two-fa-security.html" class="sidebar-submenu-list__link">2Fa Security
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-
-
-        </ul>
-    </div>
-    <!-- dashboard side bar /> -->
+        <!-- dashboard side bar /> -->
 
         <div class="dashboard-container-wrap">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="dashboard-body">
-                        <!-- < dashboard header -->
-                        <div class="row mb-4">
-                            <div class="dashboard-header">
-                                <div class="navigator-text">
-                                    <div class="dashboard-body__bar">
-                                        <span class="dashboard-body__bar-icon"><i class="las la-bars"></i></span>
-                                    </div>
-                                    <h6>Dashboard</h6>
-                                </div>
-                                <ul>
-                                    
-                                    <li class="language">
-                                        <div class="language-box">
-                                          <select class="select">
-                                            <option selected="">EN</option>
-                                            <option value="1">BN</option>
-                                            <option value="2">FR</option>
-                                            <option value="3">SP</option>
-                                          </select>
-                                        </div>
-                                      </li>
-                                  
-                                    <li>
-                                        <div class="user-thumb">
-                                            <img src="assets/images/user/user1.png" alt="...">
-                                        </div>
-                                    </li>
 
-                                </ul>
+                            <!-- < dashboard header -->
+                            <div class="row mb-4">
+                                <div
+                                    class="dashboard-header bg--base d-flex justify-content-between align-items-center">
+
+                                    <div class="navigator-text d-flex justify-content-center align-items-center">
+                                        <div class="dashboard-body__bar">
+                                            <span class="dashboard-body__bar-icon"><i class="las la-bars"></i></span>
+                                        </div>
+                                        <h6>Dashboard</h6>
+                                    </div>
+
+                                    <ul class="d-flex justify-content-center align-items-center gap--32">
+
+                                        <li class="language ">
+                                            <div class="language-box">
+                                                <select class="select">
+                                                    <option selected="">EN</option>
+                                                    <option value="1">BN</option>
+                                                    <option value="2">FR</option>
+                                                    <option value="3">SP</option>
+                                                </select>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="user-thumb">
+                                                <img src="assets/images/user/user1.png" alt="...">
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <!-- dashboard header /> -->
-                       
+                            <!-- dashboard header /> -->
+
                             <div class="row gy-4 mx-xxl-5 mx-lg-0 justify-content-center">
                                 <div class="col-lg-4">
                                     <div class="dashboard_profile-card">
@@ -187,14 +185,15 @@
                                                 <div class="profile_photo mb-2">
                                                     <img src="assets/images/user/user2.png" alt="agent">
                                                     <div class="photo_upload">
-                                                        <label for="photo_upload"><i class="fa-regular fa-image"></i></label>
+                                                        <label for="photo_upload"><i
+                                                                class="fa-regular fa-image"></i></label>
                                                         <input id="photo_upload" type="file" class="upload_file">
                                                     </div>
                                                 </div>
                                                 <div class="profile-details">
                                                     <ul>
                                                         <li>
-                                                            <p class="user-name">any@1998</p> 
+                                                            <p class="user-name">any@1998</p>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -202,36 +201,36 @@
                                         </div>
                                         <div class="contact-info">
                                             <div class="info-wrap">
-                                            <div class="info">
+                                                <div class="info">
                                                     <i class="fa-regular fa-envelope"></i>
                                                     <p>Email Address</p>
-                                            </div>
-                                            <span>demo1234@gmail.com</span>
+                                                </div>
+                                                <span>demo1234@gmail.com</span>
                                             </div>
                                         </div>
                                         <div class="contact-info">
                                             <div class="info-wrap">
-                                            <div class="info">
+                                                <div class="info">
                                                     <i class="fa-solid fa-phone"></i>
                                                     <p>Mobile Number</p>
-                                            </div>
-                                            <span>(589) 8795 4563</span>
+                                                </div>
+                                                <span>(589) 8795 4563</span>
                                             </div>
                                         </div>
                                         <div class="contact-info">
-                                            <div class="info-wrap">
-                                            <div class="info">
+                                            <div class="info-wrap border-bottom--none">
+                                                <div class="info">
                                                     <i class="fa-solid fa-location-dot"></i>
                                                     <p>Address</p>
-                                            </div>
-                                            <span>6391 Elgin St. Celina, Delaware 10299</span>
+                                                </div>
+                                                <span>6391 Elgin St. Celina, Delaware 10299</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="col-lg-8 justify-content-center">
-                                    <div class="base--card">
+                                    <div class="base--card bg--white">
                                         <form action="#" method="POST">
                                             <div class="row gy-3">
                                                 <div class="col-lg-12">
@@ -240,19 +239,23 @@
                                                 <div class="col-lg-6">
                                                     <div class="form-group mb-3">
                                                         <label for="name" class="form--label mb-3"> Full Name</label>
-                                                        <input type="text" class="form--control" id="name" placeholder="Full Name">
+                                                        <input type="text" class="form--control" id="name"
+                                                            placeholder="Full Name">
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="form-group mb-3">
-                                                        <label for="lastname" class="form--label mb-3"> User Name</label>
-                                                        <input type="text" class="form--control" id="lastname" placeholder="User Name">
+                                                        <label for="lastname" class="form--label mb-3"> User
+                                                            Name</label>
+                                                        <input type="text" class="form--control" id="lastname"
+                                                            placeholder="User Name">
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="form-group mb-3">
                                                         <label class="form--label mb-2">User Name</label>
-                                                        <input type="email" class="form--control" placeholder="User Name">
+                                                        <input type="email" class="form--control"
+                                                            placeholder="User Name">
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6">
@@ -264,13 +267,15 @@
                                                 <div class="col-lg-6">
                                                     <div class="form-group mb-3">
                                                         <label for="country" class="form--label mb-2">Country</label>
-                                                        <input type="text" class="form--control" id="country" placeholder="Country">
+                                                        <input type="text" class="form--control" id="country"
+                                                            placeholder="Country">
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="form-group mb-3">
                                                         <label for="zip-code" class="form--label mb-2">Zip Code</label>
-                                                        <input type="text" class="form--control" id="zip-code" placeholder="Zip Code">
+                                                        <input type="text" class="form--control" id="zip-code"
+                                                            placeholder="Zip Code">
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
@@ -281,35 +286,15 @@
                                     </div>
                                 </div>
                             </div>
-                     
+
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
-       
-    </div> 
+
+    </div>
 </section>
 
 
 @@include('../partials/_templateBottom.html')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

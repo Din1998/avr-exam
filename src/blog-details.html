@@ -47,11 +47,20 @@
 
     <!--==================== Preloader End ====================-->
 
-<!-- Header Start -->
+<!--========================== Header section Start ==========================-->
 
-<div class="header-main-area">
-  <div class="header" id="header">
+<div class="header-main-area header-two">
+
+
+
+  <div class="header border-bottom" id="header">
+
+    <div class="header-bg--img">
+      <img src="assets/images/common/header-bg.png" alt="...">
+    </div>
+
     <div class="container position-relative">
+      <div class="row">
         <div class="header-wrapper">
           <!-- ham menu -->
           <i class="fa-sharp fa-solid fa-bars-staggered ham__menu" data-bs-toggle="offcanvas"
@@ -69,13 +78,13 @@
 
 
           <div class="menu-list-wrapper">
-              <ul class="main-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a class='active' href="about.html">About</a></li>
-                <li><a href="category.html">Categories</a></li>
-                <li><a href="subject.html">Subject</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
+            <ul class="main-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a class='active' href="about.html">About</a></li>
+              <li><a href="category.html">Categories</a></li>
+              <li><a href="subject.html">Subject</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
           </div>
 
           <ul class="login d-flex align-items-center gap-3">
@@ -90,21 +99,22 @@
                 </select>
               </div>
             </li>
-            <li >
+            <li>
               <a class="login--btn" href="login.html">Sign in</a>
             </li>
           </ul>
         </div>
+      </div>
     </div>
   </div>
 </div>
-<!-- Header section End -->
+<!--========================== Header section End ==========================-->
 
-<!-- Sidebar mobile menu wrap Start-->
+<!--========================== Sidebar mobile menu wrap Start ==========================-->
 <div class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasExample">
   <div class="offcanvas-header">
     <div class="logo">
-      <div class="align-items-center d-flex">
+      <div class="header-menu-wrapper align-items-center d-flex">
         <div class="logo-wrapper">
           <a href="index.html" class="normal-logo" id="offcanvas-logo-normal">
             <img src="assets/images/logo/logo.png" alt="">
@@ -164,7 +174,7 @@
 
 
 
-<!-- Sidebar mobile menu wrap End -->
+<!--========================== Sidebar mobile menu wrap End ==========================-->
 
 <!-- Breadcrumb Start Here -->
 <div class="breadcrumb section--bg">
@@ -198,7 +208,7 @@
   
                       <div class="blog-item">
                           <div class="blog-item--thumb">
-                              <img src="assets/images/blog/img1.png" alt="blog-img">
+                              <img class="fit--image" src="assets/images/blog/img1.png" alt="blog-img">
                           </div>
                           <div class="blog-item--content pt-3">
                               <ul class="text-list inline">
@@ -215,12 +225,12 @@
                           <p class="blog-details--desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque excepturi cupiditate soluta nisi aperiam illum maxime dolorum. Impedit, quiLorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque excepturi cupiditate soluta nisi aperiam illum maxime dolorum. Impedit, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque excepturi cupiditate soluta nisi aperiam illum maxime dolorum. Impedit, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque excepturi cupiditate soluta nisi aperiam illum maxime dolorum. Impedit, quibusdam. Lorem it. Quis atque excepturi cupiditate soluta nisi aperiam illum maxime dolorum. Impedit, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque excepturi cupiditate soluta nisi aperiam illum maxime dolorum. Impedit, quibusdam.</p>
   
                           <div class="blog-details--share mt-4 d-flex align-items-center flex-wrap mb-4">
-                              <h5 class="social-share--title mb-0 me-sm-3 me-1 d-inline-block">Share This</h5>
-                              <ul class="social-list blog-details">
-                                  <li class="social-list--item"><a href="https://www.facebook.com" class="social-list__link"><i class="fab fa-facebook-f"></i></a> </li>
-                                  <li class="social-list--item"><a href="https://www.twitter.com" class="social-list__link"> <i class="fab fa-twitter"></i></a></li>
-                                  <li class="social-list--item"><a href="https://www.linkedin.com" class="social-list__link"> <i class="fab fa-linkedin-in"></i></a></li>
-                                  <li class="social-list--item"><a href="https://www.pinterest.com" class="social-list__link"> <i class="fab fa-instagram"></i></a></li>
+                              <h5 class="social-share--title mb-0 me-sm-3 me-1 d-inline-block">Share This :</h5>
+                              <ul class="social-list blog-details d-flex gap--12">
+                                  <li class="social-list--item"><a href="https://www.facebook.com" class="social-list__link d-flex justify-content-center align-items-center"><i class="fab fa-facebook-f"></i></a> </li>
+                                  <li class="social-list--item"><a href="https://www.twitter.com" class="social-list__link d-flex justify-content-center align-items-center"> <i class="fab fa-twitter"></i></a></li>
+                                  <li class="social-list--item"><a href="https://www.linkedin.com" class="social-list__link d-flex justify-content-center align-items-center"> <i class="fab fa-linkedin-in"></i></a></li>
+                                  <li class="social-list--item"><a href="https://www.pinterest.com" class="social-list__link d-flex justify-content-center align-items-center"> <i class="fab fa-instagram"></i></a></li>
                               </ul>
                           </div>
                      </div>
@@ -228,10 +238,11 @@
               </div>
   
               <div class="col-lg-4">
-                  <!-- ============================= Blog Details Sidebar Start ======================== -->
+
+                  <!--  Blog Details Sidebar Start  -->
                 <div class="blog-sidebar-wrapper">
-                    <div class="blog-sidebar">
-                        <h5 class="blog-sidebar--title"> Search </h5>
+                    <div class="blog-sidebar border--solid1 radius--12">
+                        <h5 class="blog-sidebar--title fs--24"> Search </h5>
                         <div class="blog-search-box w-100">
                             <form>
                                 <div class="input--group d-flex flex-nowrap position-relative">
@@ -244,38 +255,40 @@
                             </form>
                         </div>
                     </div>
-                    <div class="blog-sidebar">
-                        <h5 class="blog-sidebar--title"> New Article</h5>
-                        <div class="latest-blog">
+                    <div class="blog-sidebar border--solid1 radius--12">
+                        <h5 class="blog-sidebar--title fs--24"> New Article</h5>
+                        <div class="latest-blog d-flex flex-wrap">
                             <div class="latest-blog--thumb">
                                 <a href="blog-details.html"> <img src="assets/images/blog/img1.png" alt="..."></a>
                             </div>
                             <div class="latest-blog--content">
                                 <h6 class="latest-blog--title"><a href="blog-details.html">Sound Everyday Rutine For Your Lorem ipsum dolor sit amet.</a></h6>
-                                <span class="latest-blog--date">June 23 202</span>
+                                <span class="latest-blog--date fs--18">June 23 202</span>
                             </div>
                         </div>
-                        <div class="latest-blog">
+                        <div class="latest-blog d-flex flex-wrap">
                             <div class="latest-blog--thumb">
                                 <a href="blog-details.html"> <img src="assets/images/blog/img1.png" alt="..."></a>
                             </div>
                             <div class="latest-blog--content">
-                                <h6 class="latest-blog--title"><a href="blog-details.html">Lorem ipsum dolor sit amet.</a></h6>
-                                <span class="latest-blog--date">June 23 202</span>
+                                <h6 class="latest-blog--title"><a href="blog-details.html">Sound Everyday Rutine For Your Lorem ipsum dolor sit amet.</a></h6>
+                                <span class="latest-blog--date fs--18">June 23 202</span>
                             </div>
                         </div>
-                        <div class="latest-blog">
+                        <div class="latest-blog d-flex flex-wrap">
                             <div class="latest-blog--thumb">
                                 <a href="blog-details.html"> <img src="assets/images/blog/img1.png" alt="..."></a>
                             </div>
                             <div class="latest-blog--content">
-                                <h6 class="latest-blog--title"><a href="blog-details.html">Lorem ipsum dolor sit amet.</a></h6>
-                                <span class="latest-blog--date">June 23 202</span>
+                                <h6 class="latest-blog--title"><a href="blog-details.html">Sound Everyday Rutine For Your Lorem ipsum dolor sit amet.</a></h6>
+                                <span class="latest-blog--date fs--18">June 23 202</span>
                             </div>
                         </div>
                     </div>
                 </div>
-  <!-- ============================= Blog Details Sidebar End ======================== -->
+
+  <!-- Blog Details Sidebar End-->
+
               </div>
           </div>
       </div>
@@ -300,7 +313,7 @@
                         <p class="footer-item--desc wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                             Download the Alister Bank app and simplify your banking. Discover quick</p>
 
-                        <ul class="social-list wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+                        <ul class="social-list wow animate__animated animate__fadeInUp z--9 position-relative" data-wow-delay="1s">
                             <li class="social-list--item"><a href="https://www.facebook.com"
                                     class="social-list__link icon-wrapper">
                                     <div class="icon"><i class="fab fa-facebook-f"></i></div>

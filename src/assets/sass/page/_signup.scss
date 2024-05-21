@@ -113,16 +113,16 @@
 
       &::before {
         content: "";
-        width: 230px;
+        width: 170px;
         height: 1px;
-        border: 1px dashed hsl(var(--white));
+        border: 1px dashed hsl(var(--black)/.6);
       }
 
       &::after {
         content: "";
-        width: 230px;
+        width: 170px;
         height: 1px;
-        border: 1px dashed hsl(var(--white));
+        border: 1px dashed hsl(var(--black)/.6);
       }
     }
 
@@ -139,8 +139,8 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          background: hsl(var(--white)/0.09);
-          color: hsl(var(--white));
+          background: hsl(var(--black)/0.09);
+          color: hsl(var(--base));
         }
       }
     }

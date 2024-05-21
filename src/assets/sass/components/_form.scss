@@ -26,9 +26,7 @@
   margin-bottom: 8px;
 }
 
-.input-group-text{
-  color: hsl(var(--black));
-}
+
 
 .form--control {
   font-weight: 500;
@@ -160,7 +158,7 @@ select:-webkit-autofill {
   cursor: pointer;
   top: 50%;
   transform: translateY(-50%);
-  color: hsl(var(--white)/.5);
+  color: hsl(var(--black)/.5);
 }
 
 // --------------- Number Arrow None ---------------------
@@ -274,7 +272,7 @@ input[type=number] {
   }
 
   label {
-    color: hsl(var(--white));
+    color: hsl(var(--black));
 
     @include xsm-screen {
       font-size: 15px;
@@ -294,7 +292,7 @@ input[type=number] {
   align-items: center;
   gap: 6px;
 
-  .form-check-input {
+  .form-radio-input {
     box-shadow: none;
     border: 2px solid hsl(var(--base));
     position: relative;

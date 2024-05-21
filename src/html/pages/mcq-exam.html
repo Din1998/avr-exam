@@ -1,0 +1,387 @@
+<!-- dashboard section -->
+@@include('../partials/_templateTop.html')
+<!-- header -->
+
+
+<section class="dashboard-section">
+
+    <div class="dashboard">
+            <!-- < dashboard side bar -->
+            <div class="sidebar-menu">
+                <span class="sidebar-menu__close"><i class="las la-times"></i></span>
+                <div class="logo-wrapper px-3">
+                    <a href="index.html" class="normal-logo" id="normal-logo"> <img src="assets/images/logo/logo.png" alt=""></a>
+                </div>
+    
+                <ul class="sidebar-menu-list">
+                    <li class="sidebar-menu-list__item">
+                        <a href="dashboard.html" class="sidebar-menu-list__link active">
+                            <span class="icon"><i class="fa-solid fa-border-all"></i></span>
+                            <span class="text">Dashboard</span>
+                        </a>
+                    </li>
+    
+                    <li class="sidebar-menu-list__item">
+                        <a href="exam-list.html" class="sidebar-menu-list__link">
+                            <span class="icon"><i class="fa-solid fa-list"></i></span>
+                            <span class="text">Exam List</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-list__item">
+                        <a href="mcq-history.html" class="sidebar-menu-list__link">
+                            <span class="icon"><i class="fa-regular fa-lightbulb"></i></span>
+                            <span class="text">MCQ Exam History</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-list__item">
+                        <a href="written-history.html" class="sidebar-menu-list__link">
+                            <span class="icon"><i class="fa-solid fa-file-pen"></i></span>
+                            <span class="text">Written Exam History</span>
+                        </a>
+                    </li>
+                
+    
+    
+                    <li class="sidebar-menu-list__item has-dropdown">
+                        <a href="javascript:void(0)" class="sidebar-menu-list__link">
+                            <span class="icon"><i class="fa-solid fa-circle-dollar-to-slot"></i></span>
+                            <span class="text">Deposit</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul class="sidebar-submenu-list">
+                                <li class="sidebar-submenu-list__item">
+                                    <a href="deposit.html" class="sidebar-submenu-list__link">Deposit Now</a>
+                                </li>
+                                <li class="sidebar-submenu-list__item">
+                                    <a href="log.html" class="sidebar-submenu-list__link">Deposit Log</a>
+                                </li>
+                              
+                            </ul>
+                        </div>
+                    </li>
+    
+                    <li class="sidebar-menu-list__item has-dropdown">
+                        <a href="javascript:void(0)" class="sidebar-menu-list__link">
+                            <span class="icon"><i class="fa-solid fa-sack-dollar"></i></span>
+                            <span class="text">Withdraw</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul class="sidebar-submenu-list">
+                                <li class="sidebar-submenu-list__item">
+                                    <a href="deposit.html" class="sidebar-submenu-list__link">Withdraw Now</a>
+                                </li>
+                                <li class="sidebar-submenu-list__item">
+                                    <a href="log.html" class="sidebar-submenu-list__link">Withdraw Log</a>
+                                </li>
+                              
+                            </ul>
+                        </div>
+                    </li>
+    
+                 
+    
+                  
+                   
+                    <li class="sidebar-menu-list__item">
+                        <a href="transection.html" class="sidebar-menu-list__link">
+                            <span class="icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></span>
+                            <span class="text">Transactions</span>
+                        </a>
+                    </li>
+    
+                 
+              
+    
+                    <li class="sidebar-menu-list__item">
+                        <a href="refarral.html" class="sidebar-menu-list__link ">
+                            <span class="icon"><i class="fa-solid fa-retweet"></i></span>
+                            <span class="text">Referral</span>
+                        </a>
+                    </li>
+    
+                    <li class="sidebar-menu-list__item">
+                        <a href="support-ticket.html" class="sidebar-menu-list__link">
+                            <span class="icon"><i class="fa-solid fa-headset"></i></span>
+                            <span class="text">Support Ticket</span>
+                        </a>
+                    </li>
+    
+                    <li class="sidebar-menu-list__item has-dropdown">
+                        <a href="javascript:void(0)" class="sidebar-menu-list__link">
+                            <span class="icon"><i class="fa-solid fa-gears"></i></span>
+                            <span class="text">Setting</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul class="sidebar-submenu-list">
+                                <li class="sidebar-submenu-list__item">
+                                    <a href="user-profile.html" class="sidebar-submenu-list__link">Profile
+                                        Setting</a>
+                                </li>
+                                <li class="sidebar-submenu-list__item">
+                                    <a href="change-password.html" class="sidebar-submenu-list__link">Change
+                                        Password </a>
+                                </li>
+                                <li class="sidebar-submenu-list__item">
+                                    <a href="two-fa-security.html" class="sidebar-submenu-list__link">2Fa Security
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+    
+    
+                </ul>
+            </div>
+            <!-- dashboard side bar /> -->
+
+        <div class="dashboard-container-wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="dashboard-body">
+                            <!-- < dashboard header -->
+                            <div class="row mb-4">
+                                <div class="dashboard-header">
+                                    <div class="navigator-text">
+                                        <div class="dashboard-body__bar">
+                                            <span class="dashboard-body__bar-icon"><i class="las la-bars"></i></span>
+                                        </div>
+                                        <h6>Dashboard</h6>
+                                    </div>
+                                    <ul>
+
+                                        <li class="language">
+                                            <div class="language-box">
+                                                <select class="select">
+                                                    <option selected="">EN</option>
+                                                    <option value="1">BN</option>
+                                                    <option value="2">FR</option>
+                                                    <option value="3">SP</option>
+                                                </select>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="user-thumb">
+                                                <img src="assets/images/user/user1.png" alt="...">
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- dashboard header /> -->
+
+
+
+
+
+
+                            <div class="row mx-xxl-5 mx-lg-0  pb-4">
+                                <div class="col-lg-4">
+                                    <div class="base--card bg--white">
+                                        <h6>Exam Details</h6>
+                                        <ul class="section--bg base--radius p-3 d-flex flex-column ">
+                                            <li class="d-flex justify-content-between align-items-center border-bottom--dash1 py-3 ">
+                                                <p class="fw--400">Subject</p>
+                                                <p class="text--black fw--400">Quiz </p>
+                                            </li>
+                                            <li class="d-flex justify-content-between align-items-center border-bottom--dash1 py-3">
+                                                <p class="fw--400">Type</p>
+                                                <p class="text--black fw--400">MCQ </p>
+                                            </li>
+                                            <li class="d-flex justify-content-between align-items-center border-bottom--dash1 py-3">
+                                                <p class="fw--400">Total Mark</p>
+                                                <p class="text--black fw--400">25</p>
+                                            </li>
+                                            <li class="d-flex justify-content-between align-items-center border-bottom--dash1 py-3">
+                                                <p class="fw--400">Pass Mark Percentage</p>
+                                                <p class="text--black fw--400">15%</p>
+                                            </li>
+                                            <li class="d-flex justify-content-between align-items-center border-bottom--dash1 py-3">
+                                                <p class="fw--400">Exam Fee</p>
+                                                <p class="text--black fw--400">$20</p>
+                                            </li>
+                                            <li class="d-flex justify-content-between align-items-center border-bottom--dash1 py-3">
+                                                <p class="fw--400">Total Question</p>
+                                                <p class="text--black fw--400">60</p>
+                                            </li>
+                                            <li class="d-flex justify-content-between align-items-center border-bottom--dash1 py-3 border-bottom--none">
+                                                <p class="fw--400">Pass Mark</p>
+                                                <p class="text--black fw--400">20</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="base--card bg--white">
+                                        <h6>Time Remaining : 50:30</h6>
+                                   
+                               
+                                        <form>
+                                            
+                                            <div class="form-group">
+                                                <p class="text--black mb-2">What is CSS (Multi)?</p>
+
+                                                <div class="form--check mb-3">
+                                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="1">
+                                                    <label class="form-check-label" for="1">
+                                                        CSS is a style sheet language
+                                                    </label>
+                                                </div>
+                                                <div class="form--check mb-3">
+                                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="2">
+                                                    <label class="form-check-label" for="2">
+                                                        CSS is designed to separate the presentation and content, including layout, colors, and fonts
+                                                    </label>
+                                                </div>
+                                                <div class="form--check mb-3">
+                                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="3">
+                                                    <label class="form-check-label" for="3">
+                                                        CSS is the language used to style the HTML documents
+                                                    </label>
+                                                </div>
+                                                <div class="form--check mb-3">
+                                                    <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="4">
+                                                    <label class="form-check-label" for="4">
+                                                        All of the mentioned
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <p class="text--black mb-2">Which of the following CSS selectors are used to specify a group of elements?</p>
+                                                
+                                                <div class="form--radio mb-3">
+                                                    <input class="form-radio-input filter-by-category" name="categories" type="radio" value="1" id="5">
+                                                    <label class="form-check-label" for="5">
+                                                        tag
+                                                    </label>
+                                                </div>
+                                                <div class="form--radio mb-3">
+                                                    <input class="form-radio-input filter-by-category" name="categories" type="radio" value="1" id="6">
+                                                    <label class="form-check-label" for="6">
+                                                        id
+                                                    </label>
+                                                </div>
+                                                <div class="form--radio mb-3">
+                                                    <input class="form-radio-input filter-by-category" name="categories" type="radio" value="1" id="7">
+                                                    <label class="form-check-label" for="7">
+                                                        class
+                                                    </label>
+                                                </div>
+                                                <div class="form--radio mb-3">
+                                                    <input class="form-radio-input filter-by-category" name="categories" type="radio" value="1" id="8">
+                                                    <label class="form-check-label" for="8">
+                                                        both class and tag
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <p class="text--black mb-2">Which of the following CSS style property is used to specify an italic text?</p>
+                                                
+                                                <div class="form--radio mb-3">
+                                                    <input class="form-radio-input filter-by-category" name="categories" type="radio" value="1" id="9">
+                                                    <label class="form-check-label" for="9">
+                                                        style
+                                                    </label>
+                                                </div>
+                                                <div class="form--radio mb-3">
+                                                    <input class="form-radio-input filter-by-category" name="categories" type="radio" value="1" id="10">
+                                                    <label class="form-check-label" for="10">
+                                                        font
+                                                    </label>
+                                                </div>
+                                                <div class="form--radio mb-3">
+                                                    <input class="form-radio-input filter-by-category" name="categories" type="radio" value="1" id="11">
+                                                    <label class="form-check-label" for="11">
+                                                        font-style
+                                                    </label>
+                                                </div>
+                                                <div class="form--radio mb-3">
+                                                    <input class="form-radio-input filter-by-category" name="categories" type="radio" value="1" id="12">
+                                                    <label class="form-check-label" for="12">
+                                                        @font-face
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <p class="text--black mb-2"> Which of the following function defines a linear gradient as a CSS image?</p>
+                                                
+                                                <div class="form--radio mb-3">
+                                                    <input class="form-radio-input filter-by-category" name="categories" type="radio" value="1" id="13">
+                                                    <label class="form-check-label" for="13">
+                                                        gradient()
+                                                    </label>
+                                                </div>
+                                                <div class="form--radio mb-3">
+                                                    <input class="form-radio-input filter-by-category" name="categories" type="radio" value="1" id="14">
+                                                    <label class="form-check-label" for="14">
+                                                        linear-gradient()
+                                                    </label>
+                                                </div>
+                                                <div class="form--radio mb-3">
+                                                    <input class="form-radio-input filter-by-category" name="categories" type="radio" value="1" id="15">
+                                                    <label class="form-check-label" for="15">
+                                                        grayscale()
+                                                    </label>
+                                                </div>
+                                                <div class="form--radio mb-3">
+                                                    <input class="form-radio-input filter-by-category" name="categories" type="radio" value="1" id="16">
+                                                    <label class="form-check-label" for="16">
+                                                        image()
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <button class="btn btn--base text-end">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="base--card bg--white">
+                                        <h6>Exam Instruction</h6>
+                                        <ul class="d-flex flex-column ">
+                                            <li class="d-flex justify-content-between align-items-center border-bottom--dash1 py-3 ">
+                                              
+                                                <p class="text--black fw--400">1. Don't reload the Page,</p>
+                                            </li>
+                                            <li class="d-flex justify-content-between align-items-center border-bottom--dash1 py-3">
+                                          
+                                                <p class="text--black fw--400">2. Don't open the new tab,</p>
+                                            </li>
+                                            <li class="d-flex justify-content-between align-items-center border-bottom--dash1 py-3">
+                                          
+                                                <p class="text--black fw--400">3. Don't minimize the browser,</p>
+                                            </li>
+                                            <li class="d-flex justify-content-between align-items-center border-bottom--dash1 py-3">
+                                           
+                                                <p class="text--black fw--400">3. Don't minimize the browser,</p>
+                                            </li>
+                                            <li class="d-flex justify-content-between align-items-center border-bottom--dash1 py-3">
+                                          
+                                                <p class="text--black fw--400">4. Submit within the time,</p>
+                                            </li>
+                                            <li class="d-flex justify-content-between align-items-center border-bottom--dash1 py-3">
+                                           
+                                                <p class="text--black fw--400">5. While the time is finished exam will automatically  submit;</p>
+                                            </li>
+                                           
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+@@include('../partials/_templateBottom.html')
