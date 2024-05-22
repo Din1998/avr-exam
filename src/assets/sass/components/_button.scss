@@ -169,7 +169,7 @@ button {
         background-color: hsl(var(--primary));
         &:hover,
         &:focus {
-            background-color: hsl(var(--primary-d-100));
+            background-color: hsl(var(--primary)/.1);
         }
 
         &.pill {
@@ -194,7 +194,7 @@ button {
 
         &:hover,
         &:focus {
-            background-color: hsl(var(--secondary-d-100));
+            background-color: hsl(var(--secondary)/.1);
         }
 
         &.pill {
@@ -221,7 +221,7 @@ button {
 
         &:hover,
         &:focus {
-            background-color: hsl(var(--success-d-100));
+            background-color: hsl(var(--success)/.1);
         }
 
         &.pill {
@@ -248,7 +248,7 @@ button {
 
         &:hover,
         &:focus {
-            background-color: hsl(var(--danger-d-100));
+            background-color: hsl(var(--danger)/.1);
         }
 
         &.pill {
@@ -275,7 +275,7 @@ button {
 
         &:hover,
         &:focus {
-            background-color: hsl(var(--warning-d-100));
+            background-color: hsl(var(--warning)/.1);
         }
 
         &.pill {
@@ -302,7 +302,7 @@ button {
 
         &:hover,
         &:focus {
-            background-color: hsl(var(--info-d-100));
+            background-color: hsl(var(--info)/.1);
         }
 
         &.pill {
@@ -329,7 +329,7 @@ button {
 
         &:hover,
         &:focus {
-            background-color: hsl(var(--violet-d-100));
+            background-color: hsl(var(--violet)/.1);
         }
 
         &.pill {
