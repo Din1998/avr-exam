@@ -2304,7 +2304,7 @@ button:focus {
 }
 
 .btn--primary:hover, .btn--primary:focus {
-    background-color: hsl(var(--primary-d-100));
+    background-color: hsl(var(--primary)/0.1);
 }
 
 .btn--primary.pill {
@@ -2327,7 +2327,7 @@ button:focus {
 }
 
 .btn--secondary:hover, .btn--secondary:focus {
-    background-color: hsl(var(--secondary-d-100));
+    background-color: hsl(var(--secondary)/0.1);
 }
 
 .btn--secondary.pill {
@@ -2350,7 +2350,7 @@ button:focus {
 }
 
 .btn--success:hover, .btn--success:focus {
-    background-color: hsl(var(--success-d-100));
+    background-color: hsl(var(--success)/0.1);
 }
 
 .btn--success.pill {
@@ -2373,7 +2373,7 @@ button:focus {
 }
 
 .btn--danger:hover, .btn--danger:focus {
-    background-color: hsl(var(--danger-d-100));
+    background-color: hsl(var(--danger)/0.1);
 }
 
 .btn--danger.pill {
@@ -2396,7 +2396,7 @@ button:focus {
 }
 
 .btn--warning:hover, .btn--warning:focus {
-    background-color: hsl(var(--warning-d-100));
+    background-color: hsl(var(--warning)/0.1);
 }
 
 .btn--warning.pill {
@@ -2419,7 +2419,7 @@ button:focus {
 }
 
 .btn--info:hover, .btn--info:focus {
-    background-color: hsl(var(--info-d-100));
+    background-color: hsl(var(--info)/0.1);
 }
 
 .btn--info.pill {
@@ -2442,7 +2442,7 @@ button:focus {
 }
 
 .btn--violet:hover, .btn--violet:focus {
-    background-color: hsl(var(--violet-d-100));
+    background-color: hsl(var(--violet)/0.1);
 }
 
 .btn--violet.pill {
@@ -4585,43 +4585,50 @@ button.mfp-close {
 }
 
 .loader {
-    transform: translateZ(1px);
+    width: 200px;
+    height: 140px;
+    background: #979794;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 8px;
+    perspective: 1000px;
+}
+
+.loader:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    border-radius: 8px;
+    background: #f5f5f5 no-repeat;
+    background-size: 60px 10px;
+    background-image: linear-gradient(#ddd 100px, transparent 0), linear-gradient(#ddd 100px, transparent 0), linear-gradient(#ddd 100px, transparent 0), linear-gradient(#ddd 100px, transparent 0), linear-gradient(#ddd 100px, transparent 0), linear-gradient(#ddd 100px, transparent 0);
+    background-position: 15px 30px, 15px 60px, 15px 90px, 105px 30px, 105px 60px, 105px 90px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .loader:after {
-    content: "$";
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 32px;
-    font-weight: bold;
-    background: #FFD700;
-    color: #DAA520;
-    border: 4px double;
-    box-sizing: border-box;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-    animation: coin-flip 4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    content: "";
+    position: absolute;
+    width: calc(50% - 10px);
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    border-radius: 8px;
+    background: #fff no-repeat;
+    background-size: 60px 10px;
+    background-image: linear-gradient(#ddd 100px, transparent 0), linear-gradient(#ddd 100px, transparent 0), linear-gradient(#ddd 100px, transparent 0);
+    background-position: 50% 30px, 50% 60px, 50% 90px;
+    transform: rotateY(0deg);
+    transform-origin: left center;
+    animation: paging 1s linear infinite;
 }
 
-@keyframes coin-flip {
-    0%, 100% {
-        animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
-    }
-
-    0% {
-        transform: rotateY(0deg);
-    }
-
-    50% {
-        transform: rotateY(1800deg);
-        animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
-    }
-
-    100% {
-        transform: rotateY(3600deg);
+@keyframes paging {
+    to {
+        transform: rotateY(-180deg);
     }
 }
 
